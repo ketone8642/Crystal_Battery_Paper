@@ -1,0 +1,20 @@
+✔ crystal-system boundaries match the backend rules (0.943393ms)
+✔ input template creates two typed requests (0.712736ms)
+✔ CSV parser supports BOM CRLF quotes commas and multiline cells (0.588258ms)
+✔ CSV parser rejects malformed quoted fields (0.325171ms)
+✔ CSV rejects label/provenance columns and duplicate headers (0.510881ms)
+✔ CSV rejects wrong widths, invalid SG, symmetry, and excess rows (0.938186ms)
+✔ exports retain full voltage precision and model metadata (0.328306ms)
+✔ CSV escapes text while preserving negative numeric values (0.152981ms)
+✔ API result validation rejects missing or nonfinite values (0.293994ms)
+✔ profile chart uses interval boundaries and keeps negative voltages (0.453044ms)
+✔ flat profiles have a finite plotting range and gaps are rejected (0.27142ms)
+✔ server validation errors identify the relevant input row (0.237078ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 12
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 87.844024

@@ -1,0 +1,3 @@
+﻿working_ion,formula_charge,formula_discharge,crystal_system_charge,spacegroup_number_charge,crystal_system_discharge,spacegroup_number_discharge,model_family,training_population
+Li,C,LiC12,hexagonal,191,hexagonal,191,auto,auto
+Li,LiC12,LiC6,hexagonal,191,hexagonal,191,auto,auto

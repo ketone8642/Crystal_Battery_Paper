@@ -1,0 +1,52 @@
+{
+  "status": "complete",
+  "schema_hash": "4c924f80f01653191867e9475145e7f9db525ff581e5ee9299bf2fbd02c9f82b",
+  "population": "mixed_ions",
+  "candidate": {
+    "id": "svr_scaled_1",
+    "family": "svr",
+    "representation": "scaled",
+    "parameters": {
+      "C": 10.0,
+      "gamma": "scale",
+      "epsilon": 0.1
+    }
+  },
+  "training_rows": 6140,
+  "training_ions": [
+    "Al",
+    "Ca",
+    "Li",
+    "Mg",
+    "Y",
+    "Zn"
+  ],
+  "training_row_uid_sha256": "dcad5c85a776e81b0369958d1eec2e6b4f9028179cb44866383972ea0dad2880",
+  "fit_scope": "all_development",
+  "runtime": {
+    "python": "3.11.9",
+    "numpy": "2.1.3",
+    "scipy": "1.15.3",
+    "scikit-learn": "1.6.1",
+    "joblib": "1.5.1",
+    "tensorflow": "2.20.0"
+  },
+  "cv_mean_fold_mae_V": 0.6729193549929893,
+  "limitations": [
+    "Current Materials Project adaptation, not an exact reproduction of the original paper.",
+    "The feature scheme uses composition and symmetry; it has no atomic coordinates, ionic radii or electronegativity.",
+    "The search is small and predeclared. Selected CV scores are model-selection statistics, not unbiased test estimates.",
+    "All original eligible labels are retained, including the 14 previously flagged priority-review records. Source-energy verification is pending.",
+    "Na/K come from the same retrieval and are not the original paper sodium test set or an independent experimental benchmark.",
+    "Known-group versus new-group transfer is relative to the development partition used to fit that bundle.",
+    "No fine-tuning on Na/K and no calibrated uncertainty estimation are performed.",
+    "Li-only direct working-ion identity columns are constant during training and cannot teach a Na/K identity effect.",
+    "Metrics are in volts; R2 is computed directly on predictions and can be negative. MAE is not percentage accuracy.",
+    "Holdout/transfer results must not be used to choose new hyperparameters while still calling the same sets untouched tests."
+  ],
+  "files_sha256": {
+    "model.joblib": "5660b3c2e6eebf0174083779cfc986be39cef7670a7cb83c82bb858f0e283c16",
+    "preprocessor.npz": "495d26ffb0c771b75c08d44cb799e1dee6bf68697e0168697df76a375f202398",
+    "regressor.json": "1f0ab9977cac9c3a8209f5a690ada72e5a7f0880c365058acb53ff6481c51f25"
+  }
+}

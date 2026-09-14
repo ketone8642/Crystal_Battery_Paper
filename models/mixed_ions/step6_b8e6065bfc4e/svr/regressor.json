@@ -1,0 +1,16 @@
+{
+  "family": "svr",
+  "offset": 0.0,
+  "target_scale": 1.0,
+  "info": {
+    "input_dimensions": 497,
+    "training_rows": 6140,
+    "seed": 3026,
+    "parameters": {
+      "C": 10.0,
+      "epsilon": 0.1
+    },
+    "target_transform": "none",
+    "resolved_gamma": 0.0020120724346076447
+  }
+}

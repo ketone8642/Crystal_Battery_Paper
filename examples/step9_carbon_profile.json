@@ -1,0 +1,26 @@
+{
+  "intervals": [
+    {
+      "working_ion": "Li",
+      "formula_charge": "C",
+      "formula_discharge": "LiC12",
+      "crystal_system_charge": "hexagonal",
+      "spacegroup_number_charge": 191,
+      "crystal_system_discharge": "hexagonal",
+      "spacegroup_number_discharge": 191,
+      "model_family": "auto",
+      "training_population": "auto"
+    },
+    {
+      "working_ion": "Li",
+      "formula_charge": "LiC12",
+      "formula_discharge": "LiC6",
+      "crystal_system_charge": "hexagonal",
+      "spacegroup_number_charge": 191,
+      "crystal_system_discharge": "hexagonal",
+      "spacegroup_number_discharge": 191,
+      "model_family": "auto",
+      "training_population": "auto"
+    }
+  ]
+}

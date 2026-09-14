@@ -1,0 +1,42 @@
+{
+  "candidate": {
+    "id": "svr_pca_0",
+    "family": "svr",
+    "representation": "pca",
+    "parameters": {
+      "C": 10.0,
+      "gamma": 0.1,
+      "epsilon": 0.1
+    }
+  },
+  "fold": 1,
+  "metrics": {
+    "n": 614,
+    "mae_V": 0.9725023873852634,
+    "rmse_V": 1.292600069232092,
+    "r2": 0.4353516897863322,
+    "bias_V": 0.16855271714213604
+  },
+  "training_rows": 5526,
+  "validation_rows": 614,
+  "training_groups": 2344,
+  "validation_groups": 260,
+  "group_overlap": 0,
+  "preprocessor_sha256": "c7b1130cea3a3a958893e33df619f7c5081c73cd9485b7d41034f115ab950471",
+  "training_row_uid_sha256": "42260050addc3eef60adf118e99783e3232af6a0b8e1bbac84ddd09adc526699",
+  "elapsed_seconds": 3.0638617999502458,
+  "regressor_info": {
+    "input_dimensions": 80,
+    "training_rows": 5526,
+    "seed": 2027,
+    "parameters": {
+      "C": 10.0,
+      "epsilon": 0.1
+    },
+    "target_transform": "none",
+    "resolved_gamma": 0.1
+  },
+  "files_sha256": {
+    "fold_01.npz": "724c87d903eb0d99574044466c6c203e14e187c3c62db79c1f5cf53edafcf3a3"
+  }
+}

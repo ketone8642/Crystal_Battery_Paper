@@ -1,0 +1,31 @@
+{
+  "description": "Two adjacent carbon intervals copied from the downloaded dataset and eligible Li-only development partition; software demonstration, not an unseen-material accuracy test.",
+  "source_snapshot": "mp_20260913T172046Z_c9d04c_recovered",
+  "step4_run": "step4_856f632f34_01ddf632",
+  "source_partition": "data/splits/step4_856f632f34_01ddf632/li_only/development.csv",
+  "source_sha256": "deafc80cf6ac4a48ec291db14248184bb3006d3eacd59af2e51214876c59da1d",
+  "record_key": "d6bb238baf1eecd7c130615e890cd5d3226467c5e59905c7424c29b1c776d058",
+  "rows": [
+    {
+      "row_uid": "5e2d28735595f834f74d429c538f3f831b7537837fb38efb9032f359565355eb",
+      "formula_charge": "C",
+      "formula_discharge": "LiC12",
+      "id_charge": "mp-aaabgjle",
+      "id_discharge": "mp-aaacgcvr",
+      "spacegroup_number_charge": "191",
+      "spacegroup_number_discharge": "191",
+      "group_id": "g_259d92b323dfa40969164b713533bd7485fa47f797934801fb9d8adbe15e29ed"
+    },
+    {
+      "row_uid": "259d92b323dfa40969164b713533bd7485fa47f797934801fb9d8adbe15e29ed",
+      "formula_charge": "LiC12",
+      "formula_discharge": "LiC6",
+      "id_charge": "mp-aaacgcvr",
+      "id_discharge": "mp-aaacezqj",
+      "spacegroup_number_charge": "191",
+      "spacegroup_number_discharge": "191",
+      "group_id": "g_259d92b323dfa40969164b713533bd7485fa47f797934801fb9d8adbe15e29ed"
+    }
+  ],
+  "loading_convention": "Li atoms per reduced C host: 0 -> 1/12 -> 1/6; not Li per C6."
+}

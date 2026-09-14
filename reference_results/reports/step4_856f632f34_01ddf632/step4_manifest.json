@@ -1,0 +1,29 @@
+{
+  "status": "complete",
+  "input_sha256": "856f632f34bb6cadbab568c7484467ee57bd915af294a07e5971cbc60249f0da",
+  "configuration": {
+    "algorithm_version": "step4-v1",
+    "seed": 42,
+    "holdout_fraction": 0.1,
+    "cv_folds": 10,
+    "fraction_tolerance": 1e-06,
+    "voltage_review_low": -3.0,
+    "voltage_review_high": 10.0,
+    "label_conflict_tolerance": 1e-08
+  },
+  "output_sha256": {
+    "data/processed/step4_856f632f34_01ddf632/interval_audit.csv": "cb11fde7323a2da9c9d6586e2d7cde09ae6475da50088523165abd6676154ba9",
+    "data/processed/step4_856f632f34_01ddf632/validated_intervals.csv": "95cff06fddbbe2ee5854b8046b9d40fd00c48e47b3590ebb3dce1e1a729fd5d2",
+    "data/processed/step4_856f632f34_01ddf632/quarantine_intervals.csv": "5376ca6f137c810ca954f7dbf3dcbdc4f836da95b52341d3d8f1223dc4347227",
+    "data/processed/step4_856f632f34_01ddf632/priority_voltage_review.csv": "b4ec7834bc4cdc6192bea71fa77320ca7b5ae29f803f4063460c9bedc34364c4",
+    "data/splits/step4_856f632f34_01ddf632/mixed_ions/development.csv": "4ffd84af093b05bca8d291a86596c3a99d4834e84217bb1a118ea8a65c83f3a8",
+    "data/splits/step4_856f632f34_01ddf632/mixed_ions/holdout.csv": "20ce93b14c1028de01eadabc33f773a32d47dbf1a5f6db1fd8b6c521b0c717ae",
+    "data/splits/step4_856f632f34_01ddf632/li_only/development.csv": "deafc80cf6ac4a48ec291db14248184bb3006d3eacd59af2e51214876c59da1d",
+    "data/splits/step4_856f632f34_01ddf632/li_only/holdout.csv": "50d923c563b52be01080860aab50e56e838b84d3628228b4b969d4acc6481886",
+    "data/splits/step4_856f632f34_01ddf632/held_out_ions/Na.csv": "ba1d4a0aaa518230054dfc65777241981601be7072cc7aa7ff32ea402a1b9d83",
+    "data/splits/step4_856f632f34_01ddf632/held_out_ions/K.csv": "258fd4fd221465302859fc6a4791b2e3a711f3d19ad767a328064ddb6e67555a",
+    "data/splits/step4_856f632f34_01ddf632/split_assignments.csv": "3f925b8afe1543f7e93bfe112db985c096a3faea99bb9984e707bc6ec81dfd68",
+    "reports/step4_856f632f34_01ddf632/step4_report.json": "596ff2ce7fff7b4e7b18ec43a29e6517f2de2e5d5ba10c739c3e2940ff07ece8",
+    "reports/step4_856f632f34_01ddf632/step4_report.md": "d64e63b53790da6c62dab8e0aa51bdc5945992b72991458903eb7efec9510fec"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "source": "User-provided screenshot and voltage_single_results.csv",
+  "csv_sha256": "e2ad858a6db4c834cac0a123fb8c1b4983b0b810973dd636f1d20e7e22611d1c",
+  "csv_data_rows": 1,
+  "csv_row": {
+    "row": "1",
+    "run_id": "step6_b8e6065bfc4e",
+    "working_ion": "Li",
+    "formula_charge": "FePO4",
+    "formula_discharge": "LiFePO4",
+    "ion_per_host_charge": "0",
+    "ion_per_host_discharge": "1",
+    "fracA_charge": "0",
+    "fracA_discharge": "0.14285714285714285",
+    "predicted_voltage_V": "3.4650564309719782",
+    "model_family": "dnn",
+    "training_population": "li_only",
+    "candidate_id": "dnn_scaled_0",
+    "extrapolates_working_ion": "false",
+    "changed_training_constant_features": "0",
+    "evaluation_scope": "li_only_grouped_holdout",
+    "reference_dataset_mae_V": "0.787205717223363",
+    "warnings": "Prediction is based on computed reference voltages; it does not establish electrode stability or experimental performance. | A calibrated uncertainty interval is not available."
+  },
+  "screenshot_displayed_voltage_V": "3.465",
+  "screenshot_spacegroup_charge": 62,
+  "screenshot_spacegroup_discharge": 62,
+  "checks": "Screenshot voltage rounding, run/model metadata, endpoint loading and exported full numerical value agree.",
+  "scope": "Observed single-prediction workflow and CSV export only. Does not establish research accuracy or completion of the other Windows browser workflows."
+}

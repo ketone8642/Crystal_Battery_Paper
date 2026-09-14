@@ -1,0 +1,15 @@
+{
+  "family": "krr",
+  "offset": 3.445190614817424,
+  "target_scale": 1.0,
+  "info": {
+    "input_dimensions": 431,
+    "training_rows": 3021,
+    "seed": 3026,
+    "parameters": {
+      "alpha": 1.0
+    },
+    "target_transform": "subtract_training_mean",
+    "resolved_gamma": 0.0023201856148491887
+  }
+}

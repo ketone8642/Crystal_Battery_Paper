@@ -1,0 +1,11 @@
+{
+  "working_ion": "Li",
+  "formula_charge": "FePO4",
+  "formula_discharge": "LiFePO4",
+  "crystal_system_charge": "orthorhombic",
+  "spacegroup_number_charge": 62,
+  "crystal_system_discharge": "orthorhombic",
+  "spacegroup_number_discharge": 62,
+  "model_family": "auto",
+  "training_population": "auto"
+}

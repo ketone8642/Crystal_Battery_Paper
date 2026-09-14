@@ -1,0 +1,40 @@
+{
+  "candidate": {
+    "id": "krr_pca_2",
+    "family": "krr",
+    "representation": "pca",
+    "parameters": {
+      "alpha": 1.0,
+      "gamma": "scale"
+    }
+  },
+  "fold": 9,
+  "metrics": {
+    "n": 302,
+    "mae_V": 0.8113554897679895,
+    "rmse_V": 1.3537407678944204,
+    "r2": 0.22390692619303176,
+    "bias_V": 0.11899777121892995
+  },
+  "training_rows": 2719,
+  "validation_rows": 302,
+  "training_groups": 1256,
+  "validation_groups": 140,
+  "group_overlap": 0,
+  "preprocessor_sha256": "730ac7068b8fb7c7e26782741e60aa7557086f6702217864f37db769c25bb6aa",
+  "training_row_uid_sha256": "62b4eeb85d2632a937434eca10ab043a87d7152b42337c9077135780e81504ed",
+  "elapsed_seconds": 2.0780016999924555,
+  "regressor_info": {
+    "input_dimensions": 80,
+    "training_rows": 2719,
+    "seed": 2035,
+    "parameters": {
+      "alpha": 1.0
+    },
+    "target_transform": "subtract_training_mean",
+    "resolved_gamma": 0.004475224226674588
+  },
+  "files_sha256": {
+    "fold_09.npz": "cc0abaffcaee83b6919c6094c84d2b48dbb39425407e675eb7aa15187dcfa3f8"
+  }
+}

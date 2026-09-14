@@ -1,0 +1,60 @@
+Fitting final mixed_ions/svr: svr_scaled_0
+Fitting final mixed_ions/krr: krr_scaled_0
+Fitting final mixed_ions/dnn: dnn_scaled_0
+/workspace/scratch/864d95206efc/step6_compat_runtime/matplotlib/_fontconfig_pattern.py:64: PyparsingDeprecationWarning: 'oneOf' deprecated - use 'one_of'
+  prop = Group((name + Suppress("=") + comma_separated(value)) | oneOf(_CONSTANTS))
+/workspace/scratch/864d95206efc/step6_compat_runtime/matplotlib/_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+  parse = parser.parseString(pattern)
+/workspace/scratch/864d95206efc/step6_compat_runtime/matplotlib/_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+  parser.resetCache()
+/workspace/scratch/864d95206efc/step6_compat_runtime/matplotlib/_mathtext.py:45: PyparsingDeprecationWarning: 'enablePackrat' deprecated - use 'enable_packrat'
+  ParserElement.enablePackrat()
+In /workspace/scratch/864d95206efc/step6_compat_runtime/matplotlib/mpl-data/stylelib/classic.mplstyle: 'parseString' deprecated - use 'parse_string'
+In /workspace/scratch/864d95206efc/step6_compat_runtime/matplotlib/mpl-data/stylelib/classic.mplstyle: 'resetCache' deprecated - use 'reset_cache'
+  final fit: epoch 1/2; training objective=1.456049
+  final fit: epoch 2/2; training objective=1.047047
+/workspace/scratch/864d95206efc/step6_tf_runtime/keras/src/backend/tensorflow/core.py:172: DeprecationWarning: __array__ implementation doesn't accept a copy keyword, so passing copy=False failed. __array__ must implement 'dtype' and 'copy' keyword arguments.
+  return np.array(x)
+Fitting final li_only/svr: svr_scaled_0
+Fitting final li_only/krr: krr_scaled_0
+Fitting final li_only/dnn: dnn_scaled_0
+  final fit: epoch 1/2; training objective=1.456049
+  final fit: epoch 2/2; training objective=1.047047
+/workspace/scratch/864d95206efc/step6_tf_runtime/keras/src/backend/tensorflow/core.py:172: DeprecationWarning: __array__ implementation doesn't accept a copy keyword, so passing copy=False failed. __array__ must implement 'dtype' and 'copy' keyword arguments.
+  return np.array(x)
+test_complete_checks_are_labelled_synthetic_and_reports_are_preserved (test_step9_acceptance.AcceptanceTests.test_complete_checks_are_labelled_synthetic_and_reports_are_preserved) ... [OK] Six saved models are ready
+[OK] Model catalog and CV selections agree
+[OK] Four browser sections, module assets and API schema are available
+[OK] Default FePO4 prediction has correct routing and concentrations
+[OK] All six saved model choices produce finite predictions
+[OK] Batch results preserve order and agree with individual inference
+[OK] API CSV download agrees with JSON predictions
+[OK] Dataset carbon profile returns two contiguous interval averages
+[OK] Invalid host, symmetry, concentration, batch and profile inputs are rejected
+ok
+test_export_preserves_precision_and_rejects_corruption_or_wrong_run (test_step9_acceptance.AcceptanceTests.test_export_preserves_precision_and_rejects_corruption_or_wrong_run) ... ok
+test_missing_optional_export_becomes_reported_failure (test_step9_acceptance.AcceptanceTests.test_missing_optional_export_becomes_reported_failure) ... [OK] Six saved models are ready
+[OK] Model catalog and CV selections agree
+[OK] Four browser sections, module assets and API schema are available
+[OK] Default FePO4 prediction has correct routing and concentrations
+[OK] All six saved model choices produce finite predictions
+[OK] Batch results preserve order and agree with individual inference
+[OK] API CSV download agrees with JSON predictions
+[OK] Dataset carbon profile returns two contiguous interval averages
+[OK] Invalid host, symmetry, concentration, batch and profile inputs are rejected
+[ERROR] [Errno 2] No such file or directory: '/tmp/tmp55twkmr2/missing.csv'
+ok
+test_reordered_batch_is_caught_by_acceptance_check (test_step9_acceptance.AcceptanceTests.test_reordered_batch_is_caught_by_acceptance_check) ... [OK] Six saved models are ready
+[OK] Model catalog and CV selections agree
+[OK] Four browser sections, module assets and API schema are available
+[OK] Default FePO4 prediction has correct routing and concentrations
+[OK] All six saved model choices produce finite predictions
+[ERROR] Batch changed request order.
+ok
+test_unconfigured_models_fail_without_false_success (test_step9_acceptance.AcceptanceTests.test_unconfigured_models_fail_without_false_success) ... [ERROR] /ready returned HTTP 503; expected 200: {"detail":"Configure a completed run with scripts/step7_configure_api.py."}
+ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 4.664s
+
+OK

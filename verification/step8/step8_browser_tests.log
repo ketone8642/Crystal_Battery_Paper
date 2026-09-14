@@ -1,0 +1,17 @@
+[OK] Startup loads the model catalog and leaves the result empty until prediction
+[OK] Single prediction displays the real API response with correct rounding and model identity
+[OK] Single CSV download preserves full prediction precision and run provenance
+[OK] Editing clears old results; invalid chemistry gives an error without a substitute value
+[OK] Sodium predictions display transfer notices and the sodium reference error scope
+[OK] A response to an edited request cannot overwrite the current form state
+[OK] CSV template upload produces an ordered batch through the live API
+[OK] Batch results download includes model and warning columns
+[OK] Invalid CSV headers disable prediction and clear previous batch results
+[OK] Profile renders two actual interval averages with a matching data table
+[OK] Adding/removing profile endpoints invalidates prior profile outputs
+[OK] Model results show six saved model cards and only the two CV-selected badges
+[OK] Keyboard arrow navigation operates the workspace tabs
+[OK] Mobile single-prediction layout has no page-wide horizontal overflow
+[OK] Unconfigured service disables inference and supplies an actionable status message
+[OK] No uncaught browser JavaScript errors
+BROWSER CHECKS PASSED: 16

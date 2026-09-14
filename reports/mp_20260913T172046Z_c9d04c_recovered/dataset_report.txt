@@ -1,0 +1,18 @@
+STEP 3 DATASET INSPECTION
+Snapshot: mp_20260913T172046Z_c9d04c_recovered
+Unique electrode documents: 6683
+Adjacent voltage intervals: 7461
+Intervals passing basic checks: 7461
+Intervals with complete basic inputs: 7419
+Endpoint IDs with unresolved symmetry metadata: 36
+Electrode documents by ion:
+  Al: 143
+  Ca: 625
+  K: 164
+  Li: 2774
+  Mg: 1968
+  Na: 416
+  Y: 159
+  Zn: 434
+
+No model has been trained. Chemical/provenance validation and grouped splitting follow in Step 4.

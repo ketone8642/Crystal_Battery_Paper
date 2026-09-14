@@ -1,0 +1,23 @@
+Verifying svr_pca_0 (5526, 80)
+Completed svr_pca_0
+Verifying krr_pca_0 (5526, 80)
+Completed krr_pca_0
+Verifying dnn_pca_0 (5526, 80)
+  epoch 1/100; training objective=1.136420
+  epoch 25/100; training objective=0.384351
+  epoch 50/100; training objective=0.334092
+  epoch 75/100; training objective=0.308333
+  epoch 100/100; training objective=0.298502
+Completed dnn_pca_0
+Verifying svr_scaled_0 (5526, 491)
+Completed svr_scaled_0
+Verifying krr_scaled_0 (5526, 491)
+Completed krr_scaled_0
+Verifying dnn_scaled_0 (5526, 491)
+  epoch 1/100; training objective=0.922223
+  epoch 25/100; training objective=0.256543
+  epoch 50/100; training objective=0.221323
+  epoch 75/100; training objective=0.204827
+  epoch 100/100; training objective=0.192429
+Completed dnn_scaled_0
+REAL DEVELOPMENT FOLD VERIFICATION COMPLETE

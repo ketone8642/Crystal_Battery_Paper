@@ -1,0 +1,80 @@
+// Developer-only Playwright checks. Uses the explicitly labelled synthetic fixture server.
+const { chromium }=require('playwright');
+const assert=require('node:assert/strict');
+const fs=require('node:fs/promises');
+const path=require('node:path');
+const base=process.env.BATTERY_TEST_URL||'http://127.0.0.1:8768';
+const out=process.env.BATTERY_TEST_OUTPUT||path.resolve('browser_verification');
+const executablePath=process.env.BATTERY_TEST_CHROMIUM;
+
+(async()=>{
+  await fs.mkdir(out,{recursive:true});
+  const browser=await chromium.launch({...(executablePath?{executablePath}:{}),headless:true,args:['--no-sandbox','--disable-gpu','--disable-dev-shm-usage']});
+  const context=await browser.newContext({viewport:{width:1440,height:1100},acceptDownloads:true});
+  const page=await context.newPage();const errors=[];page.on('pageerror',error=>errors.push(error.message));
+  const checks=[];const done=name=>{checks.push(name);console.log('[OK]',name);};
+  try{
+    await page.goto(base,{waitUntil:'networkidle'});
+    await page.waitForFunction(()=>document.getElementById('status-pill').textContent.includes('6 models ready'));
+    assert.equal(await page.locator('#test-banner').isVisible(),true);
+    assert.equal(await page.locator('#single-result').isVisible(),false);
+    await page.screenshot({path:path.join(out,'desktop_initial.png'),fullPage:true});
+    done('Startup loads the model catalog and leaves the result empty until prediction');
+    const responsePromise=page.waitForResponse(r=>r.url()===base+'/predict'&&r.request().method()==='POST');
+    await page.locator('#single-submit').click();const actual=await (await responsePromise).json();
+    await page.locator('#single-result').waitFor({state:'visible'});
+    const shown=Number((await page.locator('#result-voltage').textContent()).replaceAll(',',''));
+    assert.ok(Math.abs(shown-actual.predicted_voltage_V)<.00051);
+    assert.match(await page.locator('#result-tags').textContent(),/DNN/);
+    done('Single prediction displays the real API response with correct rounding and model identity');
+    const downloadPromise=page.waitForEvent('download');await page.locator('#single-csv').click();const download=await downloadPromise;
+    const csv=await fs.readFile(await download.path(),'utf8');assert.ok(csv.includes(String(actual.predicted_voltage_V)));assert.ok(csv.includes(actual.run_id));
+    done('Single CSV download preserves full prediction precision and run provenance');
+    await page.locator('#discharge-formula').fill('LiCoO2');assert.equal(await page.locator('#single-result').isVisible(),false);
+    await page.locator('#single-submit').click();await page.locator('#single-error').waitFor({state:'visible'});
+    assert.match(await page.locator('#single-error').textContent(),/host/i);assert.equal(await page.locator('#single-result').isVisible(),false);
+    done('Editing clears old results; invalid chemistry gives an error without a substitute value');
+    await page.locator('#load-example').click();await page.locator('#single-ion').selectOption('Na');await page.locator('#discharge-formula').fill('NaFePO4');await page.locator('#single-submit').click();await page.locator('#single-result').waitFor({state:'visible'});
+    assert.match(await page.locator('#single-notices').textContent(),/absent/);assert.match(await page.locator('#result-error-label').textContent(),/Na-set/);
+    done('Sodium predictions display transfer notices and the sodium reference error scope');
+    await page.locator('#load-example').click();
+    await page.route('**/predict',async route=>{await new Promise(resolve=>setTimeout(resolve,600));await route.continue();});
+    await page.locator('#single-submit').click();await page.locator('#charge-formula').fill('CoO2');
+    await page.waitForTimeout(850);assert.equal(await page.locator('#single-result').isVisible(),false);
+    await page.unroute('**/predict');await page.locator('#load-example').click();
+    done('A response to an edited request cannot overwrite the current form state');
+    await page.getByRole('tab',{name:'Batch predictions'}).click();const templatePromise=page.waitForEvent('download');await page.locator('#batch-template').click();const template=await fs.readFile(await (await templatePromise).path());
+    await page.locator('#batch-file').setInputFiles({name:'reactions.csv',mimeType:'text/csv',buffer:template});await page.waitForFunction(()=>!document.getElementById('batch-submit').disabled);
+    await page.locator('#batch-submit').click();await page.locator('#batch-results').waitFor({state:'visible'});
+    assert.equal(await page.locator('#batch-table tbody tr').count(),2);assert.match(await page.locator('#batch-table tbody tr').nth(1).textContent(),/SVR/);
+    done('CSV template upload produces an ordered batch through the live API');
+    const batchDownloadPromise=page.waitForEvent('download');await page.locator('#batch-csv').click();const batchCSV=await fs.readFile(await (await batchDownloadPromise).path(),'utf8');assert.ok(batchCSV.includes('candidate_id'));
+    done('Batch results download includes model and warning columns');
+    await page.locator('#batch-file').setInputFiles({name:'invalid.csv',mimeType:'text/csv',buffer:Buffer.from('formula,voltage\nFePO4,3.5')});await page.locator('#batch-error').waitFor({state:'visible'});assert.equal(await page.locator('#batch-submit').isDisabled(),true);assert.equal(await page.locator('#batch-results').isVisible(),false);
+    done('Invalid CSV headers disable prediction and clear previous batch results');
+    await page.getByRole('tab',{name:'Voltage profile'}).click();
+    for(const [index,formula]of ['FePO4','LiFePO4','Li2FePO4'].entries()){
+      await page.getByRole('textbox',{name:`Endpoint ${index+1} formula`,exact:true}).fill(formula);
+      await page.getByRole('spinbutton',{name:`Endpoint ${index+1} space-group number`,exact:true}).fill('62');
+    }
+    await page.locator('#profile-submit').click();await page.locator('#profile-results').waitFor({state:'visible'});
+    assert.equal(await page.locator('#profile-chart svg line[data-interval]').count(),2);assert.equal(await page.locator('#profile-table tbody tr').count(),2);
+    await page.screenshot({path:path.join(out,'desktop_profile.png'),fullPage:true});
+    done('Profile renders two actual interval averages with a matching data table');
+    await page.locator('#add-state').click();assert.equal(await page.locator('.state-row').count(),4);assert.equal(await page.locator('#profile-results').isVisible(),false);await page.getByRole('button',{name:'Remove endpoint 4',exact:true}).click();assert.equal(await page.locator('.state-row').count(),3);
+    done('Adding/removing profile endpoints invalidates prior profile outputs');
+    await page.getByRole('tab',{name:'Model results'}).click();assert.equal(await page.locator('#models-table tbody tr').count(),6);assert.equal(await page.locator('#models-table .chosen').count(),2);
+    done('Model results show six saved model cards and only the two CV-selected badges');
+    await page.getByRole('tab',{name:'Single prediction',exact:true}).focus();await page.keyboard.press('ArrowRight');assert.equal(await page.getByRole('tab',{name:'Batch predictions'}).getAttribute('aria-selected'),'true');
+    done('Keyboard arrow navigation operates the workspace tabs');
+    await page.getByRole('tab',{name:'Single prediction',exact:true}).click();await page.setViewportSize({width:390,height:844});
+    assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth+1),true);
+    await page.screenshot({path:path.join(out,'mobile_initial.png'),fullPage:true});
+    done('Mobile single-prediction layout has no page-wide horizontal overflow');
+    const offline=await context.newPage();await offline.route('**/health',route=>route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({model_loaded:false,loaded_models:0,message:'Models are not configured.'})}));await offline.goto(base);await offline.locator('#connection-error').waitFor({state:'visible'});assert.equal(await offline.locator('#single-submit').isDisabled(),true);assert.equal(await offline.locator('#single-result').isVisible(),false);await offline.close();
+    done('Unconfigured service disables inference and supplies an actionable status message');
+    assert.deepEqual(errors,[]);done('No uncaught browser JavaScript errors');
+    await fs.writeFile(path.join(out,'browser_results.json'),JSON.stringify({browser:await browser.version(),source:'Synthetic software-verification models; not research results',passed:checks.length,checks},null,2));
+    console.log('BROWSER CHECKS PASSED:',checks.length);
+  }finally{await browser.close();}
+})().catch(error=>{console.error(error);process.exit(1)});

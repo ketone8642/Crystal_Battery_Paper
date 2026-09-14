@@ -1,0 +1,4597 @@
+{
+  "version": "reaction-composition-symmetry-v1",
+  "feature_count": 740,
+  "columns": [
+    {
+      "index": 0,
+      "name": "charge_atom_fraction_H",
+      "block": "endpoint_element_fractions",
+      "description": "H atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 1,
+      "name": "charge_atom_fraction_He",
+      "block": "endpoint_element_fractions",
+      "description": "He atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 2,
+      "name": "charge_atom_fraction_Li",
+      "block": "endpoint_element_fractions",
+      "description": "Li atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 3,
+      "name": "charge_atom_fraction_Be",
+      "block": "endpoint_element_fractions",
+      "description": "Be atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 4,
+      "name": "charge_atom_fraction_B",
+      "block": "endpoint_element_fractions",
+      "description": "B atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 5,
+      "name": "charge_atom_fraction_C",
+      "block": "endpoint_element_fractions",
+      "description": "C atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 6,
+      "name": "charge_atom_fraction_N",
+      "block": "endpoint_element_fractions",
+      "description": "N atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 7,
+      "name": "charge_atom_fraction_O",
+      "block": "endpoint_element_fractions",
+      "description": "O atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 8,
+      "name": "charge_atom_fraction_F",
+      "block": "endpoint_element_fractions",
+      "description": "F atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 9,
+      "name": "charge_atom_fraction_Ne",
+      "block": "endpoint_element_fractions",
+      "description": "Ne atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 10,
+      "name": "charge_atom_fraction_Na",
+      "block": "endpoint_element_fractions",
+      "description": "Na atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 11,
+      "name": "charge_atom_fraction_Mg",
+      "block": "endpoint_element_fractions",
+      "description": "Mg atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 12,
+      "name": "charge_atom_fraction_Al",
+      "block": "endpoint_element_fractions",
+      "description": "Al atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 13,
+      "name": "charge_atom_fraction_Si",
+      "block": "endpoint_element_fractions",
+      "description": "Si atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 14,
+      "name": "charge_atom_fraction_P",
+      "block": "endpoint_element_fractions",
+      "description": "P atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 15,
+      "name": "charge_atom_fraction_S",
+      "block": "endpoint_element_fractions",
+      "description": "S atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 16,
+      "name": "charge_atom_fraction_Cl",
+      "block": "endpoint_element_fractions",
+      "description": "Cl atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 17,
+      "name": "charge_atom_fraction_Ar",
+      "block": "endpoint_element_fractions",
+      "description": "Ar atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 18,
+      "name": "charge_atom_fraction_K",
+      "block": "endpoint_element_fractions",
+      "description": "K atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 19,
+      "name": "charge_atom_fraction_Ca",
+      "block": "endpoint_element_fractions",
+      "description": "Ca atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 20,
+      "name": "charge_atom_fraction_Sc",
+      "block": "endpoint_element_fractions",
+      "description": "Sc atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 21,
+      "name": "charge_atom_fraction_Ti",
+      "block": "endpoint_element_fractions",
+      "description": "Ti atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 22,
+      "name": "charge_atom_fraction_V",
+      "block": "endpoint_element_fractions",
+      "description": "V atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 23,
+      "name": "charge_atom_fraction_Cr",
+      "block": "endpoint_element_fractions",
+      "description": "Cr atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 24,
+      "name": "charge_atom_fraction_Mn",
+      "block": "endpoint_element_fractions",
+      "description": "Mn atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 25,
+      "name": "charge_atom_fraction_Fe",
+      "block": "endpoint_element_fractions",
+      "description": "Fe atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 26,
+      "name": "charge_atom_fraction_Co",
+      "block": "endpoint_element_fractions",
+      "description": "Co atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 27,
+      "name": "charge_atom_fraction_Ni",
+      "block": "endpoint_element_fractions",
+      "description": "Ni atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 28,
+      "name": "charge_atom_fraction_Cu",
+      "block": "endpoint_element_fractions",
+      "description": "Cu atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 29,
+      "name": "charge_atom_fraction_Zn",
+      "block": "endpoint_element_fractions",
+      "description": "Zn atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 30,
+      "name": "charge_atom_fraction_Ga",
+      "block": "endpoint_element_fractions",
+      "description": "Ga atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 31,
+      "name": "charge_atom_fraction_Ge",
+      "block": "endpoint_element_fractions",
+      "description": "Ge atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 32,
+      "name": "charge_atom_fraction_As",
+      "block": "endpoint_element_fractions",
+      "description": "As atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 33,
+      "name": "charge_atom_fraction_Se",
+      "block": "endpoint_element_fractions",
+      "description": "Se atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 34,
+      "name": "charge_atom_fraction_Br",
+      "block": "endpoint_element_fractions",
+      "description": "Br atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 35,
+      "name": "charge_atom_fraction_Kr",
+      "block": "endpoint_element_fractions",
+      "description": "Kr atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 36,
+      "name": "charge_atom_fraction_Rb",
+      "block": "endpoint_element_fractions",
+      "description": "Rb atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 37,
+      "name": "charge_atom_fraction_Sr",
+      "block": "endpoint_element_fractions",
+      "description": "Sr atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 38,
+      "name": "charge_atom_fraction_Y",
+      "block": "endpoint_element_fractions",
+      "description": "Y atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 39,
+      "name": "charge_atom_fraction_Zr",
+      "block": "endpoint_element_fractions",
+      "description": "Zr atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 40,
+      "name": "charge_atom_fraction_Nb",
+      "block": "endpoint_element_fractions",
+      "description": "Nb atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 41,
+      "name": "charge_atom_fraction_Mo",
+      "block": "endpoint_element_fractions",
+      "description": "Mo atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 42,
+      "name": "charge_atom_fraction_Tc",
+      "block": "endpoint_element_fractions",
+      "description": "Tc atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 43,
+      "name": "charge_atom_fraction_Ru",
+      "block": "endpoint_element_fractions",
+      "description": "Ru atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 44,
+      "name": "charge_atom_fraction_Rh",
+      "block": "endpoint_element_fractions",
+      "description": "Rh atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 45,
+      "name": "charge_atom_fraction_Pd",
+      "block": "endpoint_element_fractions",
+      "description": "Pd atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 46,
+      "name": "charge_atom_fraction_Ag",
+      "block": "endpoint_element_fractions",
+      "description": "Ag atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 47,
+      "name": "charge_atom_fraction_Cd",
+      "block": "endpoint_element_fractions",
+      "description": "Cd atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 48,
+      "name": "charge_atom_fraction_In",
+      "block": "endpoint_element_fractions",
+      "description": "In atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 49,
+      "name": "charge_atom_fraction_Sn",
+      "block": "endpoint_element_fractions",
+      "description": "Sn atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 50,
+      "name": "charge_atom_fraction_Sb",
+      "block": "endpoint_element_fractions",
+      "description": "Sb atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 51,
+      "name": "charge_atom_fraction_Te",
+      "block": "endpoint_element_fractions",
+      "description": "Te atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 52,
+      "name": "charge_atom_fraction_I",
+      "block": "endpoint_element_fractions",
+      "description": "I atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 53,
+      "name": "charge_atom_fraction_Xe",
+      "block": "endpoint_element_fractions",
+      "description": "Xe atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 54,
+      "name": "charge_atom_fraction_Cs",
+      "block": "endpoint_element_fractions",
+      "description": "Cs atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 55,
+      "name": "charge_atom_fraction_Ba",
+      "block": "endpoint_element_fractions",
+      "description": "Ba atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 56,
+      "name": "charge_atom_fraction_La",
+      "block": "endpoint_element_fractions",
+      "description": "La atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 57,
+      "name": "charge_atom_fraction_Ce",
+      "block": "endpoint_element_fractions",
+      "description": "Ce atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 58,
+      "name": "charge_atom_fraction_Pr",
+      "block": "endpoint_element_fractions",
+      "description": "Pr atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 59,
+      "name": "charge_atom_fraction_Nd",
+      "block": "endpoint_element_fractions",
+      "description": "Nd atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 60,
+      "name": "charge_atom_fraction_Pm",
+      "block": "endpoint_element_fractions",
+      "description": "Pm atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 61,
+      "name": "charge_atom_fraction_Sm",
+      "block": "endpoint_element_fractions",
+      "description": "Sm atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 62,
+      "name": "charge_atom_fraction_Eu",
+      "block": "endpoint_element_fractions",
+      "description": "Eu atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 63,
+      "name": "charge_atom_fraction_Gd",
+      "block": "endpoint_element_fractions",
+      "description": "Gd atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 64,
+      "name": "charge_atom_fraction_Tb",
+      "block": "endpoint_element_fractions",
+      "description": "Tb atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 65,
+      "name": "charge_atom_fraction_Dy",
+      "block": "endpoint_element_fractions",
+      "description": "Dy atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 66,
+      "name": "charge_atom_fraction_Ho",
+      "block": "endpoint_element_fractions",
+      "description": "Ho atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 67,
+      "name": "charge_atom_fraction_Er",
+      "block": "endpoint_element_fractions",
+      "description": "Er atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 68,
+      "name": "charge_atom_fraction_Tm",
+      "block": "endpoint_element_fractions",
+      "description": "Tm atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 69,
+      "name": "charge_atom_fraction_Yb",
+      "block": "endpoint_element_fractions",
+      "description": "Yb atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 70,
+      "name": "charge_atom_fraction_Lu",
+      "block": "endpoint_element_fractions",
+      "description": "Lu atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 71,
+      "name": "charge_atom_fraction_Hf",
+      "block": "endpoint_element_fractions",
+      "description": "Hf atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 72,
+      "name": "charge_atom_fraction_Ta",
+      "block": "endpoint_element_fractions",
+      "description": "Ta atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 73,
+      "name": "charge_atom_fraction_W",
+      "block": "endpoint_element_fractions",
+      "description": "W atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 74,
+      "name": "charge_atom_fraction_Re",
+      "block": "endpoint_element_fractions",
+      "description": "Re atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 75,
+      "name": "charge_atom_fraction_Os",
+      "block": "endpoint_element_fractions",
+      "description": "Os atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 76,
+      "name": "charge_atom_fraction_Ir",
+      "block": "endpoint_element_fractions",
+      "description": "Ir atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 77,
+      "name": "charge_atom_fraction_Pt",
+      "block": "endpoint_element_fractions",
+      "description": "Pt atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 78,
+      "name": "charge_atom_fraction_Au",
+      "block": "endpoint_element_fractions",
+      "description": "Au atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 79,
+      "name": "charge_atom_fraction_Hg",
+      "block": "endpoint_element_fractions",
+      "description": "Hg atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 80,
+      "name": "charge_atom_fraction_Tl",
+      "block": "endpoint_element_fractions",
+      "description": "Tl atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 81,
+      "name": "charge_atom_fraction_Pb",
+      "block": "endpoint_element_fractions",
+      "description": "Pb atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 82,
+      "name": "charge_atom_fraction_Bi",
+      "block": "endpoint_element_fractions",
+      "description": "Bi atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 83,
+      "name": "charge_atom_fraction_Po",
+      "block": "endpoint_element_fractions",
+      "description": "Po atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 84,
+      "name": "charge_atom_fraction_At",
+      "block": "endpoint_element_fractions",
+      "description": "At atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 85,
+      "name": "charge_atom_fraction_Rn",
+      "block": "endpoint_element_fractions",
+      "description": "Rn atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 86,
+      "name": "charge_atom_fraction_Fr",
+      "block": "endpoint_element_fractions",
+      "description": "Fr atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 87,
+      "name": "charge_atom_fraction_Ra",
+      "block": "endpoint_element_fractions",
+      "description": "Ra atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 88,
+      "name": "charge_atom_fraction_Ac",
+      "block": "endpoint_element_fractions",
+      "description": "Ac atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 89,
+      "name": "charge_atom_fraction_Th",
+      "block": "endpoint_element_fractions",
+      "description": "Th atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 90,
+      "name": "charge_atom_fraction_Pa",
+      "block": "endpoint_element_fractions",
+      "description": "Pa atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 91,
+      "name": "charge_atom_fraction_U",
+      "block": "endpoint_element_fractions",
+      "description": "U atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 92,
+      "name": "charge_atom_fraction_Np",
+      "block": "endpoint_element_fractions",
+      "description": "Np atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 93,
+      "name": "charge_atom_fraction_Pu",
+      "block": "endpoint_element_fractions",
+      "description": "Pu atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 94,
+      "name": "charge_atom_fraction_Am",
+      "block": "endpoint_element_fractions",
+      "description": "Am atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 95,
+      "name": "charge_atom_fraction_Cm",
+      "block": "endpoint_element_fractions",
+      "description": "Cm atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 96,
+      "name": "charge_atom_fraction_Bk",
+      "block": "endpoint_element_fractions",
+      "description": "Bk atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 97,
+      "name": "charge_atom_fraction_Cf",
+      "block": "endpoint_element_fractions",
+      "description": "Cf atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 98,
+      "name": "charge_atom_fraction_Es",
+      "block": "endpoint_element_fractions",
+      "description": "Es atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 99,
+      "name": "charge_atom_fraction_Fm",
+      "block": "endpoint_element_fractions",
+      "description": "Fm atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 100,
+      "name": "charge_atom_fraction_Md",
+      "block": "endpoint_element_fractions",
+      "description": "Md atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 101,
+      "name": "charge_atom_fraction_No",
+      "block": "endpoint_element_fractions",
+      "description": "No atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 102,
+      "name": "charge_atom_fraction_Lr",
+      "block": "endpoint_element_fractions",
+      "description": "Lr atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 103,
+      "name": "charge_atom_fraction_Rf",
+      "block": "endpoint_element_fractions",
+      "description": "Rf atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 104,
+      "name": "charge_atom_fraction_Db",
+      "block": "endpoint_element_fractions",
+      "description": "Db atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 105,
+      "name": "charge_atom_fraction_Sg",
+      "block": "endpoint_element_fractions",
+      "description": "Sg atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 106,
+      "name": "charge_atom_fraction_Bh",
+      "block": "endpoint_element_fractions",
+      "description": "Bh atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 107,
+      "name": "charge_atom_fraction_Hs",
+      "block": "endpoint_element_fractions",
+      "description": "Hs atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 108,
+      "name": "charge_atom_fraction_Mt",
+      "block": "endpoint_element_fractions",
+      "description": "Mt atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 109,
+      "name": "charge_atom_fraction_Ds",
+      "block": "endpoint_element_fractions",
+      "description": "Ds atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 110,
+      "name": "charge_atom_fraction_Rg",
+      "block": "endpoint_element_fractions",
+      "description": "Rg atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 111,
+      "name": "charge_atom_fraction_Cn",
+      "block": "endpoint_element_fractions",
+      "description": "Cn atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 112,
+      "name": "charge_atom_fraction_Nh",
+      "block": "endpoint_element_fractions",
+      "description": "Nh atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 113,
+      "name": "charge_atom_fraction_Fl",
+      "block": "endpoint_element_fractions",
+      "description": "Fl atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 114,
+      "name": "charge_atom_fraction_Mc",
+      "block": "endpoint_element_fractions",
+      "description": "Mc atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 115,
+      "name": "charge_atom_fraction_Lv",
+      "block": "endpoint_element_fractions",
+      "description": "Lv atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 116,
+      "name": "charge_atom_fraction_Ts",
+      "block": "endpoint_element_fractions",
+      "description": "Ts atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 117,
+      "name": "charge_atom_fraction_Og",
+      "block": "endpoint_element_fractions",
+      "description": "Og atoms / total atoms in the charge endpoint"
+    },
+    {
+      "index": 118,
+      "name": "discharge_atom_fraction_H",
+      "block": "endpoint_element_fractions",
+      "description": "H atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 119,
+      "name": "discharge_atom_fraction_He",
+      "block": "endpoint_element_fractions",
+      "description": "He atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 120,
+      "name": "discharge_atom_fraction_Li",
+      "block": "endpoint_element_fractions",
+      "description": "Li atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 121,
+      "name": "discharge_atom_fraction_Be",
+      "block": "endpoint_element_fractions",
+      "description": "Be atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 122,
+      "name": "discharge_atom_fraction_B",
+      "block": "endpoint_element_fractions",
+      "description": "B atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 123,
+      "name": "discharge_atom_fraction_C",
+      "block": "endpoint_element_fractions",
+      "description": "C atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 124,
+      "name": "discharge_atom_fraction_N",
+      "block": "endpoint_element_fractions",
+      "description": "N atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 125,
+      "name": "discharge_atom_fraction_O",
+      "block": "endpoint_element_fractions",
+      "description": "O atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 126,
+      "name": "discharge_atom_fraction_F",
+      "block": "endpoint_element_fractions",
+      "description": "F atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 127,
+      "name": "discharge_atom_fraction_Ne",
+      "block": "endpoint_element_fractions",
+      "description": "Ne atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 128,
+      "name": "discharge_atom_fraction_Na",
+      "block": "endpoint_element_fractions",
+      "description": "Na atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 129,
+      "name": "discharge_atom_fraction_Mg",
+      "block": "endpoint_element_fractions",
+      "description": "Mg atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 130,
+      "name": "discharge_atom_fraction_Al",
+      "block": "endpoint_element_fractions",
+      "description": "Al atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 131,
+      "name": "discharge_atom_fraction_Si",
+      "block": "endpoint_element_fractions",
+      "description": "Si atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 132,
+      "name": "discharge_atom_fraction_P",
+      "block": "endpoint_element_fractions",
+      "description": "P atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 133,
+      "name": "discharge_atom_fraction_S",
+      "block": "endpoint_element_fractions",
+      "description": "S atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 134,
+      "name": "discharge_atom_fraction_Cl",
+      "block": "endpoint_element_fractions",
+      "description": "Cl atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 135,
+      "name": "discharge_atom_fraction_Ar",
+      "block": "endpoint_element_fractions",
+      "description": "Ar atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 136,
+      "name": "discharge_atom_fraction_K",
+      "block": "endpoint_element_fractions",
+      "description": "K atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 137,
+      "name": "discharge_atom_fraction_Ca",
+      "block": "endpoint_element_fractions",
+      "description": "Ca atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 138,
+      "name": "discharge_atom_fraction_Sc",
+      "block": "endpoint_element_fractions",
+      "description": "Sc atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 139,
+      "name": "discharge_atom_fraction_Ti",
+      "block": "endpoint_element_fractions",
+      "description": "Ti atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 140,
+      "name": "discharge_atom_fraction_V",
+      "block": "endpoint_element_fractions",
+      "description": "V atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 141,
+      "name": "discharge_atom_fraction_Cr",
+      "block": "endpoint_element_fractions",
+      "description": "Cr atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 142,
+      "name": "discharge_atom_fraction_Mn",
+      "block": "endpoint_element_fractions",
+      "description": "Mn atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 143,
+      "name": "discharge_atom_fraction_Fe",
+      "block": "endpoint_element_fractions",
+      "description": "Fe atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 144,
+      "name": "discharge_atom_fraction_Co",
+      "block": "endpoint_element_fractions",
+      "description": "Co atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 145,
+      "name": "discharge_atom_fraction_Ni",
+      "block": "endpoint_element_fractions",
+      "description": "Ni atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 146,
+      "name": "discharge_atom_fraction_Cu",
+      "block": "endpoint_element_fractions",
+      "description": "Cu atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 147,
+      "name": "discharge_atom_fraction_Zn",
+      "block": "endpoint_element_fractions",
+      "description": "Zn atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 148,
+      "name": "discharge_atom_fraction_Ga",
+      "block": "endpoint_element_fractions",
+      "description": "Ga atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 149,
+      "name": "discharge_atom_fraction_Ge",
+      "block": "endpoint_element_fractions",
+      "description": "Ge atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 150,
+      "name": "discharge_atom_fraction_As",
+      "block": "endpoint_element_fractions",
+      "description": "As atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 151,
+      "name": "discharge_atom_fraction_Se",
+      "block": "endpoint_element_fractions",
+      "description": "Se atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 152,
+      "name": "discharge_atom_fraction_Br",
+      "block": "endpoint_element_fractions",
+      "description": "Br atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 153,
+      "name": "discharge_atom_fraction_Kr",
+      "block": "endpoint_element_fractions",
+      "description": "Kr atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 154,
+      "name": "discharge_atom_fraction_Rb",
+      "block": "endpoint_element_fractions",
+      "description": "Rb atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 155,
+      "name": "discharge_atom_fraction_Sr",
+      "block": "endpoint_element_fractions",
+      "description": "Sr atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 156,
+      "name": "discharge_atom_fraction_Y",
+      "block": "endpoint_element_fractions",
+      "description": "Y atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 157,
+      "name": "discharge_atom_fraction_Zr",
+      "block": "endpoint_element_fractions",
+      "description": "Zr atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 158,
+      "name": "discharge_atom_fraction_Nb",
+      "block": "endpoint_element_fractions",
+      "description": "Nb atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 159,
+      "name": "discharge_atom_fraction_Mo",
+      "block": "endpoint_element_fractions",
+      "description": "Mo atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 160,
+      "name": "discharge_atom_fraction_Tc",
+      "block": "endpoint_element_fractions",
+      "description": "Tc atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 161,
+      "name": "discharge_atom_fraction_Ru",
+      "block": "endpoint_element_fractions",
+      "description": "Ru atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 162,
+      "name": "discharge_atom_fraction_Rh",
+      "block": "endpoint_element_fractions",
+      "description": "Rh atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 163,
+      "name": "discharge_atom_fraction_Pd",
+      "block": "endpoint_element_fractions",
+      "description": "Pd atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 164,
+      "name": "discharge_atom_fraction_Ag",
+      "block": "endpoint_element_fractions",
+      "description": "Ag atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 165,
+      "name": "discharge_atom_fraction_Cd",
+      "block": "endpoint_element_fractions",
+      "description": "Cd atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 166,
+      "name": "discharge_atom_fraction_In",
+      "block": "endpoint_element_fractions",
+      "description": "In atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 167,
+      "name": "discharge_atom_fraction_Sn",
+      "block": "endpoint_element_fractions",
+      "description": "Sn atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 168,
+      "name": "discharge_atom_fraction_Sb",
+      "block": "endpoint_element_fractions",
+      "description": "Sb atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 169,
+      "name": "discharge_atom_fraction_Te",
+      "block": "endpoint_element_fractions",
+      "description": "Te atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 170,
+      "name": "discharge_atom_fraction_I",
+      "block": "endpoint_element_fractions",
+      "description": "I atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 171,
+      "name": "discharge_atom_fraction_Xe",
+      "block": "endpoint_element_fractions",
+      "description": "Xe atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 172,
+      "name": "discharge_atom_fraction_Cs",
+      "block": "endpoint_element_fractions",
+      "description": "Cs atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 173,
+      "name": "discharge_atom_fraction_Ba",
+      "block": "endpoint_element_fractions",
+      "description": "Ba atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 174,
+      "name": "discharge_atom_fraction_La",
+      "block": "endpoint_element_fractions",
+      "description": "La atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 175,
+      "name": "discharge_atom_fraction_Ce",
+      "block": "endpoint_element_fractions",
+      "description": "Ce atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 176,
+      "name": "discharge_atom_fraction_Pr",
+      "block": "endpoint_element_fractions",
+      "description": "Pr atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 177,
+      "name": "discharge_atom_fraction_Nd",
+      "block": "endpoint_element_fractions",
+      "description": "Nd atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 178,
+      "name": "discharge_atom_fraction_Pm",
+      "block": "endpoint_element_fractions",
+      "description": "Pm atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 179,
+      "name": "discharge_atom_fraction_Sm",
+      "block": "endpoint_element_fractions",
+      "description": "Sm atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 180,
+      "name": "discharge_atom_fraction_Eu",
+      "block": "endpoint_element_fractions",
+      "description": "Eu atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 181,
+      "name": "discharge_atom_fraction_Gd",
+      "block": "endpoint_element_fractions",
+      "description": "Gd atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 182,
+      "name": "discharge_atom_fraction_Tb",
+      "block": "endpoint_element_fractions",
+      "description": "Tb atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 183,
+      "name": "discharge_atom_fraction_Dy",
+      "block": "endpoint_element_fractions",
+      "description": "Dy atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 184,
+      "name": "discharge_atom_fraction_Ho",
+      "block": "endpoint_element_fractions",
+      "description": "Ho atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 185,
+      "name": "discharge_atom_fraction_Er",
+      "block": "endpoint_element_fractions",
+      "description": "Er atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 186,
+      "name": "discharge_atom_fraction_Tm",
+      "block": "endpoint_element_fractions",
+      "description": "Tm atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 187,
+      "name": "discharge_atom_fraction_Yb",
+      "block": "endpoint_element_fractions",
+      "description": "Yb atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 188,
+      "name": "discharge_atom_fraction_Lu",
+      "block": "endpoint_element_fractions",
+      "description": "Lu atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 189,
+      "name": "discharge_atom_fraction_Hf",
+      "block": "endpoint_element_fractions",
+      "description": "Hf atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 190,
+      "name": "discharge_atom_fraction_Ta",
+      "block": "endpoint_element_fractions",
+      "description": "Ta atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 191,
+      "name": "discharge_atom_fraction_W",
+      "block": "endpoint_element_fractions",
+      "description": "W atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 192,
+      "name": "discharge_atom_fraction_Re",
+      "block": "endpoint_element_fractions",
+      "description": "Re atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 193,
+      "name": "discharge_atom_fraction_Os",
+      "block": "endpoint_element_fractions",
+      "description": "Os atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 194,
+      "name": "discharge_atom_fraction_Ir",
+      "block": "endpoint_element_fractions",
+      "description": "Ir atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 195,
+      "name": "discharge_atom_fraction_Pt",
+      "block": "endpoint_element_fractions",
+      "description": "Pt atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 196,
+      "name": "discharge_atom_fraction_Au",
+      "block": "endpoint_element_fractions",
+      "description": "Au atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 197,
+      "name": "discharge_atom_fraction_Hg",
+      "block": "endpoint_element_fractions",
+      "description": "Hg atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 198,
+      "name": "discharge_atom_fraction_Tl",
+      "block": "endpoint_element_fractions",
+      "description": "Tl atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 199,
+      "name": "discharge_atom_fraction_Pb",
+      "block": "endpoint_element_fractions",
+      "description": "Pb atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 200,
+      "name": "discharge_atom_fraction_Bi",
+      "block": "endpoint_element_fractions",
+      "description": "Bi atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 201,
+      "name": "discharge_atom_fraction_Po",
+      "block": "endpoint_element_fractions",
+      "description": "Po atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 202,
+      "name": "discharge_atom_fraction_At",
+      "block": "endpoint_element_fractions",
+      "description": "At atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 203,
+      "name": "discharge_atom_fraction_Rn",
+      "block": "endpoint_element_fractions",
+      "description": "Rn atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 204,
+      "name": "discharge_atom_fraction_Fr",
+      "block": "endpoint_element_fractions",
+      "description": "Fr atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 205,
+      "name": "discharge_atom_fraction_Ra",
+      "block": "endpoint_element_fractions",
+      "description": "Ra atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 206,
+      "name": "discharge_atom_fraction_Ac",
+      "block": "endpoint_element_fractions",
+      "description": "Ac atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 207,
+      "name": "discharge_atom_fraction_Th",
+      "block": "endpoint_element_fractions",
+      "description": "Th atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 208,
+      "name": "discharge_atom_fraction_Pa",
+      "block": "endpoint_element_fractions",
+      "description": "Pa atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 209,
+      "name": "discharge_atom_fraction_U",
+      "block": "endpoint_element_fractions",
+      "description": "U atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 210,
+      "name": "discharge_atom_fraction_Np",
+      "block": "endpoint_element_fractions",
+      "description": "Np atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 211,
+      "name": "discharge_atom_fraction_Pu",
+      "block": "endpoint_element_fractions",
+      "description": "Pu atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 212,
+      "name": "discharge_atom_fraction_Am",
+      "block": "endpoint_element_fractions",
+      "description": "Am atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 213,
+      "name": "discharge_atom_fraction_Cm",
+      "block": "endpoint_element_fractions",
+      "description": "Cm atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 214,
+      "name": "discharge_atom_fraction_Bk",
+      "block": "endpoint_element_fractions",
+      "description": "Bk atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 215,
+      "name": "discharge_atom_fraction_Cf",
+      "block": "endpoint_element_fractions",
+      "description": "Cf atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 216,
+      "name": "discharge_atom_fraction_Es",
+      "block": "endpoint_element_fractions",
+      "description": "Es atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 217,
+      "name": "discharge_atom_fraction_Fm",
+      "block": "endpoint_element_fractions",
+      "description": "Fm atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 218,
+      "name": "discharge_atom_fraction_Md",
+      "block": "endpoint_element_fractions",
+      "description": "Md atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 219,
+      "name": "discharge_atom_fraction_No",
+      "block": "endpoint_element_fractions",
+      "description": "No atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 220,
+      "name": "discharge_atom_fraction_Lr",
+      "block": "endpoint_element_fractions",
+      "description": "Lr atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 221,
+      "name": "discharge_atom_fraction_Rf",
+      "block": "endpoint_element_fractions",
+      "description": "Rf atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 222,
+      "name": "discharge_atom_fraction_Db",
+      "block": "endpoint_element_fractions",
+      "description": "Db atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 223,
+      "name": "discharge_atom_fraction_Sg",
+      "block": "endpoint_element_fractions",
+      "description": "Sg atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 224,
+      "name": "discharge_atom_fraction_Bh",
+      "block": "endpoint_element_fractions",
+      "description": "Bh atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 225,
+      "name": "discharge_atom_fraction_Hs",
+      "block": "endpoint_element_fractions",
+      "description": "Hs atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 226,
+      "name": "discharge_atom_fraction_Mt",
+      "block": "endpoint_element_fractions",
+      "description": "Mt atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 227,
+      "name": "discharge_atom_fraction_Ds",
+      "block": "endpoint_element_fractions",
+      "description": "Ds atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 228,
+      "name": "discharge_atom_fraction_Rg",
+      "block": "endpoint_element_fractions",
+      "description": "Rg atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 229,
+      "name": "discharge_atom_fraction_Cn",
+      "block": "endpoint_element_fractions",
+      "description": "Cn atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 230,
+      "name": "discharge_atom_fraction_Nh",
+      "block": "endpoint_element_fractions",
+      "description": "Nh atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 231,
+      "name": "discharge_atom_fraction_Fl",
+      "block": "endpoint_element_fractions",
+      "description": "Fl atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 232,
+      "name": "discharge_atom_fraction_Mc",
+      "block": "endpoint_element_fractions",
+      "description": "Mc atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 233,
+      "name": "discharge_atom_fraction_Lv",
+      "block": "endpoint_element_fractions",
+      "description": "Lv atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 234,
+      "name": "discharge_atom_fraction_Ts",
+      "block": "endpoint_element_fractions",
+      "description": "Ts atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 235,
+      "name": "discharge_atom_fraction_Og",
+      "block": "endpoint_element_fractions",
+      "description": "Og atoms / total atoms in the discharge endpoint"
+    },
+    {
+      "index": 236,
+      "name": "charge_atomic_number_mean",
+      "block": "endpoint_composition_summaries",
+      "description": "charge: atom-fraction-weighted mean atomic number"
+    },
+    {
+      "index": 237,
+      "name": "charge_atomic_number_std",
+      "block": "endpoint_composition_summaries",
+      "description": "charge: atom-fraction-weighted population standard deviation of atomic number"
+    },
+    {
+      "index": 238,
+      "name": "charge_atomic_number_min",
+      "block": "endpoint_composition_summaries",
+      "description": "charge: minimum atomic number among present elements"
+    },
+    {
+      "index": 239,
+      "name": "charge_atomic_number_max",
+      "block": "endpoint_composition_summaries",
+      "description": "charge: maximum atomic number among present elements"
+    },
+    {
+      "index": 240,
+      "name": "charge_n_elements",
+      "block": "endpoint_composition_summaries",
+      "description": "charge: number of distinct elements"
+    },
+    {
+      "index": 241,
+      "name": "charge_fraction_entropy",
+      "block": "endpoint_composition_summaries",
+      "description": "charge: negative sum of atom fraction times its natural logarithm"
+    },
+    {
+      "index": 242,
+      "name": "charge_fraction_l2_norm",
+      "block": "endpoint_composition_summaries",
+      "description": "charge: square root of sum of squared atom fractions"
+    },
+    {
+      "index": 243,
+      "name": "discharge_atomic_number_mean",
+      "block": "endpoint_composition_summaries",
+      "description": "discharge: atom-fraction-weighted mean atomic number"
+    },
+    {
+      "index": 244,
+      "name": "discharge_atomic_number_std",
+      "block": "endpoint_composition_summaries",
+      "description": "discharge: atom-fraction-weighted population standard deviation of atomic number"
+    },
+    {
+      "index": 245,
+      "name": "discharge_atomic_number_min",
+      "block": "endpoint_composition_summaries",
+      "description": "discharge: minimum atomic number among present elements"
+    },
+    {
+      "index": 246,
+      "name": "discharge_atomic_number_max",
+      "block": "endpoint_composition_summaries",
+      "description": "discharge: maximum atomic number among present elements"
+    },
+    {
+      "index": 247,
+      "name": "discharge_n_elements",
+      "block": "endpoint_composition_summaries",
+      "description": "discharge: number of distinct elements"
+    },
+    {
+      "index": 248,
+      "name": "discharge_fraction_entropy",
+      "block": "endpoint_composition_summaries",
+      "description": "discharge: negative sum of atom fraction times its natural logarithm"
+    },
+    {
+      "index": 249,
+      "name": "discharge_fraction_l2_norm",
+      "block": "endpoint_composition_summaries",
+      "description": "discharge: square root of sum of squared atom fractions"
+    },
+    {
+      "index": 250,
+      "name": "working_ion_Li",
+      "block": "working_ion",
+      "description": "1 if working ion is Li, otherwise 0"
+    },
+    {
+      "index": 251,
+      "name": "working_ion_Na",
+      "block": "working_ion",
+      "description": "1 if working ion is Na, otherwise 0"
+    },
+    {
+      "index": 252,
+      "name": "working_ion_K",
+      "block": "working_ion",
+      "description": "1 if working ion is K, otherwise 0"
+    },
+    {
+      "index": 253,
+      "name": "working_ion_Mg",
+      "block": "working_ion",
+      "description": "1 if working ion is Mg, otherwise 0"
+    },
+    {
+      "index": 254,
+      "name": "working_ion_Ca",
+      "block": "working_ion",
+      "description": "1 if working ion is Ca, otherwise 0"
+    },
+    {
+      "index": 255,
+      "name": "working_ion_Zn",
+      "block": "working_ion",
+      "description": "1 if working ion is Zn, otherwise 0"
+    },
+    {
+      "index": 256,
+      "name": "working_ion_Al",
+      "block": "working_ion",
+      "description": "1 if working ion is Al, otherwise 0"
+    },
+    {
+      "index": 257,
+      "name": "working_ion_Y",
+      "block": "working_ion",
+      "description": "1 if working ion is Y, otherwise 0"
+    },
+    {
+      "index": 258,
+      "name": "working_ion_atomic_number",
+      "block": "working_ion",
+      "description": "Atomic number of the working element"
+    },
+    {
+      "index": 259,
+      "name": "working_ion_period",
+      "block": "working_ion",
+      "description": "Periodic-table period of the working element"
+    },
+    {
+      "index": 260,
+      "name": "fracA_charge",
+      "block": "concentration_interval",
+      "description": "Working-ion atom fraction at the charge endpoint, recomputed from formula"
+    },
+    {
+      "index": 261,
+      "name": "fracA_discharge",
+      "block": "concentration_interval",
+      "description": "Working-ion atom fraction at the discharge endpoint, recomputed from formula"
+    },
+    {
+      "index": 262,
+      "name": "delta_fracA",
+      "block": "concentration_interval",
+      "description": "Discharge atom fraction minus charge atom fraction"
+    },
+    {
+      "index": 263,
+      "name": "ion_per_host_charge",
+      "block": "concentration_interval",
+      "description": "Charge working-ion count per reduced non-working-ion host"
+    },
+    {
+      "index": 264,
+      "name": "ion_per_host_discharge",
+      "block": "concentration_interval",
+      "description": "Discharge working-ion count per reduced non-working-ion host"
+    },
+    {
+      "index": 265,
+      "name": "delta_ion_per_host",
+      "block": "concentration_interval",
+      "description": "Increase in working-ion count per reduced host"
+    },
+    {
+      "index": 266,
+      "name": "charge_crystal_system_triclinic",
+      "block": "crystal_system",
+      "description": "1 if charge crystal system is triclinic"
+    },
+    {
+      "index": 267,
+      "name": "charge_crystal_system_monoclinic",
+      "block": "crystal_system",
+      "description": "1 if charge crystal system is monoclinic"
+    },
+    {
+      "index": 268,
+      "name": "charge_crystal_system_orthorhombic",
+      "block": "crystal_system",
+      "description": "1 if charge crystal system is orthorhombic"
+    },
+    {
+      "index": 269,
+      "name": "charge_crystal_system_tetragonal",
+      "block": "crystal_system",
+      "description": "1 if charge crystal system is tetragonal"
+    },
+    {
+      "index": 270,
+      "name": "charge_crystal_system_trigonal",
+      "block": "crystal_system",
+      "description": "1 if charge crystal system is trigonal"
+    },
+    {
+      "index": 271,
+      "name": "charge_crystal_system_hexagonal",
+      "block": "crystal_system",
+      "description": "1 if charge crystal system is hexagonal"
+    },
+    {
+      "index": 272,
+      "name": "charge_crystal_system_cubic",
+      "block": "crystal_system",
+      "description": "1 if charge crystal system is cubic"
+    },
+    {
+      "index": 273,
+      "name": "discharge_crystal_system_triclinic",
+      "block": "crystal_system",
+      "description": "1 if discharge crystal system is triclinic"
+    },
+    {
+      "index": 274,
+      "name": "discharge_crystal_system_monoclinic",
+      "block": "crystal_system",
+      "description": "1 if discharge crystal system is monoclinic"
+    },
+    {
+      "index": 275,
+      "name": "discharge_crystal_system_orthorhombic",
+      "block": "crystal_system",
+      "description": "1 if discharge crystal system is orthorhombic"
+    },
+    {
+      "index": 276,
+      "name": "discharge_crystal_system_tetragonal",
+      "block": "crystal_system",
+      "description": "1 if discharge crystal system is tetragonal"
+    },
+    {
+      "index": 277,
+      "name": "discharge_crystal_system_trigonal",
+      "block": "crystal_system",
+      "description": "1 if discharge crystal system is trigonal"
+    },
+    {
+      "index": 278,
+      "name": "discharge_crystal_system_hexagonal",
+      "block": "crystal_system",
+      "description": "1 if discharge crystal system is hexagonal"
+    },
+    {
+      "index": 279,
+      "name": "discharge_crystal_system_cubic",
+      "block": "crystal_system",
+      "description": "1 if discharge crystal system is cubic"
+    },
+    {
+      "index": 280,
+      "name": "charge_spacegroup_001",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 1"
+    },
+    {
+      "index": 281,
+      "name": "charge_spacegroup_002",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 2"
+    },
+    {
+      "index": 282,
+      "name": "charge_spacegroup_003",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 3"
+    },
+    {
+      "index": 283,
+      "name": "charge_spacegroup_004",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 4"
+    },
+    {
+      "index": 284,
+      "name": "charge_spacegroup_005",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 5"
+    },
+    {
+      "index": 285,
+      "name": "charge_spacegroup_006",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 6"
+    },
+    {
+      "index": 286,
+      "name": "charge_spacegroup_007",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 7"
+    },
+    {
+      "index": 287,
+      "name": "charge_spacegroup_008",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 8"
+    },
+    {
+      "index": 288,
+      "name": "charge_spacegroup_009",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 9"
+    },
+    {
+      "index": 289,
+      "name": "charge_spacegroup_010",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 10"
+    },
+    {
+      "index": 290,
+      "name": "charge_spacegroup_011",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 11"
+    },
+    {
+      "index": 291,
+      "name": "charge_spacegroup_012",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 12"
+    },
+    {
+      "index": 292,
+      "name": "charge_spacegroup_013",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 13"
+    },
+    {
+      "index": 293,
+      "name": "charge_spacegroup_014",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 14"
+    },
+    {
+      "index": 294,
+      "name": "charge_spacegroup_015",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 15"
+    },
+    {
+      "index": 295,
+      "name": "charge_spacegroup_016",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 16"
+    },
+    {
+      "index": 296,
+      "name": "charge_spacegroup_017",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 17"
+    },
+    {
+      "index": 297,
+      "name": "charge_spacegroup_018",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 18"
+    },
+    {
+      "index": 298,
+      "name": "charge_spacegroup_019",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 19"
+    },
+    {
+      "index": 299,
+      "name": "charge_spacegroup_020",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 20"
+    },
+    {
+      "index": 300,
+      "name": "charge_spacegroup_021",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 21"
+    },
+    {
+      "index": 301,
+      "name": "charge_spacegroup_022",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 22"
+    },
+    {
+      "index": 302,
+      "name": "charge_spacegroup_023",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 23"
+    },
+    {
+      "index": 303,
+      "name": "charge_spacegroup_024",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 24"
+    },
+    {
+      "index": 304,
+      "name": "charge_spacegroup_025",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 25"
+    },
+    {
+      "index": 305,
+      "name": "charge_spacegroup_026",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 26"
+    },
+    {
+      "index": 306,
+      "name": "charge_spacegroup_027",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 27"
+    },
+    {
+      "index": 307,
+      "name": "charge_spacegroup_028",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 28"
+    },
+    {
+      "index": 308,
+      "name": "charge_spacegroup_029",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 29"
+    },
+    {
+      "index": 309,
+      "name": "charge_spacegroup_030",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 30"
+    },
+    {
+      "index": 310,
+      "name": "charge_spacegroup_031",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 31"
+    },
+    {
+      "index": 311,
+      "name": "charge_spacegroup_032",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 32"
+    },
+    {
+      "index": 312,
+      "name": "charge_spacegroup_033",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 33"
+    },
+    {
+      "index": 313,
+      "name": "charge_spacegroup_034",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 34"
+    },
+    {
+      "index": 314,
+      "name": "charge_spacegroup_035",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 35"
+    },
+    {
+      "index": 315,
+      "name": "charge_spacegroup_036",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 36"
+    },
+    {
+      "index": 316,
+      "name": "charge_spacegroup_037",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 37"
+    },
+    {
+      "index": 317,
+      "name": "charge_spacegroup_038",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 38"
+    },
+    {
+      "index": 318,
+      "name": "charge_spacegroup_039",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 39"
+    },
+    {
+      "index": 319,
+      "name": "charge_spacegroup_040",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 40"
+    },
+    {
+      "index": 320,
+      "name": "charge_spacegroup_041",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 41"
+    },
+    {
+      "index": 321,
+      "name": "charge_spacegroup_042",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 42"
+    },
+    {
+      "index": 322,
+      "name": "charge_spacegroup_043",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 43"
+    },
+    {
+      "index": 323,
+      "name": "charge_spacegroup_044",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 44"
+    },
+    {
+      "index": 324,
+      "name": "charge_spacegroup_045",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 45"
+    },
+    {
+      "index": 325,
+      "name": "charge_spacegroup_046",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 46"
+    },
+    {
+      "index": 326,
+      "name": "charge_spacegroup_047",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 47"
+    },
+    {
+      "index": 327,
+      "name": "charge_spacegroup_048",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 48"
+    },
+    {
+      "index": 328,
+      "name": "charge_spacegroup_049",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 49"
+    },
+    {
+      "index": 329,
+      "name": "charge_spacegroup_050",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 50"
+    },
+    {
+      "index": 330,
+      "name": "charge_spacegroup_051",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 51"
+    },
+    {
+      "index": 331,
+      "name": "charge_spacegroup_052",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 52"
+    },
+    {
+      "index": 332,
+      "name": "charge_spacegroup_053",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 53"
+    },
+    {
+      "index": 333,
+      "name": "charge_spacegroup_054",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 54"
+    },
+    {
+      "index": 334,
+      "name": "charge_spacegroup_055",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 55"
+    },
+    {
+      "index": 335,
+      "name": "charge_spacegroup_056",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 56"
+    },
+    {
+      "index": 336,
+      "name": "charge_spacegroup_057",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 57"
+    },
+    {
+      "index": 337,
+      "name": "charge_spacegroup_058",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 58"
+    },
+    {
+      "index": 338,
+      "name": "charge_spacegroup_059",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 59"
+    },
+    {
+      "index": 339,
+      "name": "charge_spacegroup_060",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 60"
+    },
+    {
+      "index": 340,
+      "name": "charge_spacegroup_061",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 61"
+    },
+    {
+      "index": 341,
+      "name": "charge_spacegroup_062",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 62"
+    },
+    {
+      "index": 342,
+      "name": "charge_spacegroup_063",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 63"
+    },
+    {
+      "index": 343,
+      "name": "charge_spacegroup_064",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 64"
+    },
+    {
+      "index": 344,
+      "name": "charge_spacegroup_065",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 65"
+    },
+    {
+      "index": 345,
+      "name": "charge_spacegroup_066",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 66"
+    },
+    {
+      "index": 346,
+      "name": "charge_spacegroup_067",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 67"
+    },
+    {
+      "index": 347,
+      "name": "charge_spacegroup_068",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 68"
+    },
+    {
+      "index": 348,
+      "name": "charge_spacegroup_069",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 69"
+    },
+    {
+      "index": 349,
+      "name": "charge_spacegroup_070",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 70"
+    },
+    {
+      "index": 350,
+      "name": "charge_spacegroup_071",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 71"
+    },
+    {
+      "index": 351,
+      "name": "charge_spacegroup_072",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 72"
+    },
+    {
+      "index": 352,
+      "name": "charge_spacegroup_073",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 73"
+    },
+    {
+      "index": 353,
+      "name": "charge_spacegroup_074",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 74"
+    },
+    {
+      "index": 354,
+      "name": "charge_spacegroup_075",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 75"
+    },
+    {
+      "index": 355,
+      "name": "charge_spacegroup_076",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 76"
+    },
+    {
+      "index": 356,
+      "name": "charge_spacegroup_077",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 77"
+    },
+    {
+      "index": 357,
+      "name": "charge_spacegroup_078",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 78"
+    },
+    {
+      "index": 358,
+      "name": "charge_spacegroup_079",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 79"
+    },
+    {
+      "index": 359,
+      "name": "charge_spacegroup_080",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 80"
+    },
+    {
+      "index": 360,
+      "name": "charge_spacegroup_081",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 81"
+    },
+    {
+      "index": 361,
+      "name": "charge_spacegroup_082",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 82"
+    },
+    {
+      "index": 362,
+      "name": "charge_spacegroup_083",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 83"
+    },
+    {
+      "index": 363,
+      "name": "charge_spacegroup_084",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 84"
+    },
+    {
+      "index": 364,
+      "name": "charge_spacegroup_085",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 85"
+    },
+    {
+      "index": 365,
+      "name": "charge_spacegroup_086",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 86"
+    },
+    {
+      "index": 366,
+      "name": "charge_spacegroup_087",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 87"
+    },
+    {
+      "index": 367,
+      "name": "charge_spacegroup_088",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 88"
+    },
+    {
+      "index": 368,
+      "name": "charge_spacegroup_089",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 89"
+    },
+    {
+      "index": 369,
+      "name": "charge_spacegroup_090",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 90"
+    },
+    {
+      "index": 370,
+      "name": "charge_spacegroup_091",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 91"
+    },
+    {
+      "index": 371,
+      "name": "charge_spacegroup_092",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 92"
+    },
+    {
+      "index": 372,
+      "name": "charge_spacegroup_093",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 93"
+    },
+    {
+      "index": 373,
+      "name": "charge_spacegroup_094",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 94"
+    },
+    {
+      "index": 374,
+      "name": "charge_spacegroup_095",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 95"
+    },
+    {
+      "index": 375,
+      "name": "charge_spacegroup_096",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 96"
+    },
+    {
+      "index": 376,
+      "name": "charge_spacegroup_097",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 97"
+    },
+    {
+      "index": 377,
+      "name": "charge_spacegroup_098",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 98"
+    },
+    {
+      "index": 378,
+      "name": "charge_spacegroup_099",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 99"
+    },
+    {
+      "index": 379,
+      "name": "charge_spacegroup_100",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 100"
+    },
+    {
+      "index": 380,
+      "name": "charge_spacegroup_101",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 101"
+    },
+    {
+      "index": 381,
+      "name": "charge_spacegroup_102",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 102"
+    },
+    {
+      "index": 382,
+      "name": "charge_spacegroup_103",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 103"
+    },
+    {
+      "index": 383,
+      "name": "charge_spacegroup_104",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 104"
+    },
+    {
+      "index": 384,
+      "name": "charge_spacegroup_105",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 105"
+    },
+    {
+      "index": 385,
+      "name": "charge_spacegroup_106",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 106"
+    },
+    {
+      "index": 386,
+      "name": "charge_spacegroup_107",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 107"
+    },
+    {
+      "index": 387,
+      "name": "charge_spacegroup_108",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 108"
+    },
+    {
+      "index": 388,
+      "name": "charge_spacegroup_109",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 109"
+    },
+    {
+      "index": 389,
+      "name": "charge_spacegroup_110",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 110"
+    },
+    {
+      "index": 390,
+      "name": "charge_spacegroup_111",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 111"
+    },
+    {
+      "index": 391,
+      "name": "charge_spacegroup_112",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 112"
+    },
+    {
+      "index": 392,
+      "name": "charge_spacegroup_113",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 113"
+    },
+    {
+      "index": 393,
+      "name": "charge_spacegroup_114",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 114"
+    },
+    {
+      "index": 394,
+      "name": "charge_spacegroup_115",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 115"
+    },
+    {
+      "index": 395,
+      "name": "charge_spacegroup_116",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 116"
+    },
+    {
+      "index": 396,
+      "name": "charge_spacegroup_117",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 117"
+    },
+    {
+      "index": 397,
+      "name": "charge_spacegroup_118",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 118"
+    },
+    {
+      "index": 398,
+      "name": "charge_spacegroup_119",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 119"
+    },
+    {
+      "index": 399,
+      "name": "charge_spacegroup_120",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 120"
+    },
+    {
+      "index": 400,
+      "name": "charge_spacegroup_121",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 121"
+    },
+    {
+      "index": 401,
+      "name": "charge_spacegroup_122",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 122"
+    },
+    {
+      "index": 402,
+      "name": "charge_spacegroup_123",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 123"
+    },
+    {
+      "index": 403,
+      "name": "charge_spacegroup_124",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 124"
+    },
+    {
+      "index": 404,
+      "name": "charge_spacegroup_125",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 125"
+    },
+    {
+      "index": 405,
+      "name": "charge_spacegroup_126",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 126"
+    },
+    {
+      "index": 406,
+      "name": "charge_spacegroup_127",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 127"
+    },
+    {
+      "index": 407,
+      "name": "charge_spacegroup_128",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 128"
+    },
+    {
+      "index": 408,
+      "name": "charge_spacegroup_129",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 129"
+    },
+    {
+      "index": 409,
+      "name": "charge_spacegroup_130",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 130"
+    },
+    {
+      "index": 410,
+      "name": "charge_spacegroup_131",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 131"
+    },
+    {
+      "index": 411,
+      "name": "charge_spacegroup_132",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 132"
+    },
+    {
+      "index": 412,
+      "name": "charge_spacegroup_133",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 133"
+    },
+    {
+      "index": 413,
+      "name": "charge_spacegroup_134",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 134"
+    },
+    {
+      "index": 414,
+      "name": "charge_spacegroup_135",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 135"
+    },
+    {
+      "index": 415,
+      "name": "charge_spacegroup_136",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 136"
+    },
+    {
+      "index": 416,
+      "name": "charge_spacegroup_137",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 137"
+    },
+    {
+      "index": 417,
+      "name": "charge_spacegroup_138",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 138"
+    },
+    {
+      "index": 418,
+      "name": "charge_spacegroup_139",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 139"
+    },
+    {
+      "index": 419,
+      "name": "charge_spacegroup_140",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 140"
+    },
+    {
+      "index": 420,
+      "name": "charge_spacegroup_141",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 141"
+    },
+    {
+      "index": 421,
+      "name": "charge_spacegroup_142",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 142"
+    },
+    {
+      "index": 422,
+      "name": "charge_spacegroup_143",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 143"
+    },
+    {
+      "index": 423,
+      "name": "charge_spacegroup_144",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 144"
+    },
+    {
+      "index": 424,
+      "name": "charge_spacegroup_145",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 145"
+    },
+    {
+      "index": 425,
+      "name": "charge_spacegroup_146",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 146"
+    },
+    {
+      "index": 426,
+      "name": "charge_spacegroup_147",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 147"
+    },
+    {
+      "index": 427,
+      "name": "charge_spacegroup_148",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 148"
+    },
+    {
+      "index": 428,
+      "name": "charge_spacegroup_149",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 149"
+    },
+    {
+      "index": 429,
+      "name": "charge_spacegroup_150",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 150"
+    },
+    {
+      "index": 430,
+      "name": "charge_spacegroup_151",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 151"
+    },
+    {
+      "index": 431,
+      "name": "charge_spacegroup_152",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 152"
+    },
+    {
+      "index": 432,
+      "name": "charge_spacegroup_153",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 153"
+    },
+    {
+      "index": 433,
+      "name": "charge_spacegroup_154",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 154"
+    },
+    {
+      "index": 434,
+      "name": "charge_spacegroup_155",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 155"
+    },
+    {
+      "index": 435,
+      "name": "charge_spacegroup_156",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 156"
+    },
+    {
+      "index": 436,
+      "name": "charge_spacegroup_157",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 157"
+    },
+    {
+      "index": 437,
+      "name": "charge_spacegroup_158",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 158"
+    },
+    {
+      "index": 438,
+      "name": "charge_spacegroup_159",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 159"
+    },
+    {
+      "index": 439,
+      "name": "charge_spacegroup_160",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 160"
+    },
+    {
+      "index": 440,
+      "name": "charge_spacegroup_161",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 161"
+    },
+    {
+      "index": 441,
+      "name": "charge_spacegroup_162",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 162"
+    },
+    {
+      "index": 442,
+      "name": "charge_spacegroup_163",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 163"
+    },
+    {
+      "index": 443,
+      "name": "charge_spacegroup_164",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 164"
+    },
+    {
+      "index": 444,
+      "name": "charge_spacegroup_165",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 165"
+    },
+    {
+      "index": 445,
+      "name": "charge_spacegroup_166",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 166"
+    },
+    {
+      "index": 446,
+      "name": "charge_spacegroup_167",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 167"
+    },
+    {
+      "index": 447,
+      "name": "charge_spacegroup_168",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 168"
+    },
+    {
+      "index": 448,
+      "name": "charge_spacegroup_169",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 169"
+    },
+    {
+      "index": 449,
+      "name": "charge_spacegroup_170",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 170"
+    },
+    {
+      "index": 450,
+      "name": "charge_spacegroup_171",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 171"
+    },
+    {
+      "index": 451,
+      "name": "charge_spacegroup_172",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 172"
+    },
+    {
+      "index": 452,
+      "name": "charge_spacegroup_173",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 173"
+    },
+    {
+      "index": 453,
+      "name": "charge_spacegroup_174",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 174"
+    },
+    {
+      "index": 454,
+      "name": "charge_spacegroup_175",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 175"
+    },
+    {
+      "index": 455,
+      "name": "charge_spacegroup_176",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 176"
+    },
+    {
+      "index": 456,
+      "name": "charge_spacegroup_177",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 177"
+    },
+    {
+      "index": 457,
+      "name": "charge_spacegroup_178",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 178"
+    },
+    {
+      "index": 458,
+      "name": "charge_spacegroup_179",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 179"
+    },
+    {
+      "index": 459,
+      "name": "charge_spacegroup_180",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 180"
+    },
+    {
+      "index": 460,
+      "name": "charge_spacegroup_181",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 181"
+    },
+    {
+      "index": 461,
+      "name": "charge_spacegroup_182",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 182"
+    },
+    {
+      "index": 462,
+      "name": "charge_spacegroup_183",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 183"
+    },
+    {
+      "index": 463,
+      "name": "charge_spacegroup_184",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 184"
+    },
+    {
+      "index": 464,
+      "name": "charge_spacegroup_185",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 185"
+    },
+    {
+      "index": 465,
+      "name": "charge_spacegroup_186",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 186"
+    },
+    {
+      "index": 466,
+      "name": "charge_spacegroup_187",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 187"
+    },
+    {
+      "index": 467,
+      "name": "charge_spacegroup_188",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 188"
+    },
+    {
+      "index": 468,
+      "name": "charge_spacegroup_189",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 189"
+    },
+    {
+      "index": 469,
+      "name": "charge_spacegroup_190",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 190"
+    },
+    {
+      "index": 470,
+      "name": "charge_spacegroup_191",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 191"
+    },
+    {
+      "index": 471,
+      "name": "charge_spacegroup_192",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 192"
+    },
+    {
+      "index": 472,
+      "name": "charge_spacegroup_193",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 193"
+    },
+    {
+      "index": 473,
+      "name": "charge_spacegroup_194",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 194"
+    },
+    {
+      "index": 474,
+      "name": "charge_spacegroup_195",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 195"
+    },
+    {
+      "index": 475,
+      "name": "charge_spacegroup_196",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 196"
+    },
+    {
+      "index": 476,
+      "name": "charge_spacegroup_197",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 197"
+    },
+    {
+      "index": 477,
+      "name": "charge_spacegroup_198",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 198"
+    },
+    {
+      "index": 478,
+      "name": "charge_spacegroup_199",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 199"
+    },
+    {
+      "index": 479,
+      "name": "charge_spacegroup_200",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 200"
+    },
+    {
+      "index": 480,
+      "name": "charge_spacegroup_201",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 201"
+    },
+    {
+      "index": 481,
+      "name": "charge_spacegroup_202",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 202"
+    },
+    {
+      "index": 482,
+      "name": "charge_spacegroup_203",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 203"
+    },
+    {
+      "index": 483,
+      "name": "charge_spacegroup_204",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 204"
+    },
+    {
+      "index": 484,
+      "name": "charge_spacegroup_205",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 205"
+    },
+    {
+      "index": 485,
+      "name": "charge_spacegroup_206",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 206"
+    },
+    {
+      "index": 486,
+      "name": "charge_spacegroup_207",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 207"
+    },
+    {
+      "index": 487,
+      "name": "charge_spacegroup_208",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 208"
+    },
+    {
+      "index": 488,
+      "name": "charge_spacegroup_209",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 209"
+    },
+    {
+      "index": 489,
+      "name": "charge_spacegroup_210",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 210"
+    },
+    {
+      "index": 490,
+      "name": "charge_spacegroup_211",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 211"
+    },
+    {
+      "index": 491,
+      "name": "charge_spacegroup_212",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 212"
+    },
+    {
+      "index": 492,
+      "name": "charge_spacegroup_213",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 213"
+    },
+    {
+      "index": 493,
+      "name": "charge_spacegroup_214",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 214"
+    },
+    {
+      "index": 494,
+      "name": "charge_spacegroup_215",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 215"
+    },
+    {
+      "index": 495,
+      "name": "charge_spacegroup_216",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 216"
+    },
+    {
+      "index": 496,
+      "name": "charge_spacegroup_217",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 217"
+    },
+    {
+      "index": 497,
+      "name": "charge_spacegroup_218",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 218"
+    },
+    {
+      "index": 498,
+      "name": "charge_spacegroup_219",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 219"
+    },
+    {
+      "index": 499,
+      "name": "charge_spacegroup_220",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 220"
+    },
+    {
+      "index": 500,
+      "name": "charge_spacegroup_221",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 221"
+    },
+    {
+      "index": 501,
+      "name": "charge_spacegroup_222",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 222"
+    },
+    {
+      "index": 502,
+      "name": "charge_spacegroup_223",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 223"
+    },
+    {
+      "index": 503,
+      "name": "charge_spacegroup_224",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 224"
+    },
+    {
+      "index": 504,
+      "name": "charge_spacegroup_225",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 225"
+    },
+    {
+      "index": 505,
+      "name": "charge_spacegroup_226",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 226"
+    },
+    {
+      "index": 506,
+      "name": "charge_spacegroup_227",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 227"
+    },
+    {
+      "index": 507,
+      "name": "charge_spacegroup_228",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 228"
+    },
+    {
+      "index": 508,
+      "name": "charge_spacegroup_229",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 229"
+    },
+    {
+      "index": 509,
+      "name": "charge_spacegroup_230",
+      "block": "spacegroup",
+      "description": "1 if charge space-group number is 230"
+    },
+    {
+      "index": 510,
+      "name": "discharge_spacegroup_001",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 1"
+    },
+    {
+      "index": 511,
+      "name": "discharge_spacegroup_002",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 2"
+    },
+    {
+      "index": 512,
+      "name": "discharge_spacegroup_003",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 3"
+    },
+    {
+      "index": 513,
+      "name": "discharge_spacegroup_004",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 4"
+    },
+    {
+      "index": 514,
+      "name": "discharge_spacegroup_005",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 5"
+    },
+    {
+      "index": 515,
+      "name": "discharge_spacegroup_006",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 6"
+    },
+    {
+      "index": 516,
+      "name": "discharge_spacegroup_007",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 7"
+    },
+    {
+      "index": 517,
+      "name": "discharge_spacegroup_008",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 8"
+    },
+    {
+      "index": 518,
+      "name": "discharge_spacegroup_009",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 9"
+    },
+    {
+      "index": 519,
+      "name": "discharge_spacegroup_010",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 10"
+    },
+    {
+      "index": 520,
+      "name": "discharge_spacegroup_011",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 11"
+    },
+    {
+      "index": 521,
+      "name": "discharge_spacegroup_012",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 12"
+    },
+    {
+      "index": 522,
+      "name": "discharge_spacegroup_013",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 13"
+    },
+    {
+      "index": 523,
+      "name": "discharge_spacegroup_014",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 14"
+    },
+    {
+      "index": 524,
+      "name": "discharge_spacegroup_015",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 15"
+    },
+    {
+      "index": 525,
+      "name": "discharge_spacegroup_016",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 16"
+    },
+    {
+      "index": 526,
+      "name": "discharge_spacegroup_017",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 17"
+    },
+    {
+      "index": 527,
+      "name": "discharge_spacegroup_018",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 18"
+    },
+    {
+      "index": 528,
+      "name": "discharge_spacegroup_019",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 19"
+    },
+    {
+      "index": 529,
+      "name": "discharge_spacegroup_020",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 20"
+    },
+    {
+      "index": 530,
+      "name": "discharge_spacegroup_021",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 21"
+    },
+    {
+      "index": 531,
+      "name": "discharge_spacegroup_022",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 22"
+    },
+    {
+      "index": 532,
+      "name": "discharge_spacegroup_023",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 23"
+    },
+    {
+      "index": 533,
+      "name": "discharge_spacegroup_024",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 24"
+    },
+    {
+      "index": 534,
+      "name": "discharge_spacegroup_025",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 25"
+    },
+    {
+      "index": 535,
+      "name": "discharge_spacegroup_026",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 26"
+    },
+    {
+      "index": 536,
+      "name": "discharge_spacegroup_027",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 27"
+    },
+    {
+      "index": 537,
+      "name": "discharge_spacegroup_028",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 28"
+    },
+    {
+      "index": 538,
+      "name": "discharge_spacegroup_029",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 29"
+    },
+    {
+      "index": 539,
+      "name": "discharge_spacegroup_030",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 30"
+    },
+    {
+      "index": 540,
+      "name": "discharge_spacegroup_031",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 31"
+    },
+    {
+      "index": 541,
+      "name": "discharge_spacegroup_032",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 32"
+    },
+    {
+      "index": 542,
+      "name": "discharge_spacegroup_033",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 33"
+    },
+    {
+      "index": 543,
+      "name": "discharge_spacegroup_034",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 34"
+    },
+    {
+      "index": 544,
+      "name": "discharge_spacegroup_035",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 35"
+    },
+    {
+      "index": 545,
+      "name": "discharge_spacegroup_036",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 36"
+    },
+    {
+      "index": 546,
+      "name": "discharge_spacegroup_037",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 37"
+    },
+    {
+      "index": 547,
+      "name": "discharge_spacegroup_038",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 38"
+    },
+    {
+      "index": 548,
+      "name": "discharge_spacegroup_039",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 39"
+    },
+    {
+      "index": 549,
+      "name": "discharge_spacegroup_040",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 40"
+    },
+    {
+      "index": 550,
+      "name": "discharge_spacegroup_041",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 41"
+    },
+    {
+      "index": 551,
+      "name": "discharge_spacegroup_042",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 42"
+    },
+    {
+      "index": 552,
+      "name": "discharge_spacegroup_043",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 43"
+    },
+    {
+      "index": 553,
+      "name": "discharge_spacegroup_044",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 44"
+    },
+    {
+      "index": 554,
+      "name": "discharge_spacegroup_045",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 45"
+    },
+    {
+      "index": 555,
+      "name": "discharge_spacegroup_046",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 46"
+    },
+    {
+      "index": 556,
+      "name": "discharge_spacegroup_047",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 47"
+    },
+    {
+      "index": 557,
+      "name": "discharge_spacegroup_048",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 48"
+    },
+    {
+      "index": 558,
+      "name": "discharge_spacegroup_049",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 49"
+    },
+    {
+      "index": 559,
+      "name": "discharge_spacegroup_050",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 50"
+    },
+    {
+      "index": 560,
+      "name": "discharge_spacegroup_051",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 51"
+    },
+    {
+      "index": 561,
+      "name": "discharge_spacegroup_052",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 52"
+    },
+    {
+      "index": 562,
+      "name": "discharge_spacegroup_053",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 53"
+    },
+    {
+      "index": 563,
+      "name": "discharge_spacegroup_054",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 54"
+    },
+    {
+      "index": 564,
+      "name": "discharge_spacegroup_055",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 55"
+    },
+    {
+      "index": 565,
+      "name": "discharge_spacegroup_056",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 56"
+    },
+    {
+      "index": 566,
+      "name": "discharge_spacegroup_057",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 57"
+    },
+    {
+      "index": 567,
+      "name": "discharge_spacegroup_058",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 58"
+    },
+    {
+      "index": 568,
+      "name": "discharge_spacegroup_059",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 59"
+    },
+    {
+      "index": 569,
+      "name": "discharge_spacegroup_060",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 60"
+    },
+    {
+      "index": 570,
+      "name": "discharge_spacegroup_061",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 61"
+    },
+    {
+      "index": 571,
+      "name": "discharge_spacegroup_062",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 62"
+    },
+    {
+      "index": 572,
+      "name": "discharge_spacegroup_063",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 63"
+    },
+    {
+      "index": 573,
+      "name": "discharge_spacegroup_064",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 64"
+    },
+    {
+      "index": 574,
+      "name": "discharge_spacegroup_065",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 65"
+    },
+    {
+      "index": 575,
+      "name": "discharge_spacegroup_066",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 66"
+    },
+    {
+      "index": 576,
+      "name": "discharge_spacegroup_067",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 67"
+    },
+    {
+      "index": 577,
+      "name": "discharge_spacegroup_068",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 68"
+    },
+    {
+      "index": 578,
+      "name": "discharge_spacegroup_069",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 69"
+    },
+    {
+      "index": 579,
+      "name": "discharge_spacegroup_070",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 70"
+    },
+    {
+      "index": 580,
+      "name": "discharge_spacegroup_071",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 71"
+    },
+    {
+      "index": 581,
+      "name": "discharge_spacegroup_072",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 72"
+    },
+    {
+      "index": 582,
+      "name": "discharge_spacegroup_073",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 73"
+    },
+    {
+      "index": 583,
+      "name": "discharge_spacegroup_074",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 74"
+    },
+    {
+      "index": 584,
+      "name": "discharge_spacegroup_075",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 75"
+    },
+    {
+      "index": 585,
+      "name": "discharge_spacegroup_076",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 76"
+    },
+    {
+      "index": 586,
+      "name": "discharge_spacegroup_077",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 77"
+    },
+    {
+      "index": 587,
+      "name": "discharge_spacegroup_078",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 78"
+    },
+    {
+      "index": 588,
+      "name": "discharge_spacegroup_079",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 79"
+    },
+    {
+      "index": 589,
+      "name": "discharge_spacegroup_080",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 80"
+    },
+    {
+      "index": 590,
+      "name": "discharge_spacegroup_081",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 81"
+    },
+    {
+      "index": 591,
+      "name": "discharge_spacegroup_082",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 82"
+    },
+    {
+      "index": 592,
+      "name": "discharge_spacegroup_083",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 83"
+    },
+    {
+      "index": 593,
+      "name": "discharge_spacegroup_084",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 84"
+    },
+    {
+      "index": 594,
+      "name": "discharge_spacegroup_085",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 85"
+    },
+    {
+      "index": 595,
+      "name": "discharge_spacegroup_086",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 86"
+    },
+    {
+      "index": 596,
+      "name": "discharge_spacegroup_087",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 87"
+    },
+    {
+      "index": 597,
+      "name": "discharge_spacegroup_088",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 88"
+    },
+    {
+      "index": 598,
+      "name": "discharge_spacegroup_089",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 89"
+    },
+    {
+      "index": 599,
+      "name": "discharge_spacegroup_090",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 90"
+    },
+    {
+      "index": 600,
+      "name": "discharge_spacegroup_091",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 91"
+    },
+    {
+      "index": 601,
+      "name": "discharge_spacegroup_092",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 92"
+    },
+    {
+      "index": 602,
+      "name": "discharge_spacegroup_093",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 93"
+    },
+    {
+      "index": 603,
+      "name": "discharge_spacegroup_094",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 94"
+    },
+    {
+      "index": 604,
+      "name": "discharge_spacegroup_095",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 95"
+    },
+    {
+      "index": 605,
+      "name": "discharge_spacegroup_096",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 96"
+    },
+    {
+      "index": 606,
+      "name": "discharge_spacegroup_097",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 97"
+    },
+    {
+      "index": 607,
+      "name": "discharge_spacegroup_098",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 98"
+    },
+    {
+      "index": 608,
+      "name": "discharge_spacegroup_099",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 99"
+    },
+    {
+      "index": 609,
+      "name": "discharge_spacegroup_100",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 100"
+    },
+    {
+      "index": 610,
+      "name": "discharge_spacegroup_101",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 101"
+    },
+    {
+      "index": 611,
+      "name": "discharge_spacegroup_102",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 102"
+    },
+    {
+      "index": 612,
+      "name": "discharge_spacegroup_103",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 103"
+    },
+    {
+      "index": 613,
+      "name": "discharge_spacegroup_104",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 104"
+    },
+    {
+      "index": 614,
+      "name": "discharge_spacegroup_105",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 105"
+    },
+    {
+      "index": 615,
+      "name": "discharge_spacegroup_106",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 106"
+    },
+    {
+      "index": 616,
+      "name": "discharge_spacegroup_107",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 107"
+    },
+    {
+      "index": 617,
+      "name": "discharge_spacegroup_108",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 108"
+    },
+    {
+      "index": 618,
+      "name": "discharge_spacegroup_109",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 109"
+    },
+    {
+      "index": 619,
+      "name": "discharge_spacegroup_110",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 110"
+    },
+    {
+      "index": 620,
+      "name": "discharge_spacegroup_111",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 111"
+    },
+    {
+      "index": 621,
+      "name": "discharge_spacegroup_112",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 112"
+    },
+    {
+      "index": 622,
+      "name": "discharge_spacegroup_113",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 113"
+    },
+    {
+      "index": 623,
+      "name": "discharge_spacegroup_114",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 114"
+    },
+    {
+      "index": 624,
+      "name": "discharge_spacegroup_115",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 115"
+    },
+    {
+      "index": 625,
+      "name": "discharge_spacegroup_116",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 116"
+    },
+    {
+      "index": 626,
+      "name": "discharge_spacegroup_117",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 117"
+    },
+    {
+      "index": 627,
+      "name": "discharge_spacegroup_118",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 118"
+    },
+    {
+      "index": 628,
+      "name": "discharge_spacegroup_119",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 119"
+    },
+    {
+      "index": 629,
+      "name": "discharge_spacegroup_120",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 120"
+    },
+    {
+      "index": 630,
+      "name": "discharge_spacegroup_121",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 121"
+    },
+    {
+      "index": 631,
+      "name": "discharge_spacegroup_122",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 122"
+    },
+    {
+      "index": 632,
+      "name": "discharge_spacegroup_123",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 123"
+    },
+    {
+      "index": 633,
+      "name": "discharge_spacegroup_124",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 124"
+    },
+    {
+      "index": 634,
+      "name": "discharge_spacegroup_125",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 125"
+    },
+    {
+      "index": 635,
+      "name": "discharge_spacegroup_126",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 126"
+    },
+    {
+      "index": 636,
+      "name": "discharge_spacegroup_127",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 127"
+    },
+    {
+      "index": 637,
+      "name": "discharge_spacegroup_128",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 128"
+    },
+    {
+      "index": 638,
+      "name": "discharge_spacegroup_129",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 129"
+    },
+    {
+      "index": 639,
+      "name": "discharge_spacegroup_130",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 130"
+    },
+    {
+      "index": 640,
+      "name": "discharge_spacegroup_131",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 131"
+    },
+    {
+      "index": 641,
+      "name": "discharge_spacegroup_132",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 132"
+    },
+    {
+      "index": 642,
+      "name": "discharge_spacegroup_133",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 133"
+    },
+    {
+      "index": 643,
+      "name": "discharge_spacegroup_134",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 134"
+    },
+    {
+      "index": 644,
+      "name": "discharge_spacegroup_135",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 135"
+    },
+    {
+      "index": 645,
+      "name": "discharge_spacegroup_136",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 136"
+    },
+    {
+      "index": 646,
+      "name": "discharge_spacegroup_137",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 137"
+    },
+    {
+      "index": 647,
+      "name": "discharge_spacegroup_138",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 138"
+    },
+    {
+      "index": 648,
+      "name": "discharge_spacegroup_139",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 139"
+    },
+    {
+      "index": 649,
+      "name": "discharge_spacegroup_140",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 140"
+    },
+    {
+      "index": 650,
+      "name": "discharge_spacegroup_141",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 141"
+    },
+    {
+      "index": 651,
+      "name": "discharge_spacegroup_142",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 142"
+    },
+    {
+      "index": 652,
+      "name": "discharge_spacegroup_143",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 143"
+    },
+    {
+      "index": 653,
+      "name": "discharge_spacegroup_144",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 144"
+    },
+    {
+      "index": 654,
+      "name": "discharge_spacegroup_145",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 145"
+    },
+    {
+      "index": 655,
+      "name": "discharge_spacegroup_146",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 146"
+    },
+    {
+      "index": 656,
+      "name": "discharge_spacegroup_147",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 147"
+    },
+    {
+      "index": 657,
+      "name": "discharge_spacegroup_148",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 148"
+    },
+    {
+      "index": 658,
+      "name": "discharge_spacegroup_149",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 149"
+    },
+    {
+      "index": 659,
+      "name": "discharge_spacegroup_150",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 150"
+    },
+    {
+      "index": 660,
+      "name": "discharge_spacegroup_151",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 151"
+    },
+    {
+      "index": 661,
+      "name": "discharge_spacegroup_152",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 152"
+    },
+    {
+      "index": 662,
+      "name": "discharge_spacegroup_153",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 153"
+    },
+    {
+      "index": 663,
+      "name": "discharge_spacegroup_154",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 154"
+    },
+    {
+      "index": 664,
+      "name": "discharge_spacegroup_155",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 155"
+    },
+    {
+      "index": 665,
+      "name": "discharge_spacegroup_156",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 156"
+    },
+    {
+      "index": 666,
+      "name": "discharge_spacegroup_157",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 157"
+    },
+    {
+      "index": 667,
+      "name": "discharge_spacegroup_158",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 158"
+    },
+    {
+      "index": 668,
+      "name": "discharge_spacegroup_159",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 159"
+    },
+    {
+      "index": 669,
+      "name": "discharge_spacegroup_160",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 160"
+    },
+    {
+      "index": 670,
+      "name": "discharge_spacegroup_161",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 161"
+    },
+    {
+      "index": 671,
+      "name": "discharge_spacegroup_162",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 162"
+    },
+    {
+      "index": 672,
+      "name": "discharge_spacegroup_163",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 163"
+    },
+    {
+      "index": 673,
+      "name": "discharge_spacegroup_164",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 164"
+    },
+    {
+      "index": 674,
+      "name": "discharge_spacegroup_165",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 165"
+    },
+    {
+      "index": 675,
+      "name": "discharge_spacegroup_166",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 166"
+    },
+    {
+      "index": 676,
+      "name": "discharge_spacegroup_167",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 167"
+    },
+    {
+      "index": 677,
+      "name": "discharge_spacegroup_168",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 168"
+    },
+    {
+      "index": 678,
+      "name": "discharge_spacegroup_169",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 169"
+    },
+    {
+      "index": 679,
+      "name": "discharge_spacegroup_170",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 170"
+    },
+    {
+      "index": 680,
+      "name": "discharge_spacegroup_171",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 171"
+    },
+    {
+      "index": 681,
+      "name": "discharge_spacegroup_172",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 172"
+    },
+    {
+      "index": 682,
+      "name": "discharge_spacegroup_173",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 173"
+    },
+    {
+      "index": 683,
+      "name": "discharge_spacegroup_174",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 174"
+    },
+    {
+      "index": 684,
+      "name": "discharge_spacegroup_175",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 175"
+    },
+    {
+      "index": 685,
+      "name": "discharge_spacegroup_176",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 176"
+    },
+    {
+      "index": 686,
+      "name": "discharge_spacegroup_177",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 177"
+    },
+    {
+      "index": 687,
+      "name": "discharge_spacegroup_178",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 178"
+    },
+    {
+      "index": 688,
+      "name": "discharge_spacegroup_179",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 179"
+    },
+    {
+      "index": 689,
+      "name": "discharge_spacegroup_180",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 180"
+    },
+    {
+      "index": 690,
+      "name": "discharge_spacegroup_181",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 181"
+    },
+    {
+      "index": 691,
+      "name": "discharge_spacegroup_182",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 182"
+    },
+    {
+      "index": 692,
+      "name": "discharge_spacegroup_183",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 183"
+    },
+    {
+      "index": 693,
+      "name": "discharge_spacegroup_184",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 184"
+    },
+    {
+      "index": 694,
+      "name": "discharge_spacegroup_185",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 185"
+    },
+    {
+      "index": 695,
+      "name": "discharge_spacegroup_186",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 186"
+    },
+    {
+      "index": 696,
+      "name": "discharge_spacegroup_187",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 187"
+    },
+    {
+      "index": 697,
+      "name": "discharge_spacegroup_188",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 188"
+    },
+    {
+      "index": 698,
+      "name": "discharge_spacegroup_189",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 189"
+    },
+    {
+      "index": 699,
+      "name": "discharge_spacegroup_190",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 190"
+    },
+    {
+      "index": 700,
+      "name": "discharge_spacegroup_191",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 191"
+    },
+    {
+      "index": 701,
+      "name": "discharge_spacegroup_192",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 192"
+    },
+    {
+      "index": 702,
+      "name": "discharge_spacegroup_193",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 193"
+    },
+    {
+      "index": 703,
+      "name": "discharge_spacegroup_194",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 194"
+    },
+    {
+      "index": 704,
+      "name": "discharge_spacegroup_195",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 195"
+    },
+    {
+      "index": 705,
+      "name": "discharge_spacegroup_196",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 196"
+    },
+    {
+      "index": 706,
+      "name": "discharge_spacegroup_197",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 197"
+    },
+    {
+      "index": 707,
+      "name": "discharge_spacegroup_198",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 198"
+    },
+    {
+      "index": 708,
+      "name": "discharge_spacegroup_199",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 199"
+    },
+    {
+      "index": 709,
+      "name": "discharge_spacegroup_200",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 200"
+    },
+    {
+      "index": 710,
+      "name": "discharge_spacegroup_201",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 201"
+    },
+    {
+      "index": 711,
+      "name": "discharge_spacegroup_202",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 202"
+    },
+    {
+      "index": 712,
+      "name": "discharge_spacegroup_203",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 203"
+    },
+    {
+      "index": 713,
+      "name": "discharge_spacegroup_204",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 204"
+    },
+    {
+      "index": 714,
+      "name": "discharge_spacegroup_205",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 205"
+    },
+    {
+      "index": 715,
+      "name": "discharge_spacegroup_206",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 206"
+    },
+    {
+      "index": 716,
+      "name": "discharge_spacegroup_207",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 207"
+    },
+    {
+      "index": 717,
+      "name": "discharge_spacegroup_208",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 208"
+    },
+    {
+      "index": 718,
+      "name": "discharge_spacegroup_209",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 209"
+    },
+    {
+      "index": 719,
+      "name": "discharge_spacegroup_210",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 210"
+    },
+    {
+      "index": 720,
+      "name": "discharge_spacegroup_211",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 211"
+    },
+    {
+      "index": 721,
+      "name": "discharge_spacegroup_212",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 212"
+    },
+    {
+      "index": 722,
+      "name": "discharge_spacegroup_213",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 213"
+    },
+    {
+      "index": 723,
+      "name": "discharge_spacegroup_214",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 214"
+    },
+    {
+      "index": 724,
+      "name": "discharge_spacegroup_215",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 215"
+    },
+    {
+      "index": 725,
+      "name": "discharge_spacegroup_216",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 216"
+    },
+    {
+      "index": 726,
+      "name": "discharge_spacegroup_217",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 217"
+    },
+    {
+      "index": 727,
+      "name": "discharge_spacegroup_218",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 218"
+    },
+    {
+      "index": 728,
+      "name": "discharge_spacegroup_219",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 219"
+    },
+    {
+      "index": 729,
+      "name": "discharge_spacegroup_220",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 220"
+    },
+    {
+      "index": 730,
+      "name": "discharge_spacegroup_221",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 221"
+    },
+    {
+      "index": 731,
+      "name": "discharge_spacegroup_222",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 222"
+    },
+    {
+      "index": 732,
+      "name": "discharge_spacegroup_223",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 223"
+    },
+    {
+      "index": 733,
+      "name": "discharge_spacegroup_224",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 224"
+    },
+    {
+      "index": 734,
+      "name": "discharge_spacegroup_225",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 225"
+    },
+    {
+      "index": 735,
+      "name": "discharge_spacegroup_226",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 226"
+    },
+    {
+      "index": 736,
+      "name": "discharge_spacegroup_227",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 227"
+    },
+    {
+      "index": 737,
+      "name": "discharge_spacegroup_228",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 228"
+    },
+    {
+      "index": 738,
+      "name": "discharge_spacegroup_229",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 229"
+    },
+    {
+      "index": 739,
+      "name": "discharge_spacegroup_230",
+      "block": "spacegroup",
+      "description": "1 if discharge space-group number is 230"
+    }
+  ],
+  "required_inputs": [
+    "working_ion",
+    "formula_charge",
+    "formula_discharge",
+    "crystal_system_charge",
+    "spacegroup_number_charge",
+    "crystal_system_discharge",
+    "spacegroup_number_discharge"
+  ],
+  "optional_inputs": [
+    "fracA_charge",
+    "fracA_discharge"
+  ],
+  "element_order": [
+    "H",
+    "He",
+    "Li",
+    "Be",
+    "B",
+    "C",
+    "N",
+    "O",
+    "F",
+    "Ne",
+    "Na",
+    "Mg",
+    "Al",
+    "Si",
+    "P",
+    "S",
+    "Cl",
+    "Ar",
+    "K",
+    "Ca",
+    "Sc",
+    "Ti",
+    "V",
+    "Cr",
+    "Mn",
+    "Fe",
+    "Co",
+    "Ni",
+    "Cu",
+    "Zn",
+    "Ga",
+    "Ge",
+    "As",
+    "Se",
+    "Br",
+    "Kr",
+    "Rb",
+    "Sr",
+    "Y",
+    "Zr",
+    "Nb",
+    "Mo",
+    "Tc",
+    "Ru",
+    "Rh",
+    "Pd",
+    "Ag",
+    "Cd",
+    "In",
+    "Sn",
+    "Sb",
+    "Te",
+    "I",
+    "Xe",
+    "Cs",
+    "Ba",
+    "La",
+    "Ce",
+    "Pr",
+    "Nd",
+    "Pm",
+    "Sm",
+    "Eu",
+    "Gd",
+    "Tb",
+    "Dy",
+    "Ho",
+    "Er",
+    "Tm",
+    "Yb",
+    "Lu",
+    "Hf",
+    "Ta",
+    "W",
+    "Re",
+    "Os",
+    "Ir",
+    "Pt",
+    "Au",
+    "Hg",
+    "Tl",
+    "Pb",
+    "Bi",
+    "Po",
+    "At",
+    "Rn",
+    "Fr",
+    "Ra",
+    "Ac",
+    "Th",
+    "Pa",
+    "U",
+    "Np",
+    "Pu",
+    "Am",
+    "Cm",
+    "Bk",
+    "Cf",
+    "Es",
+    "Fm",
+    "Md",
+    "No",
+    "Lr",
+    "Rf",
+    "Db",
+    "Sg",
+    "Bh",
+    "Hs",
+    "Mt",
+    "Ds",
+    "Rg",
+    "Cn",
+    "Nh",
+    "Fl",
+    "Mc",
+    "Lv",
+    "Ts",
+    "Og"
+  ],
+  "ion_period": {
+    "Li": 2,
+    "Na": 3,
+    "K": 4,
+    "Mg": 3,
+    "Ca": 4,
+    "Zn": 4,
+    "Al": 3,
+    "Y": 5
+  },
+  "fraction_tolerance": 1e-06,
+  "representation_status": "Documented adaptation; not the paper's original 237-feature specification",
+  "source_notes": [
+    "Atomic numbers use the 118-element periodic-table order. No empirical property table is imputed.",
+    "Space groups are categorical one-hot indicators, not ordinal numeric magnitudes.",
+    "Crystal systems and space groups are redundant in part; that redundancy is explicit."
+  ],
+  "schema_hash": "4c924f80f01653191867e9475145e7f9db525ff581e5ee9299bf2fbd02c9f82b"
+}

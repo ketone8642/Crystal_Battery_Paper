@@ -1,0 +1,71 @@
+{
+  "selection_metric": "mean_grouped_validation_fold_MAE_V",
+  "configuration_sha256": "b8e6065bfc4e3845d5367e68d39d42a8d6eb267ba6c0531abbb4109698dd9a60",
+  "selection_uses_holdout_or_transfer": false,
+  "selected": {
+    "mixed_ions": {
+      "svr": {
+        "id": "svr_scaled_1",
+        "family": "svr",
+        "representation": "scaled",
+        "parameters": {
+          "C": 10.0,
+          "gamma": "scale",
+          "epsilon": 0.1
+        }
+      },
+      "krr": {
+        "id": "krr_scaled_1",
+        "family": "krr",
+        "representation": "scaled",
+        "parameters": {
+          "alpha": 0.01,
+          "gamma": "scale"
+        }
+      },
+      "dnn": {
+        "id": "dnn_scaled_0",
+        "family": "dnn",
+        "representation": "scaled",
+        "parameters": {
+          "learning_rate": 0.001,
+          "l2": 0.0001
+        }
+      }
+    },
+    "li_only": {
+      "svr": {
+        "id": "svr_scaled_1",
+        "family": "svr",
+        "representation": "scaled",
+        "parameters": {
+          "C": 10.0,
+          "gamma": "scale",
+          "epsilon": 0.1
+        }
+      },
+      "krr": {
+        "id": "krr_scaled_2",
+        "family": "krr",
+        "representation": "scaled",
+        "parameters": {
+          "alpha": 1.0,
+          "gamma": "scale"
+        }
+      },
+      "dnn": {
+        "id": "dnn_scaled_0",
+        "family": "dnn",
+        "representation": "scaled",
+        "parameters": {
+          "learning_rate": 0.001,
+          "l2": 0.0001
+        }
+      }
+    }
+  },
+  "cv_selected_family": {
+    "mixed_ions": "dnn",
+    "li_only": "dnn"
+  }
+}

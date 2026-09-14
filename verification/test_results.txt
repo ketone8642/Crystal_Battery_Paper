@@ -1,0 +1,51 @@
+Fitting final mixed_ions/svr: svr_scaled_0
+Fitting final mixed_ions/krr: krr_scaled_0
+Fitting final mixed_ions/dnn: dnn_scaled_0
+/workspace/scratch/864d95206efc/step6_compat_runtime/matplotlib/_fontconfig_pattern.py:64: PyparsingDeprecationWarning: 'oneOf' deprecated - use 'one_of'
+  prop = Group((name + Suppress("=") + comma_separated(value)) | oneOf(_CONSTANTS))
+/workspace/scratch/864d95206efc/step6_compat_runtime/matplotlib/_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+  parse = parser.parseString(pattern)
+/workspace/scratch/864d95206efc/step6_compat_runtime/matplotlib/_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+  parser.resetCache()
+/workspace/scratch/864d95206efc/step6_compat_runtime/matplotlib/_mathtext.py:45: PyparsingDeprecationWarning: 'enablePackrat' deprecated - use 'enable_packrat'
+  ParserElement.enablePackrat()
+In /workspace/scratch/864d95206efc/step6_compat_runtime/matplotlib/mpl-data/stylelib/classic.mplstyle: 'parseString' deprecated - use 'parse_string'
+In /workspace/scratch/864d95206efc/step6_compat_runtime/matplotlib/mpl-data/stylelib/classic.mplstyle: 'resetCache' deprecated - use 'reset_cache'
+  final fit: epoch 1/2; training objective=1.456049
+  final fit: epoch 2/2; training objective=1.047047
+/workspace/scratch/864d95206efc/step6_tf_runtime/keras/src/backend/tensorflow/core.py:172: DeprecationWarning: __array__ implementation doesn't accept a copy keyword, so passing copy=False failed. __array__ must implement 'dtype' and 'copy' keyword arguments.
+  return np.array(x)
+Fitting final li_only/svr: svr_scaled_0
+Fitting final li_only/krr: krr_scaled_0
+Fitting final li_only/dnn: dnn_scaled_0
+  final fit: epoch 1/2; training objective=1.456049
+  final fit: epoch 2/2; training objective=1.047047
+/workspace/scratch/864d95206efc/step6_tf_runtime/keras/src/backend/tensorflow/core.py:172: DeprecationWarning: __array__ implementation doesn't accept a copy keyword, so passing copy=False failed. __array__ must implement 'dtype' and 'copy' keyword arguments.
+  return np.array(x)
+test_all_six_models_are_selectable (test_step7_api.APITests.test_all_six_models_are_selectable) ... ok
+test_bad_host_loading_symmetry_and_formula_are_rejected (test_step7_api.APITests.test_bad_host_loading_symmetry_and_formula_are_rejected) ... ok
+test_batch_preserves_order_and_matches_individual_predictions (test_step7_api.APITests.test_batch_preserves_order_and_matches_individual_predictions) ... ok
+test_batch_size_bounds (test_step7_api.APITests.test_batch_size_bounds) ... ok
+test_configured_lifespan_loads_models (test_step7_api.APITests.test_configured_lifespan_loads_models) ... ok
+test_csv_contains_the_same_predictions (test_step7_api.APITests.test_csv_contains_the_same_predictions) ... ok
+test_default_ion_routing_and_transfer_notices (test_step7_api.APITests.test_default_ion_routing_and_transfer_notices) ... ok
+test_explicit_mixed_sodium_route_is_identified (test_step7_api.APITests.test_explicit_mixed_sodium_route_is_identified) ... ok
+test_failed_configuration_preserves_the_previous_active_run (test_step7_api.APITests.test_failed_configuration_preserves_the_previous_active_run) ... ok
+test_health_readiness_docs_and_status_page (test_step7_api.APITests.test_health_readiness_docs_and_status_page) ... ok
+test_invalid_batch_is_rejected_before_model_execution (test_step7_api.APITests.test_invalid_batch_is_rejected_before_model_execution) ... ok
+test_li_only_multivalent_route_is_rejected (test_step7_api.APITests.test_li_only_multivalent_route_is_rejected) ... ok
+test_model_catalog_uses_saved_evaluation (test_step7_api.APITests.test_model_catalog_uses_saved_evaluation) ... ok
+test_model_error_returns_no_substitute_prediction (test_step7_api.APITests.test_model_error_returns_no_substitute_prediction) ... ok
+test_prediction_equals_direct_saved_bundle (test_step7_api.APITests.test_prediction_equals_direct_saved_bundle) ... ok
+test_production_loader_rejects_synthetic_test_models (test_step7_api.APITests.test_production_loader_rejects_synthetic_test_models) ... ok
+test_profile_rejects_gaps_overlaps_and_inconsistent_shared_endpoints (test_step7_api.APITests.test_profile_rejects_gaps_overlaps_and_inconsistent_shared_endpoints) ... ok
+test_profile_returns_interval_loadings_without_interpolation (test_step7_api.APITests.test_profile_returns_interval_loadings_without_interpolation) ... ok
+test_strict_numbers_and_nonfinite_json_have_safe_errors (test_step7_api.APITests.test_strict_numbers_and_nonfinite_json_have_safe_errors) ... ok
+test_tampered_bundle_is_rejected (test_step7_api.APITests.test_tampered_bundle_is_rejected) ... ok
+test_target_and_provenance_are_not_accepted_as_predictors (test_step7_api.APITests.test_target_and_provenance_are_not_accepted_as_predictors) ... ok
+test_unconfigured_app_is_live_but_not_ready (test_step7_api.APITests.test_unconfigured_app_is_live_but_not_ready) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 9.060s
+
+OK

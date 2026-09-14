@@ -1,0 +1,444 @@
+{
+  "candidate": {
+    "id": "svr_pca_0",
+    "family": "svr",
+    "representation": "pca",
+    "parameters": {
+      "C": 10.0,
+      "gamma": 0.1,
+      "epsilon": 0.1
+    }
+  },
+  "folds": 10,
+  "mean_fold_mae_V": 0.8564609103765901,
+  "std_fold_mae_V": 0.05670518684389476,
+  "oof_metrics": {
+    "n": 3021,
+    "mae_V": 0.8564833242833992,
+    "rmse_V": 1.3656093184109108,
+    "r2": 0.1889773547531487,
+    "bias_V": -0.004923655227739047
+  },
+  "fold_results": [
+    {
+      "candidate": {
+        "id": "svr_pca_0",
+        "family": "svr",
+        "representation": "pca",
+        "parameters": {
+          "C": 10.0,
+          "gamma": 0.1,
+          "epsilon": 0.1
+        }
+      },
+      "fold": 0,
+      "metrics": {
+        "n": 303,
+        "mae_V": 0.9241733228466035,
+        "rmse_V": 1.4128196321117152,
+        "r2": 0.14108376082245666,
+        "bias_V": -0.034998834156767994
+      },
+      "training_rows": 2718,
+      "validation_rows": 303,
+      "training_groups": 1256,
+      "validation_groups": 140,
+      "group_overlap": 0,
+      "preprocessor_sha256": "6fc562f6dddc0af53aab357da12a991be1145b902e58a5c8a01c0e2f5b260ffd",
+      "training_row_uid_sha256": "67fdc7f1850b4de183fffaf2b7d76851dd4295313282223409e22005d6e867d4",
+      "elapsed_seconds": 1.045415700005833,
+      "regressor_info": {
+        "input_dimensions": 80,
+        "training_rows": 2718,
+        "seed": 2026,
+        "parameters": {
+          "C": 10.0,
+          "epsilon": 0.1
+        },
+        "target_transform": "none",
+        "resolved_gamma": 0.1
+      },
+      "files_sha256": {
+        "fold_00.npz": "de011533dbcacfb5be0177d623574c5594e94d42b0d263a7b8937f8075bff4bf"
+      }
+    },
+    {
+      "candidate": {
+        "id": "svr_pca_0",
+        "family": "svr",
+        "representation": "pca",
+        "parameters": {
+          "C": 10.0,
+          "gamma": 0.1,
+          "epsilon": 0.1
+        }
+      },
+      "fold": 1,
+      "metrics": {
+        "n": 302,
+        "mae_V": 0.7780614476574049,
+        "rmse_V": 1.0103759992094419,
+        "r2": 0.3109617704910459,
+        "bias_V": -0.0028932730989072184
+      },
+      "training_rows": 2719,
+      "validation_rows": 302,
+      "training_groups": 1257,
+      "validation_groups": 139,
+      "group_overlap": 0,
+      "preprocessor_sha256": "8c300bf961f401358dd77f584cd447d72b3f33f6d0dddd77a3365c61de7c752b",
+      "training_row_uid_sha256": "7eff508763da2d2e0d30620fc2a1a77ca8ef1b0c2fbbc25f49154d2d86ced59d",
+      "elapsed_seconds": 1.0132876999559812,
+      "regressor_info": {
+        "input_dimensions": 80,
+        "training_rows": 2719,
+        "seed": 2027,
+        "parameters": {
+          "C": 10.0,
+          "epsilon": 0.1
+        },
+        "target_transform": "none",
+        "resolved_gamma": 0.1
+      },
+      "files_sha256": {
+        "fold_01.npz": "704ed5f47cc59e2422d7d5405c94c160e460bcc997c47bac6607168e6dce6b5d"
+      }
+    },
+    {
+      "candidate": {
+        "id": "svr_pca_0",
+        "family": "svr",
+        "representation": "pca",
+        "parameters": {
+          "C": 10.0,
+          "gamma": 0.1,
+          "epsilon": 0.1
+        }
+      },
+      "fold": 2,
+      "metrics": {
+        "n": 302,
+        "mae_V": 0.813230674553979,
+        "rmse_V": 1.282776122438113,
+        "r2": 0.11671185263298356,
+        "bias_V": -0.08351074673639955
+      },
+      "training_rows": 2719,
+      "validation_rows": 302,
+      "training_groups": 1257,
+      "validation_groups": 139,
+      "group_overlap": 0,
+      "preprocessor_sha256": "ba5f3bb4004fd1a5986702d5e8616473b42932a320b26557551536ca36cba80e",
+      "training_row_uid_sha256": "a7f6462a8224c9dbed0d5777bd9f18eec8dde1f51db11571d6b8ca3e1cfa36b6",
+      "elapsed_seconds": 1.0885323000256903,
+      "regressor_info": {
+        "input_dimensions": 80,
+        "training_rows": 2719,
+        "seed": 2028,
+        "parameters": {
+          "C": 10.0,
+          "epsilon": 0.1
+        },
+        "target_transform": "none",
+        "resolved_gamma": 0.1
+      },
+      "files_sha256": {
+        "fold_02.npz": "0a71bf7ea3ea532943d21f2317d540e9d43f19b175a14d3d1ee043c498e73604"
+      }
+    },
+    {
+      "candidate": {
+        "id": "svr_pca_0",
+        "family": "svr",
+        "representation": "pca",
+        "parameters": {
+          "C": 10.0,
+          "gamma": 0.1,
+          "epsilon": 0.1
+        }
+      },
+      "fold": 3,
+      "metrics": {
+        "n": 302,
+        "mae_V": 0.8185710013703212,
+        "rmse_V": 1.263297502553454,
+        "r2": 0.2135618657045938,
+        "bias_V": -0.07950299691693852
+      },
+      "training_rows": 2719,
+      "validation_rows": 302,
+      "training_groups": 1257,
+      "validation_groups": 139,
+      "group_overlap": 0,
+      "preprocessor_sha256": "afadfcbb546d26a165de7ca7c614933e98c9f550da18559d3a93fd6da06e15ce",
+      "training_row_uid_sha256": "c42a91bbd7d6f830ee87e36ec69679fa5ecc45bad3cfe75dbe5ee7e8aeac76e7",
+      "elapsed_seconds": 1.0847864999668673,
+      "regressor_info": {
+        "input_dimensions": 80,
+        "training_rows": 2719,
+        "seed": 2029,
+        "parameters": {
+          "C": 10.0,
+          "epsilon": 0.1
+        },
+        "target_transform": "none",
+        "resolved_gamma": 0.1
+      },
+      "files_sha256": {
+        "fold_03.npz": "94b7cc28172ba96a25e8d0e87aa41a5d26202d93e1c522939a8c8ce95a716211"
+      }
+    },
+    {
+      "candidate": {
+        "id": "svr_pca_0",
+        "family": "svr",
+        "representation": "pca",
+        "parameters": {
+          "C": 10.0,
+          "gamma": 0.1,
+          "epsilon": 0.1
+        }
+      },
+      "fold": 4,
+      "metrics": {
+        "n": 302,
+        "mae_V": 0.8079981812738082,
+        "rmse_V": 1.0976971714046537,
+        "r2": 0.28606014781442224,
+        "bias_V": 0.13726601555247264
+      },
+      "training_rows": 2719,
+      "validation_rows": 302,
+      "training_groups": 1257,
+      "validation_groups": 139,
+      "group_overlap": 0,
+      "preprocessor_sha256": "b8bb78a13e8074a750bb1e9d9306c40ce1f4107deb204cc0f781a78f62eef520",
+      "training_row_uid_sha256": "eb19612b2f92042154078f73d258523068b0b5a393b178cd0e9a25e92a823c7e",
+      "elapsed_seconds": 1.1068213999969885,
+      "regressor_info": {
+        "input_dimensions": 80,
+        "training_rows": 2719,
+        "seed": 2030,
+        "parameters": {
+          "C": 10.0,
+          "epsilon": 0.1
+        },
+        "target_transform": "none",
+        "resolved_gamma": 0.1
+      },
+      "files_sha256": {
+        "fold_04.npz": "403a462601528fe0e3ae51e7413911ca722cfc2dd2f0abf37b99f9dedd9dfd49"
+      }
+    },
+    {
+      "candidate": {
+        "id": "svr_pca_0",
+        "family": "svr",
+        "representation": "pca",
+        "parameters": {
+          "C": 10.0,
+          "gamma": 0.1,
+          "epsilon": 0.1
+        }
+      },
+      "fold": 5,
+      "metrics": {
+        "n": 302,
+        "mae_V": 0.8237744559298789,
+        "rmse_V": 1.3154756028924954,
+        "r2": 0.3091212618575552,
+        "bias_V": 0.09271581189854357
+      },
+      "training_rows": 2719,
+      "validation_rows": 302,
+      "training_groups": 1256,
+      "validation_groups": 140,
+      "group_overlap": 0,
+      "preprocessor_sha256": "676928034de64a196efedae71fb2ec7281deefef8155f3493c2d5cdaa153adf2",
+      "training_row_uid_sha256": "8523cfcbce873c8d93d61dc8ac0c51706032f640af3b840bd262a413ab411735",
+      "elapsed_seconds": 0.9952022000215948,
+      "regressor_info": {
+        "input_dimensions": 80,
+        "training_rows": 2719,
+        "seed": 2031,
+        "parameters": {
+          "C": 10.0,
+          "epsilon": 0.1
+        },
+        "target_transform": "none",
+        "resolved_gamma": 0.1
+      },
+      "files_sha256": {
+        "fold_05.npz": "907a37ae0fe445bb133c23c91bd121fc9e6ca5ca7531830c43892822ec44229c"
+      }
+    },
+    {
+      "candidate": {
+        "id": "svr_pca_0",
+        "family": "svr",
+        "representation": "pca",
+        "parameters": {
+          "C": 10.0,
+          "gamma": 0.1,
+          "epsilon": 0.1
+        }
+      },
+      "fold": 6,
+      "metrics": {
+        "n": 302,
+        "mae_V": 0.8583507300826207,
+        "rmse_V": 1.9907116466641683,
+        "r2": 0.14240820817201272,
+        "bias_V": -0.11461368281011028
+      },
+      "training_rows": 2719,
+      "validation_rows": 302,
+      "training_groups": 1256,
+      "validation_groups": 140,
+      "group_overlap": 0,
+      "preprocessor_sha256": "a5e2d09d7a7d8cc0233a7b0815e30e5baf5b66b5d560cc66e72d954c96062d0a",
+      "training_row_uid_sha256": "a03bcad197ccf1f5b4436c3cddbf9d7be4f546b5eb8b4b84a740117cfcd3ccb8",
+      "elapsed_seconds": 1.114840299997013,
+      "regressor_info": {
+        "input_dimensions": 80,
+        "training_rows": 2719,
+        "seed": 2032,
+        "parameters": {
+          "C": 10.0,
+          "epsilon": 0.1
+        },
+        "target_transform": "none",
+        "resolved_gamma": 0.1
+      },
+      "files_sha256": {
+        "fold_06.npz": "159c220c5b15cf0d15e3d8cb237f9d91ae69e1e63ff8a7aae86df7d7c7198056"
+      }
+    },
+    {
+      "candidate": {
+        "id": "svr_pca_0",
+        "family": "svr",
+        "representation": "pca",
+        "parameters": {
+          "C": 10.0,
+          "gamma": 0.1,
+          "epsilon": 0.1
+        }
+      },
+      "fold": 7,
+      "metrics": {
+        "n": 302,
+        "mae_V": 0.9231706656258487,
+        "rmse_V": 1.2766837752639968,
+        "r2": 0.21765868451569537,
+        "bias_V": 0.1833318120291377
+      },
+      "training_rows": 2719,
+      "validation_rows": 302,
+      "training_groups": 1256,
+      "validation_groups": 140,
+      "group_overlap": 0,
+      "preprocessor_sha256": "d65eea0bcbff227842d32f5458b79bd54f73fedf93196d3dccb4a6f0ab30bf4b",
+      "training_row_uid_sha256": "61e8769c62f586b2965c5611c9439e9315c167dcf355077abac859518fc283b7",
+      "elapsed_seconds": 1.1044734999886714,
+      "regressor_info": {
+        "input_dimensions": 80,
+        "training_rows": 2719,
+        "seed": 2033,
+        "parameters": {
+          "C": 10.0,
+          "epsilon": 0.1
+        },
+        "target_transform": "none",
+        "resolved_gamma": 0.1
+      },
+      "files_sha256": {
+        "fold_07.npz": "93de7b95d15633ac0e2bb85b142973cfd4511b209a38f981137677f8dc921b51"
+      }
+    },
+    {
+      "candidate": {
+        "id": "svr_pca_0",
+        "family": "svr",
+        "representation": "pca",
+        "parameters": {
+          "C": 10.0,
+          "gamma": 0.1,
+          "epsilon": 0.1
+        }
+      },
+      "fold": 8,
+      "metrics": {
+        "n": 302,
+        "mae_V": 0.8804667691309139,
+        "rmse_V": 1.2970290482857019,
+        "r2": 0.08158553707316174,
+        "bias_V": -0.07198928062479594
+      },
+      "training_rows": 2719,
+      "validation_rows": 302,
+      "training_groups": 1256,
+      "validation_groups": 140,
+      "group_overlap": 0,
+      "preprocessor_sha256": "5132ba4c2699b1c099047efd4ccc416851a4ebae1cee0396cbebb450bc9a8369",
+      "training_row_uid_sha256": "e311a73d368b037f39cce93139f0f213f790018582f4ec7f60e5b6706dab49f2",
+      "elapsed_seconds": 1.229521700006444,
+      "regressor_info": {
+        "input_dimensions": 80,
+        "training_rows": 2719,
+        "seed": 2034,
+        "parameters": {
+          "C": 10.0,
+          "epsilon": 0.1
+        },
+        "target_transform": "none",
+        "resolved_gamma": 0.1
+      },
+      "files_sha256": {
+        "fold_08.npz": "7f2398f618f0a444834495c415230f1bce44e940532b3a9b3885a902457ea773"
+      }
+    },
+    {
+      "candidate": {
+        "id": "svr_pca_0",
+        "family": "svr",
+        "representation": "pca",
+        "parameters": {
+          "C": 10.0,
+          "gamma": 0.1,
+          "epsilon": 0.1
+        }
+      },
+      "fold": 9,
+      "metrics": {
+        "n": 302,
+        "mae_V": 0.9368118552945232,
+        "rmse_V": 1.4763284921665285,
+        "r2": 0.07698492376332733,
+        "bias_V": -0.07494179072842934
+      },
+      "training_rows": 2719,
+      "validation_rows": 302,
+      "training_groups": 1256,
+      "validation_groups": 140,
+      "group_overlap": 0,
+      "preprocessor_sha256": "730ac7068b8fb7c7e26782741e60aa7557086f6702217864f37db769c25bb6aa",
+      "training_row_uid_sha256": "62b4eeb85d2632a937434eca10ab043a87d7152b42337c9077135780e81504ed",
+      "elapsed_seconds": 0.9848367000231519,
+      "regressor_info": {
+        "input_dimensions": 80,
+        "training_rows": 2719,
+        "seed": 2035,
+        "parameters": {
+          "C": 10.0,
+          "epsilon": 0.1
+        },
+        "target_transform": "none",
+        "resolved_gamma": 0.1
+      },
+      "files_sha256": {
+        "fold_09.npz": "5e9811826e72931eec69d12f0bd775399ac32bb9a5330210f22645a60dad1755"
+      }
+    }
+  ]
+}

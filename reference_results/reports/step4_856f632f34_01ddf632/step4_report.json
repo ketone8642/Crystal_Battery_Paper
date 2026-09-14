@@ -1,0 +1,332 @@
+{
+  "stage": "step4_validation_and_grouped_splitting",
+  "settings": {
+    "seed": 42,
+    "holdout_fraction": 0.1,
+    "cv_folds": 10,
+    "fraction_tolerance": 1e-06,
+    "voltage_review_low": -3.0,
+    "voltage_review_high": 10.0,
+    "label_conflict_tolerance": 1e-08
+  },
+  "input_rows": 7461,
+  "composition_checks_passed": 7461,
+  "symmetry_checks_passed": 7419,
+  "eligible_rows": 7419,
+  "quarantined_rows": 42,
+  "issue_counts": {
+    "missing_symmetry_charge": 25,
+    "missing_symmetry_discharge": 17
+  },
+  "negative_voltage_rows": 647,
+  "priority_voltage_review_rows": 14,
+  "negative_voltage_eligible_rows": 642,
+  "priority_voltage_review_eligible_rows": 14,
+  "all_voltage_labels_preserved": true,
+  "models_trained": false,
+  "scaling_or_pca_fitted": false,
+  "conflicting_endpoint_metadata_ids": [],
+  "exact_duplicate_rows_excluded": 0,
+  "repeated_endpoint_reaction_groups": 0,
+  "conflicting_endpoint_reaction_label_groups": 0,
+  "connected_groups_all_rows": 3013,
+  "largest_group_rows": 121,
+  "partitions": {
+    "development": {
+      "rows": 6140,
+      "rows_by_ion": {
+        "Al": 127,
+        "Ca": 618,
+        "Li": 3021,
+        "Mg": 1815,
+        "Y": 144,
+        "Zn": 415
+      },
+      "groups": 2604
+    },
+    "holdout": {
+      "rows": 630,
+      "rows_by_ion": {
+        "Al": 20,
+        "Ca": 49,
+        "Li": 324,
+        "Mg": 191,
+        "Y": 18,
+        "Zn": 28
+      },
+      "groups": 290
+    },
+    "held_out_Na": {
+      "rows": 472,
+      "rows_by_ion": {
+        "Na": 472
+      },
+      "groups": 311
+    },
+    "held_out_K": {
+      "rows": 177,
+      "rows_by_ion": {
+        "K": 177
+      },
+      "groups": 141
+    },
+    "quarantine": {
+      "rows": 42,
+      "rows_by_ion": {
+        "Al": 1,
+        "Ca": 4,
+        "K": 1,
+        "Li": 9,
+        "Mg": 19,
+        "Na": 3,
+        "Y": 1,
+        "Zn": 4
+      },
+      "groups": 32
+    }
+  },
+  "split_checks": {
+    "mixed_ions": {
+      "development_rows": 6140,
+      "holdout_rows": 630,
+      "holdout_overlap": {
+        "shared_groups": 0,
+        "shared_source_records": 0,
+        "shared_endpoint_ids": 0,
+        "shared_host_compositions": 0
+      },
+      "cross_validation": [
+        {
+          "fold": 0,
+          "train_rows": 5526,
+          "validation_rows": 614,
+          "shared_groups": 0,
+          "shared_source_records": 0,
+          "shared_endpoint_ids": 0,
+          "shared_host_compositions": 0
+        },
+        {
+          "fold": 1,
+          "train_rows": 5526,
+          "validation_rows": 614,
+          "shared_groups": 0,
+          "shared_source_records": 0,
+          "shared_endpoint_ids": 0,
+          "shared_host_compositions": 0
+        },
+        {
+          "fold": 2,
+          "train_rows": 5526,
+          "validation_rows": 614,
+          "shared_groups": 0,
+          "shared_source_records": 0,
+          "shared_endpoint_ids": 0,
+          "shared_host_compositions": 0
+        },
+        {
+          "fold": 3,
+          "train_rows": 5526,
+          "validation_rows": 614,
+          "shared_groups": 0,
+          "shared_source_records": 0,
+          "shared_endpoint_ids": 0,
+          "shared_host_compositions": 0
+        },
+        {
+          "fold": 4,
+          "train_rows": 5526,
+          "validation_rows": 614,
+          "shared_groups": 0,
+          "shared_source_records": 0,
+          "shared_endpoint_ids": 0,
+          "shared_host_compositions": 0
+        },
+        {
+          "fold": 5,
+          "train_rows": 5526,
+          "validation_rows": 614,
+          "shared_groups": 0,
+          "shared_source_records": 0,
+          "shared_endpoint_ids": 0,
+          "shared_host_compositions": 0
+        },
+        {
+          "fold": 6,
+          "train_rows": 5526,
+          "validation_rows": 614,
+          "shared_groups": 0,
+          "shared_source_records": 0,
+          "shared_endpoint_ids": 0,
+          "shared_host_compositions": 0
+        },
+        {
+          "fold": 7,
+          "train_rows": 5526,
+          "validation_rows": 614,
+          "shared_groups": 0,
+          "shared_source_records": 0,
+          "shared_endpoint_ids": 0,
+          "shared_host_compositions": 0
+        },
+        {
+          "fold": 8,
+          "train_rows": 5526,
+          "validation_rows": 614,
+          "shared_groups": 0,
+          "shared_source_records": 0,
+          "shared_endpoint_ids": 0,
+          "shared_host_compositions": 0
+        },
+        {
+          "fold": 9,
+          "train_rows": 5526,
+          "validation_rows": 614,
+          "shared_groups": 0,
+          "shared_source_records": 0,
+          "shared_endpoint_ids": 0,
+          "shared_host_compositions": 0
+        }
+      ]
+    },
+    "li_only": {
+      "development_rows": 3021,
+      "holdout_rows": 324,
+      "holdout_overlap": {
+        "shared_groups": 0,
+        "shared_source_records": 0,
+        "shared_endpoint_ids": 0,
+        "shared_host_compositions": 0
+      },
+      "cross_validation": [
+        {
+          "fold": 0,
+          "train_rows": 2718,
+          "validation_rows": 303,
+          "shared_groups": 0,
+          "shared_source_records": 0,
+          "shared_endpoint_ids": 0,
+          "shared_host_compositions": 0
+        },
+        {
+          "fold": 1,
+          "train_rows": 2719,
+          "validation_rows": 302,
+          "shared_groups": 0,
+          "shared_source_records": 0,
+          "shared_endpoint_ids": 0,
+          "shared_host_compositions": 0
+        },
+        {
+          "fold": 2,
+          "train_rows": 2719,
+          "validation_rows": 302,
+          "shared_groups": 0,
+          "shared_source_records": 0,
+          "shared_endpoint_ids": 0,
+          "shared_host_compositions": 0
+        },
+        {
+          "fold": 3,
+          "train_rows": 2719,
+          "validation_rows": 302,
+          "shared_groups": 0,
+          "shared_source_records": 0,
+          "shared_endpoint_ids": 0,
+          "shared_host_compositions": 0
+        },
+        {
+          "fold": 4,
+          "train_rows": 2719,
+          "validation_rows": 302,
+          "shared_groups": 0,
+          "shared_source_records": 0,
+          "shared_endpoint_ids": 0,
+          "shared_host_compositions": 0
+        },
+        {
+          "fold": 5,
+          "train_rows": 2719,
+          "validation_rows": 302,
+          "shared_groups": 0,
+          "shared_source_records": 0,
+          "shared_endpoint_ids": 0,
+          "shared_host_compositions": 0
+        },
+        {
+          "fold": 6,
+          "train_rows": 2719,
+          "validation_rows": 302,
+          "shared_groups": 0,
+          "shared_source_records": 0,
+          "shared_endpoint_ids": 0,
+          "shared_host_compositions": 0
+        },
+        {
+          "fold": 7,
+          "train_rows": 2719,
+          "validation_rows": 302,
+          "shared_groups": 0,
+          "shared_source_records": 0,
+          "shared_endpoint_ids": 0,
+          "shared_host_compositions": 0
+        },
+        {
+          "fold": 8,
+          "train_rows": 2719,
+          "validation_rows": 302,
+          "shared_groups": 0,
+          "shared_source_records": 0,
+          "shared_endpoint_ids": 0,
+          "shared_host_compositions": 0
+        },
+        {
+          "fold": 9,
+          "train_rows": 2719,
+          "validation_rows": 302,
+          "shared_groups": 0,
+          "shared_source_records": 0,
+          "shared_endpoint_ids": 0,
+          "shared_host_compositions": 0
+        }
+      ]
+    }
+  },
+  "transfer_group_overlap": {
+    "Na": {
+      "mixed": {
+        "shares_development_group": 343,
+        "new_group_relative_to_development": 129
+      },
+      "li": {
+        "shares_development_group": 325,
+        "new_group_relative_to_development": 147
+      }
+    },
+    "K": {
+      "mixed": {
+        "shares_development_group": 120,
+        "new_group_relative_to_development": 57
+      },
+      "li": {
+        "shares_development_group": 107,
+        "new_group_relative_to_development": 70
+      }
+    }
+  },
+  "limitations": [
+    "Formula checks establish composition consistency, not oxidation-state feasibility, crystal stability, or label correctness.",
+    "Original DFT energies, reference-metal energies, structures and calculation settings were not supplied in this CSV; voltages cannot be independently recomputed here.",
+    "Symmetry is checked for presence and space-group/crystal-system consistency, not independently recalculated from structures.",
+    "The host key groups identical reduced non-working-ion composition, including polymorphs; it does not capture every chemically similar family.",
+    "Na and K are held-out ions from the same Materials Project retrieval, not an independent experimental dataset or the original paper's 32-material Na set.",
+    "Transfer rows may share hosts/endpoints with development; report known-group and new-group transfer separately.",
+    "Raw CSV labels were inspected for data-quality review before splitting; no performance-based filtering or split selection was performed.",
+    "Source database version continuity could not be established after metadata recovery.",
+    "Priority voltage bounds are descriptive review settings, not physical validity limits or exclusion criteria."
+  ],
+  "run_id": "step4_856f632f34_01ddf632",
+  "input_file": "voltage_intervals.csv",
+  "input_sha256": "856f632f34bb6cadbab568c7484467ee57bd915af294a07e5971cbc60249f0da",
+  "algorithm_version": "step4-v1",
+  "created_at_utc": "2026-09-13T17:37:17.039146+00:00"
+}

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Explore computed battery electrode voltages with trained composition and symmetry models.">
+  <title>Battery Electrode Voltage Prediction</title>
+  <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/static/styles.css?v=8.1">
+  <script type="module" src="/static/app.js?v=8.1"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to workspace</a>
+<header class="topbar"><div class="shell header-inner">
+  <a class="brand" href="/" aria-label="Battery Electrode Voltage Prediction home"><span class="brand-mark" aria-hidden="true">V</span><span>Electrode <strong>Lab</strong><small>BATTERY VOLTAGE PREDICTION</small></span></a>
+  <div class="connection"><span id="status-pill" class="status-pill" role="status">Connecting to models</span><button id="reconnect" class="text-button" type="button">Reconnect</button></div>
+</div></header>
+<div id="connection-error" class="shell connection-error" role="alert" hidden></div>
+<div id="test-banner" class="shell notice" hidden>Software verification models are active. These predictions are synthetic test outputs, not research results.</div>
+<nav class="shell tabbar" aria-label="Workspace"><div role="tablist" aria-label="Prediction tools">
+  <button id="tab-single" role="tab" aria-selected="true" aria-controls="panel-single" data-tab="single" tabindex="0">Single prediction</button>
+  <button id="tab-batch" role="tab" aria-selected="false" aria-controls="panel-batch" data-tab="batch" tabindex="-1">Batch predictions</button>
+  <button id="tab-profile" role="tab" aria-selected="false" aria-controls="panel-profile" data-tab="profile" tabindex="-1">Voltage profile</button>
+  <button id="tab-models" role="tab" aria-selected="false" aria-controls="panel-models" data-tab="models" tabindex="-1">Model results</button>
+</div><a href="/docs" class="docs-link" target="_blank" rel="noopener">API docs <span aria-hidden="true">↗</span></a></nav>
+<main id="main" class="shell">
+<section id="panel-single" role="tabpanel" aria-labelledby="tab-single">
+  <div class="page-heading"><div><p class="eyebrow">01 / REACTION SCREENING</p><h1>From composition<br>to average voltage.</h1><p class="subtitle">Describe both endpoints of an insertion reaction.<br class="desktop-break"> Explore a prediction from your trained models.</p></div><div class="heading-note"><span class="tiny-rule"></span>Composition + symmetry<br>Computed reference voltages</div></div>
+  <div class="prediction-layout">
+    <form id="single-form" class="card input-card">
+      <div class="card-heading"><h2>Reaction inputs</h2><button id="load-example" class="text-button" type="button">Load FePO₄ example</button></div>
+      <label for="single-ion">Working ion</label><select id="single-ion" name="working_ion"><option>Li</option><option>Na</option><option>K</option><option>Mg</option><option>Ca</option><option>Zn</option><option>Al</option><option>Y</option></select>
+      <div class="endpoints">
+        <fieldset><legend><span class="endpoint-dot"></span>Charged endpoint</legend><p class="field-note">Lower ion loading</p><label for="charge-formula">Chemical formula</label><input id="charge-formula" name="formula_charge" placeholder="e.g. FePO4" value="FePO4" required maxlength="256" autocomplete="off" spellcheck="false"><label for="charge-sg">Space-group number</label><input id="charge-sg" type="number" min="1" max="230" step="1" value="62" required inputmode="numeric"><p id="charge-system" class="system-label" aria-live="polite">Orthorhombic</p></fieldset>
+        <fieldset><legend><span class="endpoint-dot filled"></span>Discharged endpoint</legend><p class="field-note">Higher ion loading</p><label for="discharge-formula">Chemical formula</label><input id="discharge-formula" name="formula_discharge" placeholder="e.g. LiFePO4" value="LiFePO4" required maxlength="256" autocomplete="off" spellcheck="false"><label for="discharge-sg">Space-group number</label><input id="discharge-sg" type="number" min="1" max="230" step="1" value="62" required inputmode="numeric"><p id="discharge-system" class="system-label" aria-live="polite">Orthorhombic</p></fieldset>
+      </div>
+      <p class="help">Use each endpoint’s known symmetry. Crystal systems are derived from space-group numbers; ion concentrations are calculated from the formulas.</p>
+      <details class="model-settings"><summary>Model settings <span>Automatic by default</span></summary><div class="two-fields"><div><label for="single-family">Model family</label><select id="single-family"><option value="auto">Automatic · CV choice</option value="dnn">DNN</option><option value="svr">SVR</option><option value="krr">KRR</option></select></div><div><label for="single-population">Training population</label><select id="single-population"><option value="auto">Automatic · ion routing</option value="li_only">Li only</option><option value="mixed_ions">Mixed ions</option></select></div></div></details>
+      <p id="single-routing" class="routing-note"></p>
+      <div id="single-error" class="error-box" role="alert" hidden></div>
+      <button id="single-submit" class="primary" type="submit" data-needs-ready data-label="Predict voltage" disabled>Predict voltage <span aria-hidden="true">→</span></button>
+    </form>
+    <div class="result-column">
+      <div id="single-empty" class="card empty-result"><div class="empty-symbol" aria-hidden="true">V</div><p class="eyebrow">YOUR PREDICTION</p><h2>A voltage, with context.</h2><p>Run a reaction to see its average voltage,<br>the selected model, and evaluation context.</p><div class="empty-interval"><span>Charged</span><span aria-hidden="true">→</span><span>Discharged</span></div><p class="caption">Estimates use computed training labels.<br>They do not certify experimental performance.</p></div>
+      <article id="single-result" class="card result-card" aria-live="polite" hidden>
+        <div class="card-heading"><p class="eyebrow">PREDICTED AVERAGE VOLTAGE</p><span id="result-ion" class="ion-badge"></span></div>
+        <div class="voltage-number"><span id="result-voltage"></span><span class="unit">V</span></div><p id="result-reaction" class="reaction-text"></p>
+        <div id="result-tags" class="tag-row"></div>
+        <dl class="result-stats"><div><dt>Insertion interval</dt><dd id="result-loading"></dd><small>ions per reduced host</small></div><div><dt id="result-error-label">Reference holdout MAE</dt><dd id="result-error-value"></dd><small>dataset average, not an error bound</small></div></dl>
+        <details class="concentration-details"><summary>Concentration and model details</summary><dl id="result-details" class="detail-list"></dl></details>
+        <div id="single-notices" class="prediction-notices"></div>
+        <p class="caption">No calibrated uncertainty interval is available. Verify promising candidates with reference calculations or experiments.</p>
+        <div class="result-actions"><button id="single-csv" class="secondary" type="button">Download CSV</button><button id="single-json" class="text-button" type="button">Download JSON</button></div>
+      </article>
+      <aside class="context-note"><span aria-hidden="true">i</span><p><strong>One row, one insertion interval.</strong> Endpoint formulas must share the same host, with more working ions at the discharged endpoint.</p></aside>
+    </div>
+  </div>
+</section>
+<section id="panel-batch" role="tabpanel" aria-labelledby="tab-batch" hidden>
+  <div class="page-heading"><div><p class="eyebrow">02 / MULTIPLE REACTIONS</p><h1>Screen a set of reactions.</h1><p class="subtitle">Upload up to 128 reactions using the input template.<br>Download predictions with their model and provenance.</p></div></div>
+  <form id="batch-form" class="card">
+    <div class="card-heading"><h2>Upload reaction CSV</h2><button id="batch-template" class="text-button" type="button">Download input template ↓</button></div>
+    <label class="upload-zone" for="batch-file"><span class="upload-icon" aria-hidden="true">↑</span><strong>Choose a CSV file</strong><span>Up to 128 rows · maximum 1 MB</span><input id="batch-file" type="file" accept=".csv,text/csv"></label>
+    <div class="toolbar"><p id="batch-file-note" class="help">The template includes two LiFePO₄ requests with different model choices.</p><button id="batch-submit" class="primary compact" type="submit" data-needs-ready data-label="Predict batch" disabled>Predict batch →</button></div>
+    <div id="batch-error" class="error-box" role="alert" hidden></div>
+  </form>
+  <div id="batch-results" class="card results-section" hidden><div class="card-heading"><div><h2>Batch results</h2><p id="batch-summary" class="help"></p></div><button id="batch-csv" class="secondary" type="button">Download results CSV</button></div><div id="batch-table" class="table-wrap" tabindex="0" aria-label="Batch predictions table"></div><p class="caption">Notices are included in the CSV. Dataset-level errors do not provide a confidence interval for each prediction.</p></div>
+</section>
+<section id="panel-profile" role="tabpanel" aria-labelledby="tab-profile" hidden>
+  <div class="page-heading"><div><p class="eyebrow">03 / INSERTION INTERVALS</p><h1>Explore a voltage profile.</h1><p class="subtitle">Enter at least three states of the same host, in increasing ion loading.<br>Each pair of adjacent states defines one predicted interval.</p></div></div>
+  <form id="profile-form" class="card"><div class="card-heading"><h2>Endpoint sequence</h2><span class="subtle-label">3–51 states</span></div>
+    <div class="three-fields"><div><label for="profile-ion">Working ion</label><select id="profile-ion"><option>Li</option><option>Na</option><option>K</option><option>Mg</option><option>Ca</option><option>Zn</option><option>Al</option><option>Y</option></select></div><div><label for="profile-family">Model family</label><select id="profile-family"><option value="auto">Automatic · CV choice</option><option value="dnn">DNN</option><option value="svr">SVR</option><option value="krr">KRR</option></select></div><div><label for="profile-population">Training population</label><select id="profile-population"><option value="auto">Automatic · ion routing</option><option value="li_only">Li only</option><option value="mixed_ions">Mixed ions</option></select></div></div>
+    <div id="profile-states" class="profile-states"></div>
+    <div class="toolbar"><button id="add-state" type="button" class="secondary">+ Add endpoint</button><button id="profile-submit" type="submit" class="primary compact" data-needs-ready data-label="Predict profile" disabled>Predict profile →</button></div>
+    <p class="help">Use physically justified compositions and symmetry for your material. The app checks composition consistency; it does not establish whether the supplied phases are stable.</p>
+    <div id="profile-error" class="error-box" role="alert" hidden></div>
+  </form>
+  <div id="profile-results" class="card results-section" hidden><div class="card-heading"><div><h2>Predicted voltage profile</h2><p id="profile-summary" class="help"></p></div><button id="profile-csv" class="secondary" type="button">Download intervals CSV</button></div><div id="profile-chart" class="profile-chart"></div><p class="chart-note">Each horizontal segment is an interval average. Dashed joins guide the eye; they do not describe a calculated transition path.</p><div id="profile-table" class="table-wrap" tabindex="0" aria-label="Profile interval predictions"></div><div id="profile-notices" class="prediction-notices"></div></div>
+</section>
+<section id="panel-models" role="tabpanel" aria-labelledby="tab-models" hidden>
+  <div class="page-heading"><div><p class="eyebrow">04 / MODEL EVALUATION</p><h1>Know the models behind<br>the predictions.</h1><p class="subtitle">Results from your completed training run.<br>Model family selection uses development cross-validation.</p></div></div>
+  <div id="model-populations" class="model-populations"></div>
+  <div class="card"><div class="card-heading"><h2>Saved evaluation results</h2><span class="subtle-label">MAE in volts · lower is better</span></div><div id="models-table" class="table-wrap" tabindex="0" aria-label="Saved model evaluation results"><p>Connect to the model service to load results.</p></div><p class="caption">The populations have different holdout sets. Na/K are held-out ions from the same database, and may share host groups with development data.</p><div id="baseline-summary" class="baseline-summary"></div></div>
+  <div class="card method-card"><h2>How to read a prediction</h2><div class="three-fields"><div><h3>Validation precedes testing</h3><p>Each candidate uses training-only preprocessing within grouped CV. Final model choices were frozen before holdout evaluation.</p></div><div><h3>Transfer needs care</h3><p>Na and K are absent from the training ions. Their predictions are transfer estimates without fine-tuning or calibrated uncertainty.</p></div><div><h3>An adaptation of the paper</h3><p>The project uses 740 composition and symmetry features. Atomic coordinates and the paper’s complete original feature definition are not included.</p></div></div><p id="active-run" class="run-label"></p></div>
+</section>
+</main>
+<footer class="shell footer"><span>Electrode Lab · Research workspace</span><span>Computed voltage estimates · Local model inference</span></footer>
+</body></html>

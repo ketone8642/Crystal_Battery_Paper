@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Battery Electrode Voltage Prediction</title>
+<style>
+body{font:17px/1.6 system-ui,sans-serif;background:#f5f7fa;color:#182735;margin:0;padding:48px 24px}
+main{max-width:720px;margin:auto;background:white;padding:32px;border:1px solid #d7e0e8;border-radius:12px}
+h1{font-size:30px;line-height:1.2}a{color:#005e87}#status{padding:16px;background:#eef4f8;border-radius:6px}
+</style>
+</head>
+<body><main>
+<p>STEP 7 · PREDICTION API</p><h1>Battery Electrode Voltage Prediction</h1>
+<p id="status" role="status">Checking model availability…</p>
+<p>Use the API documentation to submit an electrode reaction and view its predicted average voltage.</p>
+<p><a href="/docs">Open API documentation</a> · <a href="/models">View model information</a> · <a href="/health">View server status</a></p>
+<p>The prediction form and voltage-profile charts will be added in Step 8.</p>
+</main><script>
+fetch('/health').then(r=>{if(!r.ok)throw new Error();return r.json()}).then(s=>{
+ document.getElementById('status').textContent=s.model_loaded
+ ?'Prediction API ready. '+s.loaded_models+' models loaded from '+s.run_id+'.'
+ :s.message;
+}).catch(()=>{document.getElementById('status').textContent='Unable to reach the API. Check that the server is running.'});
+</script></body></html>

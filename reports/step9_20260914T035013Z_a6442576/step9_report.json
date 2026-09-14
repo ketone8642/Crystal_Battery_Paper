@@ -1,0 +1,1821 @@
+{
+  "status": "automated_checks_passed",
+  "checks": [
+    {
+      "name": "Six saved models are ready",
+      "status": "passed"
+    },
+    {
+      "name": "Model catalog and CV selections agree",
+      "status": "passed"
+    },
+    {
+      "name": "Four browser sections, module assets and API schema are available",
+      "status": "passed"
+    },
+    {
+      "name": "Default FePO4 prediction has correct routing and concentrations",
+      "status": "passed"
+    },
+    {
+      "name": "All six saved model choices produce finite predictions",
+      "status": "passed"
+    },
+    {
+      "name": "Batch results preserve order and agree with individual inference",
+      "status": "passed"
+    },
+    {
+      "name": "API CSV download agrees with JSON predictions",
+      "status": "passed"
+    },
+    {
+      "name": "Dataset carbon profile returns two contiguous interval averages",
+      "status": "passed"
+    },
+    {
+      "name": "Invalid host, symmetry, concentration, batch and profile inputs are rejected",
+      "status": "passed"
+    }
+  ],
+  "model_data_source": "Materials Project computed insertion voltages",
+  "scope": "Application acceptance checks using existing saved models; no fitting, tuning or accuracy reevaluation.",
+  "browser_interaction_checked_by_this_script": false,
+  "pending_manual_checks": [
+    "Chrome batch upload/download",
+    "Chrome carbon-profile chart",
+    "Chrome model-results tab"
+  ],
+  "run_id": "step6_b8e6065bfc4e",
+  "saved_evaluation_catalog": {
+    "run_id": "step6_b8e6065bfc4e",
+    "models": [
+      {
+        "family": "svr",
+        "training_population": "mixed_ions",
+        "candidate_id": "svr_scaled_1",
+        "representation": "scaled",
+        "training_rows": 6140,
+        "training_ions": [
+          "Al",
+          "Ca",
+          "Li",
+          "Mg",
+          "Y",
+          "Zn"
+        ],
+        "cv_mean_mae_V": 0.6729193549929893,
+        "selected_by_cv": false,
+        "holdout": {
+          "all": {
+            "n": 630,
+            "mae_V": 0.6972763405947005,
+            "rmse_V": 1.0427502994124502,
+            "r2": 0.6562248516776286,
+            "bias_V": 0.01563661137717507
+          },
+          "per_ion": {
+            "Al": {
+              "n": 20,
+              "mae_V": 0.8522280760916295,
+              "rmse_V": 1.1176311954321079,
+              "r2": 0.3251172316507065,
+              "bias_V": 0.13103002300047314
+            },
+            "Ca": {
+              "n": 49,
+              "mae_V": 0.7336635049230547,
+              "rmse_V": 1.0399620142901824,
+              "r2": 0.5322717830435038,
+              "bias_V": 0.13889652811653
+            },
+            "Li": {
+              "n": 324,
+              "mae_V": 0.7534045559884748,
+              "rmse_V": 1.1664727625773479,
+              "r2": 0.37154631828250495,
+              "bias_V": -0.16426405991978624
+            },
+            "Mg": {
+              "n": 191,
+              "mae_V": 0.6281192598780914,
+              "rmse_V": 0.8722022298116082,
+              "r2": 0.6091338063464875,
+              "bias_V": 0.24201672775760782
+            },
+            "Y": {
+              "n": 18,
+              "mae_V": 0.34732332611936995,
+              "rmse_V": 0.4469929400928883,
+              "r2": 0.8250641397456486,
+              "bias_V": 0.04503165914592698
+            },
+            "Zn": {
+              "n": 28,
+              "mae_V": 0.570155238016752,
+              "rmse_V": 0.7858038414248925,
+              "r2": 0.4580898829999689,
+              "bias_V": 0.23608304919935083
+            }
+          },
+          "negative_reference_voltage": {
+            "n": 78,
+            "mae_V": 1.0014759365910872,
+            "rmse_V": 1.2917357784409833,
+            "r2": -4.740352288022193,
+            "bias_V": 0.9774373201760372
+          },
+          "priority_review_reference_voltage": {
+            "n": 1,
+            "mae_V": 11.843601088236815,
+            "rmse_V": 11.843601088236815,
+            "r2": null,
+            "bias_V": -11.843601088236815
+          },
+          "support_diagnostics": {
+            "rows_with_changed_training_constant_features": 12,
+            "changed_training_constant_feature_names": [
+              "charge_atom_fraction_Pm",
+              "charge_atom_fraction_Pu",
+              "discharge_atom_fraction_Pm",
+              "discharge_atom_fraction_Pu",
+              "charge_spacegroup_032",
+              "charge_spacegroup_053",
+              "charge_spacegroup_096",
+              "charge_spacegroup_097",
+              "charge_spacegroup_181",
+              "charge_spacegroup_223",
+              "discharge_spacegroup_051",
+              "discharge_spacegroup_152",
+              "discharge_spacegroup_181",
+              "discharge_spacegroup_220",
+              "discharge_spacegroup_223"
+            ]
+          }
+        },
+        "held_out_Na": {
+          "all": {
+            "n": 472,
+            "mae_V": 0.9115471836485961,
+            "rmse_V": 1.121851283635572,
+            "r2": 0.31591363800470285,
+            "bias_V": -0.6233307905494796
+          },
+          "per_ion": {
+            "Na": {
+              "n": 472,
+              "mae_V": 0.9115471836485961,
+              "rmse_V": 1.121851283635572,
+              "r2": 0.31591363800470285,
+              "bias_V": -0.6233307905494796
+            }
+          },
+          "negative_reference_voltage": {
+            "n": 13,
+            "mae_V": 1.7771915599760464,
+            "rmse_V": 1.8918848543540987,
+            "r2": -10.095625657341726,
+            "bias_V": 1.7771915599760464
+          },
+          "priority_review_reference_voltage": {
+            "n": 0,
+            "mae_V": null,
+            "rmse_V": null,
+            "r2": null,
+            "bias_V": null
+          },
+          "known_development_group": {
+            "n": 343,
+            "mae_V": 0.8942267224881613,
+            "rmse_V": 1.0938940254714336,
+            "r2": 0.38268579409365255,
+            "bias_V": -0.6413375816931911
+          },
+          "new_development_group": {
+            "n": 129,
+            "mae_V": 0.9576008129356436,
+            "rmse_V": 1.193004555508099,
+            "r2": 0.050563581208760366,
+            "bias_V": -0.5754522683611615
+          },
+          "support_diagnostics": {
+            "rows_with_changed_training_constant_features": 472,
+            "changed_training_constant_feature_names": [
+              "working_ion_Na",
+              "discharge_spacegroup_054",
+              "discharge_spacegroup_086",
+              "discharge_spacegroup_205"
+            ]
+          }
+        },
+        "held_out_K": {
+          "all": {
+            "n": 177,
+            "mae_V": 1.3500125393378093,
+            "rmse_V": 1.5673920211147048,
+            "r2": 0.09475874251013816,
+            "bias_V": -0.874847929811672
+          },
+          "per_ion": {
+            "K": {
+              "n": 177,
+              "mae_V": 1.3500125393378093,
+              "rmse_V": 1.5673920211147048,
+              "r2": 0.09475874251013816,
+              "bias_V": -0.874847929811672
+            }
+          },
+          "negative_reference_voltage": {
+            "n": 11,
+            "mae_V": 2.2366559269173276,
+            "rmse_V": 2.3499538488043132,
+            "r2": -9.824375377035024,
+            "bias_V": 2.2366559269173276
+          },
+          "priority_review_reference_voltage": {
+            "n": 0,
+            "mae_V": null,
+            "rmse_V": null,
+            "r2": null,
+            "bias_V": null
+          },
+          "known_development_group": {
+            "n": 120,
+            "mae_V": 1.413344770238355,
+            "rmse_V": 1.612447469349754,
+            "r2": 0.1997830272008836,
+            "bias_V": -0.8117996562139541
+          },
+          "new_development_group": {
+            "n": 57,
+            "mae_V": 1.216681526915608,
+            "rmse_V": 1.4680254096985499,
+            "r2": -0.36293305985059066,
+            "bias_V": -1.0075811373858155
+          },
+          "support_diagnostics": {
+            "rows_with_changed_training_constant_features": 177,
+            "changed_training_constant_feature_names": [
+              "working_ion_K",
+              "charge_spacegroup_066",
+              "charge_spacegroup_201",
+              "charge_spacegroup_223",
+              "discharge_spacegroup_032",
+              "discharge_spacegroup_048",
+              "discharge_spacegroup_086",
+              "discharge_spacegroup_127",
+              "discharge_spacegroup_223"
+            ]
+          }
+        }
+      },
+      {
+        "family": "krr",
+        "training_population": "mixed_ions",
+        "candidate_id": "krr_scaled_1",
+        "representation": "scaled",
+        "training_rows": 6140,
+        "training_ions": [
+          "Al",
+          "Ca",
+          "Li",
+          "Mg",
+          "Y",
+          "Zn"
+        ],
+        "cv_mean_mae_V": 0.757477466695027,
+        "selected_by_cv": false,
+        "holdout": {
+          "all": {
+            "n": 630,
+            "mae_V": 0.8126089567438646,
+            "rmse_V": 1.1751397304926972,
+            "r2": 0.5633908318850513,
+            "bias_V": 0.07112611256150062
+          },
+          "per_ion": {
+            "Al": {
+              "n": 20,
+              "mae_V": 0.9407035930812597,
+              "rmse_V": 1.3001153988777836,
+              "r2": 0.0867385765525851,
+              "bias_V": 0.449958484726711
+            },
+            "Ca": {
+              "n": 49,
+              "mae_V": 0.8272439784800507,
+              "rmse_V": 1.1323535429348541,
+              "r2": 0.44547299069639146,
+              "bias_V": 0.2665369833326251
+            },
+            "Li": {
+              "n": 324,
+              "mae_V": 0.8625935369045702,
+              "rmse_V": 1.2768104102926554,
+              "r2": 0.24703134059667098,
+              "bias_V": -0.13836156195330093
+            },
+            "Mg": {
+              "n": 191,
+              "mae_V": 0.767591965691564,
+              "rmse_V": 1.0496931547618775,
+              "r2": 0.43386702114738773,
+              "bias_V": 0.29441149905231273
+            },
+            "Y": {
+              "n": 18,
+              "mae_V": 0.36546848265636345,
+              "rmse_V": 0.5569622320916479,
+              "r2": 0.7284004724272614,
+              "bias_V": 0.1169168975780795
+            },
+            "Zn": {
+              "n": 28,
+              "mae_V": 0.7116361374822485,
+              "rmse_V": 1.0199464191082812,
+              "r2": 0.0870359448387148,
+              "bias_V": 0.33007195119231697
+            }
+          },
+          "negative_reference_voltage": {
+            "n": 78,
+            "mae_V": 1.1587482574605588,
+            "rmse_V": 1.5279387809558747,
+            "r2": -7.031618591640649,
+            "bias_V": 1.1210917217787442
+          },
+          "priority_review_reference_voltage": {
+            "n": 1,
+            "mae_V": 11.834608410996516,
+            "rmse_V": 11.834608410996516,
+            "r2": null,
+            "bias_V": -11.834608410996516
+          },
+          "support_diagnostics": {
+            "rows_with_changed_training_constant_features": 12,
+            "changed_training_constant_feature_names": [
+              "charge_atom_fraction_Pm",
+              "charge_atom_fraction_Pu",
+              "discharge_atom_fraction_Pm",
+              "discharge_atom_fraction_Pu",
+              "charge_spacegroup_032",
+              "charge_spacegroup_053",
+              "charge_spacegroup_096",
+              "charge_spacegroup_097",
+              "charge_spacegroup_181",
+              "charge_spacegroup_223",
+              "discharge_spacegroup_051",
+              "discharge_spacegroup_152",
+              "discharge_spacegroup_181",
+              "discharge_spacegroup_220",
+              "discharge_spacegroup_223"
+            ]
+          }
+        },
+        "held_out_Na": {
+          "all": {
+            "n": 472,
+            "mae_V": 0.9973023181681557,
+            "rmse_V": 1.2145347032479554,
+            "r2": 0.19821078340933473,
+            "bias_V": -0.5787017157183195
+          },
+          "per_ion": {
+            "Na": {
+              "n": 472,
+              "mae_V": 0.9973023181681557,
+              "rmse_V": 1.2145347032479554,
+              "r2": 0.19821078340933473,
+              "bias_V": -0.5787017157183195
+            }
+          },
+          "negative_reference_voltage": {
+            "n": 13,
+            "mae_V": 2.3825828471657107,
+            "rmse_V": 2.5062709094288538,
+            "r2": -18.472352451605257,
+            "bias_V": 2.3825828471657107
+          },
+          "priority_review_reference_voltage": {
+            "n": 0,
+            "mae_V": null,
+            "rmse_V": null,
+            "r2": null,
+            "bias_V": null
+          },
+          "known_development_group": {
+            "n": 343,
+            "mae_V": 0.9922204835522966,
+            "rmse_V": 1.209900883104684,
+            "r2": 0.24481151724205097,
+            "bias_V": -0.6569313433926827
+          },
+          "new_development_group": {
+            "n": 129,
+            "mae_V": 1.010814483076991,
+            "rmse_V": 1.2267704972473132,
+            "r2": -0.00394131841510359,
+            "bias_V": -0.3706958064756329
+          },
+          "support_diagnostics": {
+            "rows_with_changed_training_constant_features": 472,
+            "changed_training_constant_feature_names": [
+              "working_ion_Na",
+              "discharge_spacegroup_054",
+              "discharge_spacegroup_086",
+              "discharge_spacegroup_205"
+            ]
+          }
+        },
+        "held_out_K": {
+          "all": {
+            "n": 177,
+            "mae_V": 1.4287460224822526,
+            "rmse_V": 1.680902156222838,
+            "r2": -0.04110359119990381,
+            "bias_V": -0.7483557027197952
+          },
+          "per_ion": {
+            "K": {
+              "n": 177,
+              "mae_V": 1.4287460224822526,
+              "rmse_V": 1.680902156222838,
+              "r2": -0.04110359119990381,
+              "bias_V": -0.7483557027197952
+            }
+          },
+          "negative_reference_voltage": {
+            "n": 11,
+            "mae_V": 3.019319241643342,
+            "rmse_V": 3.1564703609653844,
+            "r2": -18.529341947960972,
+            "bias_V": 3.019319241643342
+          },
+          "priority_review_reference_voltage": {
+            "n": 0,
+            "mae_V": null,
+            "rmse_V": null,
+            "r2": null,
+            "bias_V": null
+          },
+          "known_development_group": {
+            "n": 120,
+            "mae_V": 1.5511518065035612,
+            "rmse_V": 1.804314992466149,
+            "r2": -0.0019852402690740956,
+            "bias_V": -0.7603737642063007
+          },
+          "new_development_group": {
+            "n": 57,
+            "mae_V": 1.1710496350689714,
+            "rmse_V": 1.385610026920611,
+            "r2": -0.2141977268578943,
+            "bias_V": -0.7230545206429416
+          },
+          "support_diagnostics": {
+            "rows_with_changed_training_constant_features": 177,
+            "changed_training_constant_feature_names": [
+              "working_ion_K",
+              "charge_spacegroup_066",
+              "charge_spacegroup_201",
+              "charge_spacegroup_223",
+              "discharge_spacegroup_032",
+              "discharge_spacegroup_048",
+              "discharge_spacegroup_086",
+              "discharge_spacegroup_127",
+              "discharge_spacegroup_223"
+            ]
+          }
+        }
+      },
+      {
+        "family": "dnn",
+        "training_population": "mixed_ions",
+        "candidate_id": "dnn_scaled_0",
+        "representation": "scaled",
+        "training_rows": 6140,
+        "training_ions": [
+          "Al",
+          "Ca",
+          "Li",
+          "Mg",
+          "Y",
+          "Zn"
+        ],
+        "cv_mean_mae_V": 0.6400657843611557,
+        "selected_by_cv": true,
+        "holdout": {
+          "all": {
+            "n": 630,
+            "mae_V": 0.6553245952993202,
+            "rmse_V": 0.9945138010993434,
+            "r2": 0.6872945428951769,
+            "bias_V": -0.011050699327446708
+          },
+          "per_ion": {
+            "Al": {
+              "n": 20,
+              "mae_V": 0.6706431171609686,
+              "rmse_V": 1.025468597212848,
+              "r2": 0.43183295508817876,
+              "bias_V": 0.16495926213971251
+            },
+            "Ca": {
+              "n": 49,
+              "mae_V": 0.6153775206409774,
+              "rmse_V": 0.8434917684739014,
+              "r2": 0.6923050878594479,
+              "bias_V": 0.04001161810034079
+            },
+            "Li": {
+              "n": 324,
+              "mae_V": 0.6952899346864306,
+              "rmse_V": 1.1034038742424963,
+              "r2": 0.43766763616245075,
+              "bias_V": -0.15642293654909073
+            },
+            "Mg": {
+              "n": 191,
+              "mae_V": 0.6518022744583031,
+              "rmse_V": 0.8987401873651152,
+              "r2": 0.5849866685961731,
+              "bias_V": 0.15699008111088558
+            },
+            "Y": {
+              "n": 18,
+              "mae_V": 0.38546621616307136,
+              "rmse_V": 0.5167304762863119,
+              "r2": 0.7662209063817733,
+              "bias_V": 0.2264097783867192
+            },
+            "Zn": {
+              "n": 28,
+              "mae_V": 0.449341751181063,
+              "rmse_V": 0.6984368425549302,
+              "r2": 0.5718920975097983,
+              "bias_V": 0.1571019583129618
+            }
+          },
+          "negative_reference_voltage": {
+            "n": 78,
+            "mae_V": 0.9698375498771278,
+            "rmse_V": 1.208600302545028,
+            "r2": -4.025237196029797,
+            "bias_V": 0.7770763982086828
+          },
+          "priority_review_reference_voltage": {
+            "n": 1,
+            "mae_V": 11.93741984524652,
+            "rmse_V": 11.93741984524652,
+            "r2": null,
+            "bias_V": -11.93741984524652
+          },
+          "support_diagnostics": {
+            "rows_with_changed_training_constant_features": 12,
+            "changed_training_constant_feature_names": [
+              "charge_atom_fraction_Pm",
+              "charge_atom_fraction_Pu",
+              "discharge_atom_fraction_Pm",
+              "discharge_atom_fraction_Pu",
+              "charge_spacegroup_032",
+              "charge_spacegroup_053",
+              "charge_spacegroup_096",
+              "charge_spacegroup_097",
+              "charge_spacegroup_181",
+              "charge_spacegroup_223",
+              "discharge_spacegroup_051",
+              "discharge_spacegroup_152",
+              "discharge_spacegroup_181",
+              "discharge_spacegroup_220",
+              "discharge_spacegroup_223"
+            ]
+          }
+        },
+        "held_out_Na": {
+          "all": {
+            "n": 472,
+            "mae_V": 0.7431094199221544,
+            "rmse_V": 0.9526593950581667,
+            "r2": 0.5066948339428978,
+            "bias_V": -0.4339639097328594
+          },
+          "per_ion": {
+            "Na": {
+              "n": 472,
+              "mae_V": 0.7431094199221544,
+              "rmse_V": 0.9526593950581667,
+              "r2": 0.5066948339428978,
+              "bias_V": -0.4339639097328594
+            }
+          },
+          "negative_reference_voltage": {
+            "n": 13,
+            "mae_V": 1.3058667139423894,
+            "rmse_V": 1.4396967218672534,
+            "r2": -5.425462995830997,
+            "bias_V": 1.256950529963074
+          },
+          "priority_review_reference_voltage": {
+            "n": 0,
+            "mae_V": null,
+            "rmse_V": null,
+            "r2": null,
+            "bias_V": null
+          },
+          "known_development_group": {
+            "n": 343,
+            "mae_V": 0.7232725064325983,
+            "rmse_V": 0.928133803286771,
+            "r2": 0.5555970316603835,
+            "bias_V": -0.46757960435955476
+          },
+          "new_development_group": {
+            "n": 129,
+            "mae_V": 0.7958540813711288,
+            "rmse_V": 1.0149922108720115,
+            "r2": 0.31276210116583847,
+            "bias_V": -0.3445826441750569
+          },
+          "support_diagnostics": {
+            "rows_with_changed_training_constant_features": 472,
+            "changed_training_constant_feature_names": [
+              "working_ion_Na",
+              "discharge_spacegroup_054",
+              "discharge_spacegroup_086",
+              "discharge_spacegroup_205"
+            ]
+          }
+        },
+        "held_out_K": {
+          "all": {
+            "n": 177,
+            "mae_V": 1.2093215844202772,
+            "rmse_V": 1.429036804288266,
+            "r2": 0.2475183668016092,
+            "bias_V": -0.9905462773491269
+          },
+          "per_ion": {
+            "K": {
+              "n": 177,
+              "mae_V": 1.2093215844202772,
+              "rmse_V": 1.429036804288266,
+              "r2": 0.2475183668016092,
+              "bias_V": -0.9905462773491269
+            }
+          },
+          "negative_reference_voltage": {
+            "n": 11,
+            "mae_V": 1.0440833280169297,
+            "rmse_V": 1.170569524979789,
+            "r2": -1.6858305231541793,
+            "bias_V": 0.5713184392667409
+          },
+          "priority_review_reference_voltage": {
+            "n": 0,
+            "mae_V": null,
+            "rmse_V": null,
+            "r2": null,
+            "bias_V": null
+          },
+          "known_development_group": {
+            "n": 120,
+            "mae_V": 1.2175949366382635,
+            "rmse_V": 1.407076576450735,
+            "r2": 0.3906426197614583,
+            "bias_V": -0.9479626319926363
+          },
+          "new_development_group": {
+            "n": 57,
+            "mae_V": 1.1919040008034634,
+            "rmse_V": 1.4741999688102363,
+            "r2": -0.37442224611875385,
+            "bias_V": -1.0801960570470017
+          },
+          "support_diagnostics": {
+            "rows_with_changed_training_constant_features": 177,
+            "changed_training_constant_feature_names": [
+              "working_ion_K",
+              "charge_spacegroup_066",
+              "charge_spacegroup_201",
+              "charge_spacegroup_223",
+              "discharge_spacegroup_032",
+              "discharge_spacegroup_048",
+              "discharge_spacegroup_086",
+              "discharge_spacegroup_127",
+              "discharge_spacegroup_223"
+            ]
+          }
+        }
+      },
+      {
+        "family": "svr",
+        "training_population": "li_only",
+        "candidate_id": "svr_scaled_1",
+        "representation": "scaled",
+        "training_rows": 3021,
+        "training_ions": [
+          "Li"
+        ],
+        "cv_mean_mae_V": 0.6879295923787823,
+        "selected_by_cv": false,
+        "holdout": {
+          "all": {
+            "n": 324,
+            "mae_V": 0.7801903676134749,
+            "rmse_V": 1.2171014706360743,
+            "r2": 0.31580854723253315,
+            "bias_V": -0.06795363412070048
+          },
+          "per_ion": {
+            "Li": {
+              "n": 324,
+              "mae_V": 0.7801903676134749,
+              "rmse_V": 1.2171014706360743,
+              "r2": 0.31580854723253315,
+              "bias_V": -0.06795363412070048
+            }
+          },
+          "negative_reference_voltage": {
+            "n": 9,
+            "mae_V": 2.781068783658848,
+            "rmse_V": 2.8654159140164577,
+            "r2": -16.3617697440828,
+            "bias_V": 2.781068783658848
+          },
+          "priority_review_reference_voltage": {
+            "n": 1,
+            "mae_V": 11.795594845626656,
+            "rmse_V": 11.795594845626656,
+            "r2": null,
+            "bias_V": -11.795594845626656
+          },
+          "support_diagnostics": {
+            "rows_with_changed_training_constant_features": 11,
+            "changed_training_constant_feature_names": [
+              "charge_atom_fraction_I",
+              "charge_atom_fraction_U",
+              "charge_atom_fraction_Pu",
+              "discharge_atom_fraction_I",
+              "discharge_atom_fraction_U",
+              "discharge_atom_fraction_Pu",
+              "charge_spacegroup_096",
+              "charge_spacegroup_145",
+              "charge_spacegroup_181",
+              "discharge_spacegroup_051",
+              "discharge_spacegroup_145",
+              "discharge_spacegroup_152",
+              "discharge_spacegroup_176",
+              "discharge_spacegroup_181"
+            ]
+          }
+        },
+        "held_out_Na": {
+          "all": {
+            "n": 472,
+            "mae_V": 0.9586501285160735,
+            "rmse_V": 1.1930149981719511,
+            "r2": 0.22637203357145796,
+            "bias_V": -0.2727787576591756
+          },
+          "per_ion": {
+            "Na": {
+              "n": 472,
+              "mae_V": 0.9586501285160735,
+              "rmse_V": 1.1930149981719511,
+              "r2": 0.22637203357145796,
+              "bias_V": -0.2727787576591756
+            }
+          },
+          "negative_reference_voltage": {
+            "n": 13,
+            "mae_V": 2.974910226458613,
+            "rmse_V": 3.025780968423958,
+            "r2": -27.381632293152265,
+            "bias_V": 2.974910226458613
+          },
+          "priority_review_reference_voltage": {
+            "n": 0,
+            "mae_V": null,
+            "rmse_V": null,
+            "r2": null,
+            "bias_V": null
+          },
+          "known_development_group": {
+            "n": 325,
+            "mae_V": 0.9305235902609177,
+            "rmse_V": 1.1555161942608716,
+            "r2": 0.23659388204880205,
+            "bias_V": -0.3926108360271041
+          },
+          "new_development_group": {
+            "n": 147,
+            "mae_V": 1.0208346518693088,
+            "rmse_V": 1.2720027448514737,
+            "r2": 0.1296310311087071,
+            "bias_V": -0.007843890519197474
+          },
+          "support_diagnostics": {
+            "rows_with_changed_training_constant_features": 472,
+            "changed_training_constant_feature_names": [
+              "charge_atom_fraction_Hf",
+              "charge_atom_fraction_U",
+              "discharge_atom_fraction_Hf",
+              "discharge_atom_fraction_U",
+              "working_ion_Li",
+              "working_ion_Na",
+              "working_ion_atomic_number",
+              "working_ion_period",
+              "charge_spacegroup_046",
+              "charge_spacegroup_054",
+              "discharge_spacegroup_054",
+              "discharge_spacegroup_086",
+              "discharge_spacegroup_204",
+              "discharge_spacegroup_205"
+            ]
+          }
+        },
+        "held_out_K": {
+          "all": {
+            "n": 177,
+            "mae_V": 1.208329700597955,
+            "rmse_V": 1.484782250032189,
+            "r2": 0.18766603878814447,
+            "bias_V": -0.2765162033766422
+          },
+          "per_ion": {
+            "K": {
+              "n": 177,
+              "mae_V": 1.208329700597955,
+              "rmse_V": 1.484782250032189,
+              "r2": 0.18766603878814447,
+              "bias_V": -0.2765162033766422
+            }
+          },
+          "negative_reference_voltage": {
+            "n": 11,
+            "mae_V": 3.1806604464290373,
+            "rmse_V": 3.2550232596344713,
+            "r2": -19.767889813643762,
+            "bias_V": 3.1806604464290373
+          },
+          "priority_review_reference_voltage": {
+            "n": 0,
+            "mae_V": null,
+            "rmse_V": null,
+            "r2": null,
+            "bias_V": null
+          },
+          "known_development_group": {
+            "n": 107,
+            "mae_V": 1.1550170196275997,
+            "rmse_V": 1.3701554460243799,
+            "r2": 0.18779452976268773,
+            "bias_V": -0.4591045202686696
+          },
+          "new_development_group": {
+            "n": 70,
+            "mae_V": 1.2898219415097836,
+            "rmse_V": 1.6446297375786723,
+            "r2": 0.11032709358822379,
+            "bias_V": 0.0025830810154567514
+          },
+          "support_diagnostics": {
+            "rows_with_changed_training_constant_features": 177,
+            "changed_training_constant_feature_names": [
+              "charge_atom_fraction_Be",
+              "charge_atom_fraction_I",
+              "discharge_atom_fraction_Be",
+              "discharge_atom_fraction_I",
+              "working_ion_Li",
+              "working_ion_K",
+              "working_ion_atomic_number",
+              "working_ion_period",
+              "charge_spacegroup_066",
+              "charge_spacegroup_083",
+              "charge_spacegroup_201",
+              "charge_spacegroup_223",
+              "charge_spacegroup_224",
+              "discharge_spacegroup_032",
+              "discharge_spacegroup_048",
+              "discharge_spacegroup_086",
+              "discharge_spacegroup_127",
+              "discharge_spacegroup_140",
+              "discharge_spacegroup_176",
+              "discharge_spacegroup_204",
+              "discharge_spacegroup_223",
+              "discharge_spacegroup_224"
+            ]
+          }
+        }
+      },
+      {
+        "family": "krr",
+        "training_population": "li_only",
+        "candidate_id": "krr_scaled_2",
+        "representation": "scaled",
+        "training_rows": 3021,
+        "training_ions": [
+          "Li"
+        ],
+        "cv_mean_mae_V": 0.785578996132686,
+        "selected_by_cv": false,
+        "holdout": {
+          "all": {
+            "n": 324,
+            "mae_V": 0.86020095643443,
+            "rmse_V": 1.3300510559068488,
+            "r2": 0.18292731017264396,
+            "bias_V": 0.055293183654867406
+          },
+          "per_ion": {
+            "Li": {
+              "n": 324,
+              "mae_V": 0.86020095643443,
+              "rmse_V": 1.3300510559068488,
+              "r2": 0.18292731017264396,
+              "bias_V": 0.055293183654867406
+            }
+          },
+          "negative_reference_voltage": {
+            "n": 9,
+            "mae_V": 3.5861649205162474,
+            "rmse_V": 3.6776932678994556,
+            "r2": -27.600239151123624,
+            "bias_V": 3.5861649205162474
+          },
+          "priority_review_reference_voltage": {
+            "n": 1,
+            "mae_V": 12.242924244439553,
+            "rmse_V": 12.242924244439553,
+            "r2": null,
+            "bias_V": -12.242924244439553
+          },
+          "support_diagnostics": {
+            "rows_with_changed_training_constant_features": 11,
+            "changed_training_constant_feature_names": [
+              "charge_atom_fraction_I",
+              "charge_atom_fraction_U",
+              "charge_atom_fraction_Pu",
+              "discharge_atom_fraction_I",
+              "discharge_atom_fraction_U",
+              "discharge_atom_fraction_Pu",
+              "charge_spacegroup_096",
+              "charge_spacegroup_145",
+              "charge_spacegroup_181",
+              "discharge_spacegroup_051",
+              "discharge_spacegroup_145",
+              "discharge_spacegroup_152",
+              "discharge_spacegroup_176",
+              "discharge_spacegroup_181"
+            ]
+          }
+        },
+        "held_out_Na": {
+          "all": {
+            "n": 472,
+            "mae_V": 1.0010315119003128,
+            "rmse_V": 1.3419691042166642,
+            "r2": 0.021129166162989765,
+            "bias_V": 0.47217242134022025
+          },
+          "per_ion": {
+            "Na": {
+              "n": 472,
+              "mae_V": 1.0010315119003128,
+              "rmse_V": 1.3419691042166642,
+              "r2": 0.021129166162989765,
+              "bias_V": 0.47217242134022025
+            }
+          },
+          "negative_reference_voltage": {
+            "n": 13,
+            "mae_V": 4.0066804615807445,
+            "rmse_V": 4.046144054876179,
+            "r2": -49.75105527856321,
+            "bias_V": 4.0066804615807445
+          },
+          "priority_review_reference_voltage": {
+            "n": 0,
+            "mae_V": null,
+            "rmse_V": null,
+            "r2": null,
+            "bias_V": null
+          },
+          "known_development_group": {
+            "n": 325,
+            "mae_V": 0.919963986742998,
+            "rmse_V": 1.2377390454289952,
+            "r2": 0.12408543917289294,
+            "bias_V": 0.35521863396334724
+          },
+          "new_development_group": {
+            "n": 147,
+            "mae_V": 1.180262434867165,
+            "rmse_V": 1.5476920192339962,
+            "r2": -0.2885354999132428,
+            "bias_V": 0.7307437199625585
+          },
+          "support_diagnostics": {
+            "rows_with_changed_training_constant_features": 472,
+            "changed_training_constant_feature_names": [
+              "charge_atom_fraction_Hf",
+              "charge_atom_fraction_U",
+              "discharge_atom_fraction_Hf",
+              "discharge_atom_fraction_U",
+              "working_ion_Li",
+              "working_ion_Na",
+              "working_ion_atomic_number",
+              "working_ion_period",
+              "charge_spacegroup_046",
+              "charge_spacegroup_054",
+              "discharge_spacegroup_054",
+              "discharge_spacegroup_086",
+              "discharge_spacegroup_204",
+              "discharge_spacegroup_205"
+            ]
+          }
+        },
+        "held_out_K": {
+          "all": {
+            "n": 177,
+            "mae_V": 1.2906564840364887,
+            "rmse_V": 1.6745957767528001,
+            "r2": -0.033306256955079716,
+            "bias_V": 0.5278987804189333
+          },
+          "per_ion": {
+            "K": {
+              "n": 177,
+              "mae_V": 1.2906564840364887,
+              "rmse_V": 1.6745957767528001,
+              "r2": -0.033306256955079716,
+              "bias_V": 0.5278987804189333
+            }
+          },
+          "negative_reference_voltage": {
+            "n": 11,
+            "mae_V": 4.196875284357171,
+            "rmse_V": 4.257589736878027,
+            "r2": -34.53135739204502,
+            "bias_V": 4.196875284357171
+          },
+          "priority_review_reference_voltage": {
+            "n": 0,
+            "mae_V": null,
+            "rmse_V": null,
+            "r2": null,
+            "bias_V": null
+          },
+          "known_development_group": {
+            "n": 107,
+            "mae_V": 1.1440085568398468,
+            "rmse_V": 1.46914560677102,
+            "r2": 0.06619561455108569,
+            "bias_V": 0.30117132955347714
+          },
+          "new_development_group": {
+            "n": 70,
+            "mae_V": 1.5148183156084993,
+            "rmse_V": 1.9471897943300625,
+            "r2": -0.24712692860172436,
+            "bias_V": 0.8744678838847022
+          },
+          "support_diagnostics": {
+            "rows_with_changed_training_constant_features": 177,
+            "changed_training_constant_feature_names": [
+              "charge_atom_fraction_Be",
+              "charge_atom_fraction_I",
+              "discharge_atom_fraction_Be",
+              "discharge_atom_fraction_I",
+              "working_ion_Li",
+              "working_ion_K",
+              "working_ion_atomic_number",
+              "working_ion_period",
+              "charge_spacegroup_066",
+              "charge_spacegroup_083",
+              "charge_spacegroup_201",
+              "charge_spacegroup_223",
+              "charge_spacegroup_224",
+              "discharge_spacegroup_032",
+              "discharge_spacegroup_048",
+              "discharge_spacegroup_086",
+              "discharge_spacegroup_127",
+              "discharge_spacegroup_140",
+              "discharge_spacegroup_176",
+              "discharge_spacegroup_204",
+              "discharge_spacegroup_223",
+              "discharge_spacegroup_224"
+            ]
+          }
+        }
+      },
+      {
+        "family": "dnn",
+        "training_population": "li_only",
+        "candidate_id": "dnn_scaled_0",
+        "representation": "scaled",
+        "training_rows": 3021,
+        "training_ions": [
+          "Li"
+        ],
+        "cv_mean_mae_V": 0.6672231770509364,
+        "selected_by_cv": true,
+        "holdout": {
+          "all": {
+            "n": 324,
+            "mae_V": 0.787205717223363,
+            "rmse_V": 1.1925435918913205,
+            "r2": 0.34314033231538044,
+            "bias_V": -0.11848961413874044
+          },
+          "per_ion": {
+            "Li": {
+              "n": 324,
+              "mae_V": 0.787205717223363,
+              "rmse_V": 1.1925435918913205,
+              "r2": 0.34314033231538044,
+              "bias_V": -0.11848961413874044
+            }
+          },
+          "negative_reference_voltage": {
+            "n": 9,
+            "mae_V": 2.008376367306574,
+            "rmse_V": 2.2780592776878996,
+            "r2": -9.973589158101069,
+            "bias_V": 1.746265335992951
+          },
+          "priority_review_reference_voltage": {
+            "n": 1,
+            "mae_V": 11.823887717028262,
+            "rmse_V": 11.823887717028262,
+            "r2": null,
+            "bias_V": -11.823887717028262
+          },
+          "support_diagnostics": {
+            "rows_with_changed_training_constant_features": 11,
+            "changed_training_constant_feature_names": [
+              "charge_atom_fraction_I",
+              "charge_atom_fraction_U",
+              "charge_atom_fraction_Pu",
+              "discharge_atom_fraction_I",
+              "discharge_atom_fraction_U",
+              "discharge_atom_fraction_Pu",
+              "charge_spacegroup_096",
+              "charge_spacegroup_145",
+              "charge_spacegroup_181",
+              "discharge_spacegroup_051",
+              "discharge_spacegroup_145",
+              "discharge_spacegroup_152",
+              "discharge_spacegroup_176",
+              "discharge_spacegroup_181"
+            ]
+          }
+        },
+        "held_out_Na": {
+          "all": {
+            "n": 472,
+            "mae_V": 0.9239765306317085,
+            "rmse_V": 1.2120866707574007,
+            "r2": 0.20143972024975731,
+            "bias_V": 0.5696759744876901
+          },
+          "per_ion": {
+            "Na": {
+              "n": 472,
+              "mae_V": 0.9239765306317085,
+              "rmse_V": 1.2120866707574007,
+              "r2": 0.20143972024975731,
+              "bias_V": 0.5696759744876901
+            }
+          },
+          "negative_reference_voltage": {
+            "n": 13,
+            "mae_V": 2.823753930091439,
+            "rmse_V": 3.0360200552211887,
+            "r2": -27.57404125508389,
+            "bias_V": 2.823753930091439
+          },
+          "priority_review_reference_voltage": {
+            "n": 0,
+            "mae_V": null,
+            "rmse_V": null,
+            "r2": null,
+            "bias_V": null
+          },
+          "known_development_group": {
+            "n": 325,
+            "mae_V": 0.8832059266557378,
+            "rmse_V": 1.1582844807711858,
+            "r2": 0.23293169482500453,
+            "bias_V": 0.6076373577756968
+          },
+          "new_development_group": {
+            "n": 147,
+            "mae_V": 1.0141156210547737,
+            "rmse_V": 1.3232954097808152,
+            "r2": 0.058021665983669535,
+            "bias_V": 0.4857477461298522
+          },
+          "support_diagnostics": {
+            "rows_with_changed_training_constant_features": 472,
+            "changed_training_constant_feature_names": [
+              "charge_atom_fraction_Hf",
+              "charge_atom_fraction_U",
+              "discharge_atom_fraction_Hf",
+              "discharge_atom_fraction_U",
+              "working_ion_Li",
+              "working_ion_Na",
+              "working_ion_atomic_number",
+              "working_ion_period",
+              "charge_spacegroup_046",
+              "charge_spacegroup_054",
+              "discharge_spacegroup_054",
+              "discharge_spacegroup_086",
+              "discharge_spacegroup_204",
+              "discharge_spacegroup_205"
+            ]
+          }
+        },
+        "held_out_K": {
+          "all": {
+            "n": 177,
+            "mae_V": 1.0038557813314783,
+            "rmse_V": 1.2715845374523236,
+            "r2": 0.40420129843435426,
+            "bias_V": 0.030321578658311928
+          },
+          "per_ion": {
+            "K": {
+              "n": 177,
+              "mae_V": 1.0038557813314783,
+              "rmse_V": 1.2715845374523236,
+              "r2": 0.40420129843435426,
+              "bias_V": 0.030321578658311928
+            }
+          },
+          "negative_reference_voltage": {
+            "n": 11,
+            "mae_V": 2.3632966040644003,
+            "rmse_V": 2.5197559849087163,
+            "r2": -11.445179048740467,
+            "bias_V": 2.3632966040644003
+          },
+          "priority_review_reference_voltage": {
+            "n": 0,
+            "mae_V": null,
+            "rmse_V": null,
+            "r2": null,
+            "bias_V": null
+          },
+          "known_development_group": {
+            "n": 107,
+            "mae_V": 0.9254865309783239,
+            "rmse_V": 1.1889685031595336,
+            "r2": 0.3884007735026218,
+            "bias_V": 0.03950003069700023
+          },
+          "new_development_group": {
+            "n": 70,
+            "mae_V": 1.1236487782998719,
+            "rmse_V": 1.3884008678592765,
+            "r2": 0.36594951299334677,
+            "bias_V": 0.016291659113459738
+          },
+          "support_diagnostics": {
+            "rows_with_changed_training_constant_features": 177,
+            "changed_training_constant_feature_names": [
+              "charge_atom_fraction_Be",
+              "charge_atom_fraction_I",
+              "discharge_atom_fraction_Be",
+              "discharge_atom_fraction_I",
+              "working_ion_Li",
+              "working_ion_K",
+              "working_ion_atomic_number",
+              "working_ion_period",
+              "charge_spacegroup_066",
+              "charge_spacegroup_083",
+              "charge_spacegroup_201",
+              "charge_spacegroup_223",
+              "charge_spacegroup_224",
+              "discharge_spacegroup_032",
+              "discharge_spacegroup_048",
+              "discharge_spacegroup_086",
+              "discharge_spacegroup_127",
+              "discharge_spacegroup_140",
+              "discharge_spacegroup_176",
+              "discharge_spacegroup_204",
+              "discharge_spacegroup_223",
+              "discharge_spacegroup_224"
+            ]
+          }
+        }
+      }
+    ],
+    "default_family_by_population": {
+      "mixed_ions": "dnn",
+      "li_only": "dnn"
+    },
+    "median_baseline_by_population": {
+      "mixed_ions": {
+        "holdout": {
+          "all": {
+            "n": 630,
+            "mae_V": 1.4013127745898806,
+            "rmse_V": 1.8233439398435194,
+            "r2": -0.05111692123007927,
+            "bias_V": 0.4020919961762977
+          },
+          "per_ion": {
+            "Al": {
+              "n": 20,
+              "mae_V": 1.336969778020833,
+              "rmse_V": 1.5741302725029183,
+              "r2": -0.3387905891724401,
+              "bias_V": 0.7918629338541634
+            },
+            "Ca": {
+              "n": 49,
+              "mae_V": 1.3122365841454062,
+              "rmse_V": 1.5473514386111715,
+              "r2": -0.035467670127187656,
+              "bias_V": 0.28637626558247975
+            },
+            "Li": {
+              "n": 324,
+              "mae_V": 1.1154645181940603,
+              "rmse_V": 1.5675458739465384,
+              "r2": -0.1349182731529801,
+              "bias_V": -0.5404721895927241
+            },
+            "Mg": {
+              "n": 191,
+              "mae_V": 1.872148741985163,
+              "rmse_V": 2.2501155325960425,
+              "r2": -1.6013773798408626,
+              "bias_V": 1.7654278876396134
+            },
+            "Y": {
+              "n": 18,
+              "mae_V": 0.9600110015972224,
+              "rmse_V": 1.116998553200223,
+              "r2": -0.09240263368111301,
+              "bias_V": 0.324865368001541
+            },
+            "Zn": {
+              "n": 28,
+              "mae_V": 1.9827481487604135,
+              "rmse_V": 2.2518337733294778,
+              "r2": -3.450118961909882,
+              "bias_V": 1.9827481487604135
+            }
+          },
+          "negative_reference_voltage": {
+            "n": 78,
+            "mae_V": 3.3988637589369626,
+            "rmse_V": 3.441358833629508,
+            "r2": -39.74282016152035,
+            "bias_V": 3.3988637589369626
+          },
+          "priority_review_reference_voltage": {
+            "n": 1,
+            "mae_V": 12.762739264166669,
+            "rmse_V": 12.762739264166669,
+            "r2": null,
+            "bias_V": -12.762739264166669
+          }
+        },
+        "held_out_Na": {
+          "all": {
+            "n": 472,
+            "mae_V": 1.114172224179316,
+            "rmse_V": 1.3748640541051904,
+            "r2": -0.02744804209214302,
+            "bias_V": -0.2247167827790766
+          },
+          "per_ion": {
+            "Na": {
+              "n": 472,
+              "mae_V": 1.114172224179316,
+              "rmse_V": 1.3748640541051904,
+              "r2": -0.02744804209214302,
+              "bias_V": -0.2247167827790766
+            }
+          },
+          "negative_reference_voltage": {
+            "n": 13,
+            "mae_V": 3.357644285723914,
+            "rmse_V": 3.405342166891678,
+            "r2": -34.94875940961707,
+            "bias_V": 3.357644285723914
+          },
+          "priority_review_reference_voltage": {
+            "n": 0,
+            "mae_V": null,
+            "rmse_V": null,
+            "r2": null,
+            "bias_V": null
+          },
+          "known_development_group": {
+            "n": 343,
+            "mae_V": 1.1540572756863794,
+            "rmse_V": 1.4273412765188427,
+            "r2": -0.05102106582287269,
+            "bias_V": -0.3144827858847054
+          },
+          "new_development_group": {
+            "n": 129,
+            "mae_V": 1.0081212732729374,
+            "rmse_V": 1.224439694389069,
+            "r2": -0.00013006542500182405,
+            "bias_V": 0.013963365013409402
+          }
+        },
+        "held_out_K": {
+          "all": {
+            "n": 177,
+            "mae_V": 1.3485907571925613,
+            "rmse_V": 1.6548981925322341,
+            "r2": -0.009140507160288358,
+            "bias_V": -0.1575000183112086
+          },
+          "per_ion": {
+            "K": {
+              "n": 177,
+              "mae_V": 1.3485907571925613,
+              "rmse_V": 1.6548981925322341,
+              "r2": -0.009140507160288358,
+              "bias_V": -0.1575000183112086
+            }
+          },
+          "negative_reference_voltage": {
+            "n": 11,
+            "mae_V": 3.5400967250303,
+            "rmse_V": 3.6114340483368723,
+            "r2": -24.564868009025094,
+            "bias_V": 3.5400967250303
+          },
+          "priority_review_reference_voltage": {
+            "n": 0,
+            "mae_V": null,
+            "rmse_V": null,
+            "r2": null,
+            "bias_V": null
+          },
+          "known_development_group": {
+            "n": 120,
+            "mae_V": 1.4895434764027793,
+            "rmse_V": 1.812251510857644,
+            "r2": -0.010819356137267366,
+            "bias_V": -0.18749185416389197
+          },
+          "new_development_group": {
+            "n": 57,
+            "mae_V": 1.0518481904342083,
+            "rmse_V": 1.261001525248635,
+            "r2": -0.005630888205655715,
+            "bias_V": -0.0943593112529278
+          }
+        }
+      },
+      "li_only": {
+        "holdout": {
+          "all": {
+            "n": 324,
+            "mae_V": 0.9741928196000931,
+            "rmse_V": 1.494245455127137,
+            "r2": -0.03125948793836364,
+            "bias_V": 0.26015303374060555
+          },
+          "per_ion": {
+            "Li": {
+              "n": 324,
+              "mae_V": 0.9741928196000931,
+              "rmse_V": 1.494245455127137,
+              "r2": -0.03125948793836364,
+              "bias_V": 0.26015303374060555
+            }
+          },
+          "negative_reference_voltage": {
+            "n": 9,
+            "mae_V": 4.247193875833334,
+            "rmse_V": 4.302507282904066,
+            "r2": -38.14370081699838,
+            "bias_V": 4.247193875833334
+          },
+          "priority_review_reference_voltage": {
+            "n": 1,
+            "mae_V": 11.96211404083334,
+            "rmse_V": 11.96211404083334,
+            "r2": null,
+            "bias_V": -11.96211404083334
+          }
+        },
+        "held_out_Na": {
+          "all": {
+            "n": 472,
+            "mae_V": 1.1196870803245569,
+            "rmse_V": 1.4735752667270219,
+            "r2": -0.18027987207332563,
+            "bias_V": 0.5759084405542532
+          },
+          "per_ion": {
+            "Na": {
+              "n": 472,
+              "mae_V": 1.1196870803245569,
+              "rmse_V": 1.4735752667270219,
+              "r2": -0.18027987207332563,
+              "bias_V": 0.5759084405542532
+            }
+          },
+          "negative_reference_voltage": {
+            "n": 13,
+            "mae_V": 4.158269509057243,
+            "rmse_V": 4.196878058046389,
+            "r2": -53.602823035650054,
+            "bias_V": 4.158269509057243
+          },
+          "priority_review_reference_voltage": {
+            "n": 0,
+            "mae_V": null,
+            "rmse_V": null,
+            "r2": null,
+            "bias_V": null
+          },
+          "known_development_group": {
+            "n": 325,
+            "mae_V": 1.0542214326795623,
+            "rmse_V": 1.3864124614344744,
+            "r2": -0.09897666216083989,
+            "bias_V": 0.41606829217531044
+          },
+          "new_development_group": {
+            "n": 147,
+            "mae_V": 1.2644240564104294,
+            "rmse_V": 1.6500192076601623,
+            "r2": -0.4645537037825691,
+            "bias_V": 0.9292965237049768
+          }
+        },
+        "held_out_K": {
+          "all": {
+            "n": 177,
+            "mae_V": 1.3854276320823906,
+            "rmse_V": 1.768471600341145,
+            "r2": -0.1524053234818934,
+            "bias_V": 0.6431252050221212
+          },
+          "per_ion": {
+            "K": {
+              "n": 177,
+              "mae_V": 1.3854276320823906,
+              "rmse_V": 1.768471600341145,
+              "r2": -0.1524053234818934,
+              "bias_V": 0.6431252050221212
+            }
+          },
+          "negative_reference_voltage": {
+            "n": 11,
+            "mae_V": 4.340721948363631,
+            "rmse_V": 4.39909514513182,
+            "r2": -36.93244953033725,
+            "bias_V": 4.340721948363631
+          },
+          "priority_review_reference_voltage": {
+            "n": 0,
+            "mae_V": null,
+            "rmse_V": null,
+            "r2": null,
+            "bias_V": null
+          },
+          "known_development_group": {
+            "n": 107,
+            "mae_V": 1.2401523116479753,
+            "rmse_V": 1.5646392799153717,
+            "r2": -0.05914320778999227,
+            "bias_V": 0.3697339445732019
+          },
+          "new_development_group": {
+            "n": 70,
+            "mae_V": 1.6074913361749965,
+            "rmse_V": 2.0410773368687396,
+            "r2": -0.3702916414417481,
+            "bias_V": 1.0610232745654693
+          }
+        }
+      }
+    },
+    "default_population_by_ion": {
+      "Li": "li_only",
+      "Na": "li_only",
+      "K": "li_only",
+      "Mg": "mixed_ions",
+      "Ca": "mixed_ions",
+      "Zn": "mixed_ions",
+      "Al": "mixed_ions",
+      "Y": "mixed_ions"
+    },
+    "routing_basis": "Population routing was specified before testing; family choice uses development CV.",
+    "evaluation_note": "Dataset-level errors are not confidence intervals for individual predictions.",
+    "data_source": "Materials Project computed insertion voltages"
+  },
+  "fe_po4_example": {
+    "run_id": "step6_b8e6065bfc4e",
+    "working_ion": "Li",
+    "predicted_voltage_V": 3.4650564309719782,
+    "interval": {
+      "formula_charge": "FePO4",
+      "formula_discharge": "LiFePO4",
+      "fracA_charge": 0.0,
+      "fracA_discharge": 0.14285714285714285,
+      "ion_per_host_charge": 0.0,
+      "ion_per_host_discharge": 1.0,
+      "loading_convention": "working-ion atoms per reduced non-working-ion host"
+    },
+    "model": {
+      "family": "dnn",
+      "training_population": "li_only",
+      "candidate_id": "dnn_scaled_0",
+      "representation": "scaled",
+      "training_rows": 3021,
+      "training_ions": [
+        "Li"
+      ],
+      "cv_mean_mae_V": 0.6672231770509364
+    },
+    "evaluation_reference": {
+      "scope": "li_only_grouped_holdout",
+      "all": {
+        "n": 324,
+        "mae_V": 0.787205717223363,
+        "rmse_V": 1.1925435918913205,
+        "r2": 0.34314033231538044,
+        "bias_V": -0.11848961413874044
+      },
+      "requested_ion": {
+        "n": 324,
+        "mae_V": 0.787205717223363,
+        "rmse_V": 1.1925435918913205,
+        "r2": 0.34314033231538044,
+        "bias_V": -0.11848961413874044
+      }
+    },
+    "extrapolates_working_ion": false,
+    "changed_training_constant_features": 0,
+    "warnings": [
+      "Prediction is based on computed reference voltages; it does not establish electrode stability or experimental performance.",
+      "A calibrated uncertainty interval is not available."
+    ]
+  },
+  "six_model_inference_examples": [
+    {
+      "population": "mixed_ions",
+      "family": "svr",
+      "voltage_V": 4.042117410100046
+    },
+    {
+      "population": "mixed_ions",
+      "family": "krr",
+      "voltage_V": 3.727392054084709
+    },
+    {
+      "population": "mixed_ions",
+      "family": "dnn",
+      "voltage_V": 3.3979611790727806
+    },
+    {
+      "population": "li_only",
+      "family": "svr",
+      "voltage_V": 3.6043867719137332
+    },
+    {
+      "population": "li_only",
+      "family": "krr",
+      "voltage_V": 3.862543480826404
+    },
+    {
+      "population": "li_only",
+      "family": "dnn",
+      "voltage_V": 3.4650564309719782
+    }
+  ],
+  "carbon_profile_example": {
+    "run_id": "step6_b8e6065bfc4e",
+    "count": 2,
+    "predictions": [
+      {
+        "run_id": "step6_b8e6065bfc4e",
+        "working_ion": "Li",
+        "predicted_voltage_V": 0.7373844526266891,
+        "interval": {
+          "formula_charge": "C",
+          "formula_discharge": "LiC12",
+          "fracA_charge": 0.0,
+          "fracA_discharge": 0.07692307692307693,
+          "ion_per_host_charge": 0.0,
+          "ion_per_host_discharge": 0.08333333333333333,
+          "loading_convention": "working-ion atoms per reduced non-working-ion host"
+        },
+        "model": {
+          "family": "dnn",
+          "training_population": "li_only",
+          "candidate_id": "dnn_scaled_0",
+          "representation": "scaled",
+          "training_rows": 3021,
+          "training_ions": [
+            "Li"
+          ],
+          "cv_mean_mae_V": 0.6672231770509364
+        },
+        "evaluation_reference": {
+          "scope": "li_only_grouped_holdout",
+          "all": {
+            "n": 324,
+            "mae_V": 0.787205717223363,
+            "rmse_V": 1.1925435918913205,
+            "r2": 0.34314033231538044,
+            "bias_V": -0.11848961413874044
+          },
+          "requested_ion": {
+            "n": 324,
+            "mae_V": 0.787205717223363,
+            "rmse_V": 1.1925435918913205,
+            "r2": 0.34314033231538044,
+            "bias_V": -0.11848961413874044
+          }
+        },
+        "extrapolates_working_ion": false,
+        "changed_training_constant_features": 0,
+        "warnings": [
+          "Prediction is based on computed reference voltages; it does not establish electrode stability or experimental performance.",
+          "A calibrated uncertainty interval is not available."
+        ]
+      },
+      {
+        "run_id": "step6_b8e6065bfc4e",
+        "working_ion": "Li",
+        "predicted_voltage_V": 0.5462019715734745,
+        "interval": {
+          "formula_charge": "LiC12",
+          "formula_discharge": "LiC6",
+          "fracA_charge": 0.07692307692307693,
+          "fracA_discharge": 0.14285714285714285,
+          "ion_per_host_charge": 0.08333333333333333,
+          "ion_per_host_discharge": 0.16666666666666666,
+          "loading_convention": "working-ion atoms per reduced non-working-ion host"
+        },
+        "model": {
+          "family": "dnn",
+          "training_population": "li_only",
+          "candidate_id": "dnn_scaled_0",
+          "representation": "scaled",
+          "training_rows": 3021,
+          "training_ions": [
+            "Li"
+          ],
+          "cv_mean_mae_V": 0.6672231770509364
+        },
+        "evaluation_reference": {
+          "scope": "li_only_grouped_holdout",
+          "all": {
+            "n": 324,
+            "mae_V": 0.787205717223363,
+            "rmse_V": 1.1925435918913205,
+            "r2": 0.34314033231538044,
+            "bias_V": -0.11848961413874044
+          },
+          "requested_ion": {
+            "n": 324,
+            "mae_V": 0.787205717223363,
+            "rmse_V": 1.1925435918913205,
+            "r2": 0.34314033231538044,
+            "bias_V": -0.11848961413874044
+          }
+        },
+        "extrapolates_working_ion": false,
+        "changed_training_constant_features": 0,
+        "warnings": [
+          "Prediction is based on computed reference voltages; it does not establish electrode stability or experimental performance.",
+          "A calibrated uncertainty interval is not available."
+        ]
+      }
+    ],
+    "profile_type": "average voltage over each contiguous insertion interval",
+    "x_axis": "working-ion atoms per reduced host"
+  },
+  "browser_export": {
+    "status": "not_requested",
+    "command_option": "--export-csv PATH"
+  },
+  "verified_at_utc": "2026-09-14T03:50:12.916309+00:00",
+  "runtime": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "packages": {
+      "numpy": "2.1.3",
+      "scikit-learn": "1.6.1",
+      "fastapi": "0.115.12",
+      "httpx": "0.28.1"
+    }
+  },
+  "profile_input_sha256": "ba8ce3a72c2a3113f56536e7cd1b94f8927a97df6b1e6b164b4c7332b6ae37a0"
+}

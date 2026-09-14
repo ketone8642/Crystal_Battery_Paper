@@ -1,0 +1,42 @@
+{
+  "candidate": {
+    "id": "svr_scaled_2",
+    "family": "svr",
+    "representation": "scaled",
+    "parameters": {
+      "C": 100.0,
+      "gamma": "scale",
+      "epsilon": 0.1
+    }
+  },
+  "fold": 2,
+  "metrics": {
+    "n": 614,
+    "mae_V": 0.6505962406229658,
+    "rmse_V": 1.0045960591991332,
+    "r2": 0.6827968239861091,
+    "bias_V": 0.06987281169251958
+  },
+  "training_rows": 5526,
+  "validation_rows": 614,
+  "training_groups": 2344,
+  "validation_groups": 260,
+  "group_overlap": 0,
+  "preprocessor_sha256": "7fde5bab2bc2675c3a61cbef061cc5eff881ff16971243465bb2b345006512f7",
+  "training_row_uid_sha256": "63ea8caf6fea0f552071a7fb1c0367b3427f7d62917a7aaebcef87cc3cd8c2bb",
+  "elapsed_seconds": 16.222861299989745,
+  "regressor_info": {
+    "input_dimensions": 493,
+    "training_rows": 5526,
+    "seed": 2028,
+    "parameters": {
+      "C": 100.0,
+      "epsilon": 0.1
+    },
+    "target_transform": "none",
+    "resolved_gamma": 0.002028397565922921
+  },
+  "files_sha256": {
+    "fold_02.npz": "a4ea429aca29898499c60521d3854bf85e6fe5c97da2f7c946f30cba98a7ea7c"
+  }
+}
